@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <threshold>5</threshold>
+    <cache>mycache</cache>
+    <attributes>domainName,url,responseCode</attributes>
+
+</config>

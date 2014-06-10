@@ -1,0 +1,61 @@
+package eu.leads.processor.test;
+
+import eu.leads.crawler.PersistentCrawl;
+import eu.leads.processor.common.StringConstants;
+import eu.leads.processor.common.infinispan.InfinispanClusterSingleton;
+import eu.leads.processor.common.utils.PrintUtilities;
+import eu.leads.processor.conf.LQPConfiguration;
+import eu.leads.processor.plugins.EventType;
+import eu.leads.processor.plugins.PluginBaseImpl;
+import eu.leads.processor.plugins.PluginManager;
+import eu.leads.processor.plugins.PluginPackage;
+import org.apache.commons.configuration.ConfigurationException;
+import org.apache.commons.configuration.XMLConfiguration;
+import org.infinispan.Cache;
+
+import java.io.File;
+
+/**
+ * Created by vagvaz on 6/3/14.
+ */
+public class TestSimpleRunner {
+  public static void main(String[] args) {
+    LQPConfiguration.initialize();
+    LQPConfiguration.getInstance().getConfiguration().setProperty(StringConstants.CRAWLER_DEFAULT_CACHE, "webpages:");
+
+    PersistentCrawl.main(null);
+    File pluginf = new File(PluginBaseImpl.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+    String configPath = null;
+    String jarPath = null;
+    if ( args.length == 0 ) {
+      configPath = "/home/vagvaz/Projects/idea/basic_plugin.xml";
+      jarPath = "/home/vagvaz/Projects/idea/leads-query-processor/plugins/target/leads-query-processor-plugins-1.0-SNAPSHOT.jar";
+
+    } else {
+      configPath = args[0];
+    }
+    PluginPackage plugin = new PluginPackage(PluginBaseImpl.class.getCanonicalName(), PluginBaseImpl.class.getCanonicalName(), jarPath, configPath);
+    PluginManager.uploadPlugin(plugin);
+    CachePutter putter = new CachePutter("testCache", 100, 100);
+    XMLConfiguration config = null;
+    try {
+      config = new XMLConfiguration(configPath);
+    } catch ( ConfigurationException e ) {
+      e.printStackTrace();
+    }
+    PluginManager.deployPlugin(PluginBaseImpl.class.getCanonicalName(), config, "webpages:", EventType.CREATEANDMODIFY);
+    putter.putValues();
+    try {
+      Thread.sleep(1000);
+    } catch ( InterruptedException e ) {
+      e.printStackTrace();
+    }
+    Cache logCache = (Cache) InfinispanClusterSingleton.getInstance().getManager().getPersisentCache("logCache");
+    System.out.println("--------------------_LOG CACHE_--------------------");
+    Cache c = (Cache) InfinispanClusterSingleton.getInstance().getManager().getPersisentCache("webpages:");
+    PrintUtilities.printMap(c);
+    PersistentCrawl.stop();
+    System.exit(0);
+
+  }
+}

@@ -1,0 +1,67 @@
+This is the repository for the Leads Query Processor for users to implement and test their plugins.
+
+COMPLILE & INSTALL
+
+To simplify the procedure right the dependencies on this repo is not the Leads-Infinispan project found here
+https://github.com/otrack/Leads-infinispan but the current under development infinispan. 
+
+In later releases this will change.
+
+To compile and install your the required artifacts of the leads query processor use
+
+mvn clean install
+
+Now you can develop your plugin by using the plugins-template maven project found in plugin-examples sub-folder.
+Some reference plugin implementations are:
+
+transform plugin, which projects some attributes from a cache
+sentiment plugin, which computes the sentiment of a webpage and its entities.
+
+There is also a simple crawler for testing  based on the crawler https://github.com/otrack/Leads-crawler.
+
+Plugins
+
+Leads Plugins are POJOs (Plain Old Java Objects) that are implemented by the users of the leads platform.
+
+Each plugin has the following attributes:
+    An id that must be unique
+    A jar which contains the plugin code and its jar dependencies
+    A XML configuration file
+    A class name
+
+These attributes are packaged in PluginPackage class.
+
+The query processor stores all plugins in a KVS cache. When a user requests to deploy a plugin to a target cache, It adds the plugin to a listener that is not clustered for that cache. Moreover, the user defines which events for that cache is interested in (CREATE,REMOVE,MODIFY).
+
+A user can upload his/her plugin using
+boolean PluginManager.uploadPlugin(PluginPackage plugin)
+
+Plugins are deployed by the user using.
+//Using the default configuration
+ deployPlugin(String pluginId, String cacheName, EventType[] events)
+//Using Custom Configuration
+ deployPlugin(String pluginId, XMLConfiguration config, String cacheName, EventType[] events) 
+
+
+In leads query processor the plugins must implement the following interface
+  
+  public String getId();
+  public void setId(String id);
+  public String getClassName();
+  public Configuration getConfiguration();
+  public void setConfiguration(Configuration config);
+  
+  //Initialize the plugin, called once  the Configuration is a XMLConfiguration by Apache commons Configuration
+  //InfinispanManager is an Interface that wraps certain KVS functionality (getCache,addListener etc)
+  //If the initialization failed then the user should throw an Exception
+  //In order to avoid the installation of the plugin to the listener
+  public void initialize(Configuration config, InfinispanManager manager);
+  
+  //Clean up is called once when a plugin is undeployed
+  public void cleanup();
+  //Methods called when a key is modified, created or removed.
+  
+  public void modified(Object key, Object value, Cache<Object, Object> cache);
+  public void created(Object key, Object value, Cache<Object, Object> cache);
+  public void removed(Object key, Object value, Cache<Object, Object> cache);
+
