@@ -6,96 +6,113 @@
         xmlns="urn:infinispan:config:7.0">
 
 
-    <jgroups>
-        <stack-file name="tcp" path="conf/jgroups-tcp.xml"/>
-    </jgroups>
-    <threads>
-        <thread-factory name="infinispan-factory" group-name="infinispan"
-                        thread-name-pattern="%G %i" priority="5"/>
-        <cached-thread-pool name="infinispan-cached" thread-factory="infinispan-factory"/>
-        <blocking-bounded-queue-thread-pool name="infinispan-listener"
-                                            thread-factory="infinispan-factory"
-                                            core-threads="1" max-threads="1" queue-length="0"
-                                            keepalive-time="0"/>
-        <blocking-bounded-queue-thread-pool name="infinispan-transport"
-                                            thread-factory="infinispan-factory"
-                                            core-threads="5" max-threads="10" queue-length="100"
-                                            keepalive-time="10000"/>
-        <scheduled-thread-pool name="infinispan-eviction" thread-factory="infinispan-factory"/>
-        <scheduled-thread-pool name="infinispan-repl-queue" thread-factory="infinispan-factory"/>
-    </threads>
-    <cache-container name="defaultContainer" statistics="true" default-cache="defaultCache"
-                     start="true">
-        <transport stack="tcp"/>
-        <serialization version="70"/>
-        <jmx domain="eu.leads.processor" duplicate-domains="true"></jmx>
-        <distributed-cache name="default" mode="SYNC" owners="3" l1-lifespan="600000" start="true"
-                           statistics="true">
-            <eviction max-entries="10000"/>
-            <locking concurrency-level="2000"/>
-            <state-transfer enabled="false" await-initial-transfer="false"/>
+   <jgroups>
+      <stack-file name="tcp" path="conf/jgroups-tcp.xml"/>
+   </jgroups>
+   <threads>
+      <thread-factory name="infinispan-factory" group-name="infinispan"
+                      thread-name-pattern="%G %i" priority="5"/>
+      <cached-thread-pool name="infinispan-cached" thread-factory="infinispan-factory"/>
+      <blocking-bounded-queue-thread-pool name="infinispan-listener"
+                                          thread-factory="infinispan-factory"
+                                          core-threads="1" max-threads="1" queue-length="0"
+                                          keepalive-time="0"/>
+      <blocking-bounded-queue-thread-pool name="infinispan-transport"
+                                          thread-factory="infinispan-factory"
+                                          core-threads="5" max-threads="10" queue-length="100"
+                                          keepalive-time="10000"/>
+      <scheduled-thread-pool name="infinispan-eviction" thread-factory="infinispan-factory"/>
+      <scheduled-thread-pool name="infinispan-repl-queue" thread-factory="infinispan-factory"/>
+   </threads>
+   <cache-container name="defaultContainer" statistics="true" default-cache="defaultCache"
+                    start="true">
+      <transport stack="tcp"/>
+      <serialization version="70"/>
+      <jmx domain="eu.leads.processor" duplicate-domains="true"></jmx>
+      <distributed-cache name="default" mode="SYNC" owners="3" l1-lifespan="600000" start="true"
+                         statistics="true">
+         <compatibility></compatibility>
+         <eviction max-entries="10000"/>
+         <locking concurrency-level="2000" acquire-timeout="3000"/>
+         <state-transfer enabled="false" await-initial-transfer="false"/>
 
-            <persistence passivation="true">
-                <file-store path="${java.io.tmpdir}" shared="false" preload="true"/>
-            </persistence>
+         <persistence passivation="true">
+            <file-store path="${java.io.tmpdir}" shared="false" preload="true"/>
+         </persistence>
 
-        </distributed-cache>
+      </distributed-cache>
 
-        <distributed-cache name="testCache" mode="SYNC" owners="3" l1-lifespan="600000" start="true"
-                           statistics="true">
+      <distributed-cache name="testCache" mode="SYNC" owners="3" l1-lifespan="600000" start="true"
+                         statistics="true">
+         <compatibility></compatibility>
+         <eviction max-entries="1"/>
+                  <locking concurrency-level="2000" acquire-timeout="3000"/>
+         <state-transfer enabled="true" await-initial-transfer="true"/>
 
-            <eviction max-entries="10000"/>
-            <locking concurrency-level="2000"/>
-            <state-transfer enabled="true" await-initial-transfer="true"/>
+         <persistence passivation="true">
+         <file-store path="${java.io.tmpdir}" shared="false" preload="true"/>
+         </persistence>
 
-            <!--<persistence passivation="true">-->
-            <!--<file-store path="${java.io.tmpdir}" shared="false" preload="true"/>-->
-            <!--</persistence>-->
+      </distributed-cache>
 
-        </distributed-cache>
+      <distributed-cache name="clustered" mode="SYNC" owners="3" l1-lifespan="600000" start="true"
+                         statistics="true">
+         <compatibility></compatibility>
+         <eviction max-entries="1"/>
+                  <locking concurrency-level="2000" acquire-timeout="3000"/>
+         <state-transfer enabled="true" await-initial-transfer="true"/>
 
-        <distributed-cache name="clustered" mode="SYNC" owners="3" l1-lifespan="600000" start="true"
-                           statistics="true">
+         <persistence passivation="true">
+            <file-store path="${java.io.tmpdir}" shared="false" preload="true"/>
+         </persistence>
 
-            <eviction max-entries="10000"/>
-            <locking concurrency-level="2000"/>
-            <state-transfer enabled="true" await-initial-transfer="true"/>
+      </distributed-cache>
+      <distributed-cache name="active_plugins_cache" mode="ASYNC" owners="2" l1-lifespan="600000"
+                         start="true"
+                         statistics="false">
+          <state-transfer enabled="false" await-initial-transfer="false"/>
+         <compatibility></compatibility>
+          <eviction strategy="LIRS" max-entries="1"/>
+                  <locking concurrency-level="2000" acquire-timeout="3000"/>
+         <persistence passivation="true">
+            <file-store path="${java.io.tmpdir}" shared="false" preload="false"/>
+         </persistence>
 
-            <persistence passivation="true">
-                <file-store path="${java.io.tmpdir}" shared="false" preload="true"/>
-            </persistence>
+      </distributed-cache>
+      <distributed-cache name="processor_plugins" mode="ASYNC" owners="2" l1-lifespan="600000"
+                         start="true"
+                         statistics="false">
+         <state-transfer enabled="false" await-initial-transfer="false"/>
 
-        </distributed-cache>
-        <distributed-cache name="active_plugins_cache" mode="SYNC" owners="3" l1-lifespan="600000"
-                           start="true"
-                           statistics="true">
+          <eviction strategy="LIRS" max-entries="1"/>
+                  <locking concurrency-level="2000" acquire-timeout="3000"/>
+         <state-transfer enabled="false" await-initial-transfer="false"/>
+         <compatibility></compatibility>
+         <persistence passivation="true">
+            <file-store path="${java.io.tmpdir}" shared="false" preload="false"/>
+         </persistence>
 
-            <eviction max-entries="10000"/>
-            <locking concurrency-level="2000"/>
-            <persistence passivation="true">
-                <file-store path="${java.io.tmpdir}" shared="false" preload="true"/>
-            </persistence>
+      </distributed-cache>
 
-        </distributed-cache>
-        <distributed-cache name="processor_plugins" mode="SYNC" owners="2" l1-lifespan="600000"
-                           start="true"
-                           statistics="true">
-            <state-transfer enabled="true" await-initial-transfer="true"/>
-            <eviction max-entries="10000"/>
-            <locking concurrency-level="2000"/>
-            <state-transfer enabled="true" await-initial-transfer="true"/>
-
-            <persistence passivation="true">
-                <file-store path="${java.io.tmpdir}" shared="false" preload="true"/>
-            </persistence>
-
-        </distributed-cache>
-
-        <distributed-cache name="queries" mode="SYNC" owners="3" l1-lifespan="600000" start="true"
-                           statistics="true"></distributed-cache>
-        <distributed-cache name="tables" mode="SYNC" owners="3" l1-lifespan="600000" start="true"
-                           statistics="true">
-        </distributed-cache>
-    </cache-container>
+      <distributed-cache name="queries" mode="SYNC" owners="3" l1-lifespan="600000" start="true"
+                         statistics="true">
+          <locking concurrency-level="2000" acquire-timeout="3000"/>
+          <state-transfer enabled="false" await-initial-transfer="false"/>
+          <eviction strategy="LIRS" max-entries="1"/>
+         <persistence passivation="true">
+            <file-store path="${java.io.tmpdir}" shared="false" preload="false"/>
+         </persistence>
+     </distributed-cache>
+     <distributed-cache name="tables" mode="SYNC" owners="3" l1-lifespan="600000" start="true"
+                         statistics="true">
+         <eviction strategy="LIRS" max-entries="1"/>
+         <locking concurrency-level="2000" acquire-timeout="3000"/>
+         <state-transfer enabled="false" await-initial-transfer="false"/>
+         <compatibility></compatibility>
+        <persistence passivation="true">
+           <file-store path="${java.io.tmpdir}" shared="false" preload="false"/>
+        </persistence>
+      </distributed-cache>
+   </cache-container>
 
 </infinispan>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<leads-processor-bootstrap>
+   <processor>
+      <ips>localhost</ips>
+      <components>imanager,webservice,default</components>
+      <processors>3</processors>
+      <configurationFiles></configurationFiles>
+      <ssh>
+         <username>vagvaz</username>
+         <baseDir>/tmp/</baseDir>
+      </ssh>
+   </processor>
+</leads-processor-bootstrap>

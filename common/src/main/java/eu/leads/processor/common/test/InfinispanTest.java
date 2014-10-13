@@ -15,30 +15,36 @@ import java.util.concurrent.ConcurrentMap;
  * Created by vagvaz on 6/2/14.
  */
 public class InfinispanTest {
-  public static void main(String[] args) {
-    LQPConfiguration.initialize();
-    ObjectMapper mapper = new ObjectMapper();
-    InfinispanCluster cluster = InfinispanClusterSingleton.getInstance().getCluster();
+    public static void main(String[] args) {
+        LQPConfiguration.initialize();
+        ObjectMapper mapper = new ObjectMapper();
 
-//        cluster.initialize();
-    InfinispanManager man = cluster.getManager();
 
-    ConcurrentMap map = man.getPersisentCache("queries:");
-    map.put("1", "11");
-    map.put("2", "22");
-    InfinispanCluster cluster2 = new InfinispanCluster(CacheManagerFactory.createCacheManager());
+        //        cluster.initialize();
+        InfinispanManager man =InfinispanClusterSingleton.getInstance().getManager();
 
-    PrintUtilities.printMap(map);
-    ConcurrentMap map2 = cluster2.getManager().getPersisentCache("queries:");
-    map2.put("4", "33");
-    PrintUtilities.printMap(map2);
-    System.out.println("cl");
-    PrintUtilities.printList(cluster.getManager().getMembers());
-    System.out.println("cl2");
-    PrintUtilities.printList(cluster2.getManager().getMembers());
+        ConcurrentMap map = man.getPersisentCache("queriesfoo");
+        map.put("1", "11");
+        map.put("2", "22");
+//        InfinispanCluster cluster2 =
+//            new InfinispanCluster(CacheManagerFactory.createCacheManager());
 
-    cluster2.shutdown();
-    cluster.shutdown();
-    System.exit(0);
-  }
+        InfinispanManager man2 = CacheManagerFactory.createCacheManager();
+        PrintUtilities.printMap(map);
+        ConcurrentMap map2 = man2.getPersisentCache("queriesfoo");
+        map2.put("4", "33");
+        PrintUtilities.printMap(map2);
+        System.out.println("cl");
+        PrintUtilities.printList(InfinispanClusterSingleton.getInstance().getManager().getMembers());
+        System.out.println("cl2");
+        PrintUtilities.printList(man2.getMembers());
+        boolean output = false;
+        if(map.get("4").equals("33") && map2.get("2").equals("22"))
+            output = true;
+//        cluster2.shutdown();
+//        cluster.shutdown();
+        if(output)
+            System.err.println("SUCCESS");
+        System.exit(0);
+    }
 }
