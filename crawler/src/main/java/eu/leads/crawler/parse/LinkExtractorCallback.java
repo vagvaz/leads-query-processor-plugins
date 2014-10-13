@@ -15,35 +15,41 @@ import java.util.List;
  */
 public class LinkExtractorCallback extends LinkExtractor implements ParserCallback {
 
-  /** {@inheritDoc} */
-  @Override
-  public void configure(BulletParser parser) {
-    super.configure(parser);
-  }
-
-  /** {@inheritDoc} */
-  public void startPage(Page page) {
-    // Doing nothing
-  }
-
-  /** {@inheritDoc} */
-  public void endPage(Page page) {
-    URL baseUrl = page.getUrl();
-    try {
-      baseUrl = base() == null ? page.getUrl() : new URL(base());
-    } catch ( Exception ex ) {
-      // Ignore
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void configure(BulletParser parser) {
+        super.configure(parser);
     }
 
-    List<URL> links = new ArrayList<URL>();
-
-    for ( String url : this.urls ) {
-      URL normalized = URLNormalizer.normalize(url, baseUrl, page.getCharset());
-      if ( normalized != null ) {
-        links.add(normalized);
-      }
+    /**
+     * {@inheritDoc}
+     */
+    public void startPage(Page page) {
+        // Doing nothing
     }
 
-    page.setLinks(links);
-  }
+    /**
+     * {@inheritDoc}
+     */
+    public void endPage(Page page) {
+        URL baseUrl = page.getUrl();
+        try {
+            baseUrl = base() == null ? page.getUrl() : new URL(base());
+        } catch (Exception ex) {
+            // Ignore
+        }
+
+        List<URL> links = new ArrayList<URL>();
+
+        for (String url : this.urls) {
+            URL normalized = URLNormalizer.normalize(url, baseUrl, page.getCharset());
+            if (normalized != null) {
+                links.add(normalized);
+            }
+        }
+
+        page.setLinks(links);
+    }
 }

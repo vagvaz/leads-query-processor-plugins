@@ -11,26 +11,34 @@ import java.io.Serializable;
 import java.util.Set;
 
 public class StopCacheCallable<K, V> implements DistributedCallable<K, V, Void>, Serializable {
-  private static final long serialVersionUID = 8331682008912636781L;
-  private final String cacheName;
-  private transient Cache<K, V> cache;
+    private static final long serialVersionUID = 8331682008912636781L;
+    private final String cacheName;
+    private transient Cache<K, V> cache;
 
 
-  public StopCacheCallable(String cacheName) {
-    this.cacheName = cacheName;
-  }
+    public StopCacheCallable(String cacheName) {
+        this.cacheName = cacheName;
+    }
 
-  /** {@inheritDoc} */
-  @Override
-  public Void call() throws Exception {
-    cache.getCacheManager().removeCache(cacheName);
-    return null;
-  }
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Void call() throws Exception {
+      if(cache.getCacheManager().cacheExists(cacheName))
+      {
+        if(cache.getAdvancedCache().getRpcManager().getMembers().contains(cache.getCacheManager().getAddress()))
+          cache.getCacheManager().removeCache(cacheName);
+      }
+        return null;
+    }
 
-  /** {@inheritDoc} */
-  @Override
-  public void setEnvironment(Cache<K, V> cache, Set<K> inputKeys) {
-    this.cache = cache;
-  }
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void setEnvironment(Cache<K, V> cache, Set<K> inputKeys) {
+        this.cache = cache;
+    }
 
 }

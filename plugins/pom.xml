@@ -2,35 +2,60 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+   <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>gr.tuc.softnet</groupId>
-        <artifactId>leads-query-processor-parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
-        <relativePath>../parent/pom.xml</relativePath>
-    </parent>
+   <parent>
+      <groupId>gr.tuc.softnet</groupId>
+      <artifactId>leads-query-processor-parent</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <relativePath>../parent/pom.xml</relativePath>
+   </parent>
 
-    <groupId>gr.tuc.softnet</groupId>
-    <artifactId>leads-query-processor-plugins</artifactId>
-    <version>${processor.version}</version>
+   <groupId>gr.tuc.softnet</groupId>
+   <artifactId>leads-query-processor-plugins</artifactId>
+   <version>${processor.version}</version>
 
-    <dependencies>
-        <dependency>
-            <groupId>gr.tuc.softnet</groupId>
-            <artifactId>leads-query-processor-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>gr.tuc.softnet</groupId>
-            <artifactId>simple-crawler</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+   <dependencies>
+      <dependency>
+         <groupId>gr.tuc.softnet</groupId>
+         <artifactId>leads-query-processor-common</artifactId>
+         <version>${processor.version}</version>
+      </dependency>
+      <dependency>
+         <groupId>com.google.guava</groupId>
+         <artifactId>guava</artifactId>
+      </dependency>
+      <dependency>
+         <groupId>gr.tuc.softnet</groupId>
+         <artifactId>simple-crawler</artifactId>
+         <version>${processor.version}</version>
+      </dependency>
+      <dependency>
+         <groupId>org.infinispan</groupId>
+         <artifactId>infinispan-client-hotrod</artifactId>
+         <version>${infinispan.version}</version>
+      </dependency>
 
-    </dependencies>
+      <dependency>
+         <groupId>org.infinispan</groupId>
+         <artifactId>infinispan-server-hotrod</artifactId>
+         <version>${infinispan.version}</version>
+      </dependency>
 
+   </dependencies>
+   <build>
+
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.1</version>
+            <configuration>
+               <source>1.7</source>
+               <target>1.7</target>
+            </configuration>
+         </plugin>
+      </plugins>
+
+   </build>
 </project>

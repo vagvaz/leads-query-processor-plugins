@@ -2,18 +2,14 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+   <artifactId>leads-query-processor-core</artifactId>
+   <packaging>pom</packaging>
+   <modules>
+      <module>common-core</module>
+   </modules>
+   <groupId>gr.tuc.softnet</groupId>
+   <version>1.0-SNAPSHOT</version>
 
-    <parent>
-        <groupId>gr.tuc.softnet</groupId>
-        <artifactId>leads-query-processor-parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
-        <relativePath>../parent/pom.xml</relativePath>
-    </parent>
-
-    <groupId>gr.tuc.softnet</groupId>
-    <artifactId>leads-query-processor-core</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
+   <modelVersion>4.0.0</modelVersion>
 
 </project>

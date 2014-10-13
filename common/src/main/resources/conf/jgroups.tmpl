@@ -1,11 +1,11 @@
 <config xmlns="urn:org:jgroups"
         >
     <TCP
-            bind_addr="${jgroups.tcp.address:147.27.14.80}"
+            bind_addr="${jgroups.tcp.address:}"
             port_range="30"
-            recv_buf_size="20m"
-            send_buf_size="640k"
-            max_bundle_size="64k"
+            recv_buf_size="50m"
+            send_buf_size="1240k"
+            max_bundle_size="256k"
             use_send_queues="true"
             enable_diagnostics="true"
             bundler_type="new"
@@ -29,27 +29,7 @@
             oob_thread_pool.rejection_policy="Discard"
             />
 
-    <BPING dest="147.27.14.255" port_range="20"/>
-    <MPING
-            send_on_all_interfaces="false"
-            bind_addr="147.27.14.80"
-            always_send_physical_addr_with_discovery_request="false"
-            num_initial_members="3"
-            force_sending_discovery_rsps="true"
-            stats="true"
-            ergonomics="true"
-            mcast_addr="230.0.0.4"
-            receive_on_all_interfaces="false"
-            num_initial_srv_members="0"
-            id="7"
-            return_entire_cache="false"
-            mcast_port="45700"
-            break_on_coord_rsp="true"
-            use_disk_cache="false"
-            stagger_timeout="0"
-            name="MPING"
-            timeout="3000"
-            ip_ttl="2"/>
+    <BPING dest="" port_range="20"/>
     <MERGE2 max_interval="30000" min_interval="10000"/>
     <FD_SOCK/>
     <FD timeout="3000" max_tries="3"/>

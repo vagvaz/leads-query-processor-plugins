@@ -5,20 +5,22 @@ package eu.leads.crawler;
  */
 public class CrawlerException extends Exception {
 
-  /** Constructs a new CrawlerException. */
-  public CrawlerException() {
-    super();
-  }
+    /**
+     * Constructs a new CrawlerException.
+     */
+    public CrawlerException() {
+        super();
+    }
 
-  public CrawlerException(String message) {
-    super(message);
-  }
+    public CrawlerException(String message) {
+        super(message);
+    }
 
-  public CrawlerException(Throwable cause) {
-    super(cause);
-  }
+    public CrawlerException(Throwable cause) {
+        super(cause);
+    }
 
-  public CrawlerException(String message, Throwable cause) {
-    super(message, cause);
-  }
+    public CrawlerException(String message, Throwable cause) {
+        super(message, cause);
+    }
 }

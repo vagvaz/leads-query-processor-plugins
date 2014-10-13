@@ -14,79 +14,82 @@ import java.util.regex.Pattern;
  */
 public class ProxyGrabber {
 
-  private static Map<String, Pattern> grabberPatterns = new HashMap<String, Pattern>();
+    private static Map<String, Pattern> grabberPatterns = new HashMap<String, Pattern>();
 
-  static {
-    // Initializing default grabber pattern
-    addGrabberPattern("default", Pattern.compile("([0-9]{1,3})\\.([0-9]{1,3})\\.([0-9]{1,3})\\.([0-9]{1,3})\\s{0,2}:\\s{0,2}([0-9]{1,6})"));
-  }
+    static {
+        // Initializing default grabber pattern
+        addGrabberPattern("default", Pattern
+                                         .compile("([0-9]{1,3})\\.([0-9]{1,3})\\.([0-9]{1,3})\\.([0-9]{1,3})\\s{0,2}:\\s{0,2}([0-9]{1,6})"));
+    }
 
-  /**
-   * Adds pattern for parsing proxy from the html page. Regexp should contain five groups in
-   * following order: (1).(2).(3).(4):(5).
-   *
-   * @param domainName
-   * @param pattern
-   */
-  public static void addGrabberPattern(String domainName, Pattern pattern) {
-    grabberPatterns.put(domainName, pattern);
-  }
+    /**
+     * Adds pattern for parsing proxy from the html page. Regexp should contain five groups in
+     * following order: (1).(2).(3).(4):(5).
+     *
+     * @param domainName
+     * @param pattern
+     */
+    public static void addGrabberPattern(String domainName, Pattern pattern) {
+        grabberPatterns.put(domainName, pattern);
+    }
 
-  /**
-   * Parses proxies from the specified list of urls
-   *
-   * @param urls
-   *
-   * @return
-   */
-  public static List<Proxy> grab(Collection<? extends URL> urls) {
+    /**
+     * Parses proxies from the specified list of urls
+     *
+     * @param urls
+     *
+     * @return
+     */
+    public static List<Proxy> grab(Collection<? extends URL> urls) {
 
-    List<Proxy> proxys = new ArrayList<Proxy>();
+        List<Proxy> proxys = new ArrayList<Proxy>();
 
-    for ( URL url : urls ) {
-      try {
-        String responseBody = UrlUtils.downloadString(url, Proxy.NO_PROXY);
+        for (URL url : urls) {
+            try {
+                String responseBody = UrlUtils.downloadString(url, Proxy.NO_PROXY);
 
-        List<Proxy> parsed = parse(responseBody, url.getHost());
+                List<Proxy> parsed = parse(responseBody, url.getHost());
 
-        for ( Proxy proxy : parsed ) {
-          if ( !proxys.contains(proxy) ) {
-            proxys.add(proxy);
-          }
+                for (Proxy proxy : parsed) {
+                    if (!proxys.contains(proxy)) {
+                        proxys.add(proxy);
+                    }
+                }
+            } catch (Exception ex) {
+                // Ignore
+            }
         }
-      } catch ( Exception ex ) {
-        // Ignore
-      }
+
+        return proxys;
     }
 
-    return proxys;
-  }
+    private static List<Proxy> parse(String text, String host) {
+        List<Proxy> proxys = new ArrayList<Proxy>();
+        Pattern pattern = getGrabberPattern(host);
+        Matcher matcher = pattern.matcher(text);
 
-  private static List<Proxy> parse(String text, String host) {
-    List<Proxy> proxys = new ArrayList<Proxy>();
-    Pattern pattern = getGrabberPattern(host);
-    Matcher matcher = pattern.matcher(text);
+        while (matcher.find()) {
+            String ip =
+                matcher.group(1) + "." + matcher.group(2) + "." + matcher.group(3) + "." + matcher
+                                                                                               .group(4);
+            Integer port = Integer.valueOf(matcher.group(5));
 
-    while ( matcher.find() ) {
-      String ip = matcher.group(1) + "." + matcher.group(2) + "." + matcher.group(3) + "." + matcher.group(4);
-      Integer port = Integer.valueOf(matcher.group(5));
+            Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress(ip, port));
+            if (!proxys.contains(proxy)) {
+                proxys.add(proxy);
+            }
+        }
 
-      Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress(ip, port));
-      if ( !proxys.contains(proxy) ) {
-        proxys.add(proxy);
-      }
+        return proxys;
     }
 
-    return proxys;
-  }
+    private static Pattern getGrabberPattern(String host) {
+        Pattern pattern = grabberPatterns.get(host);
 
-  private static Pattern getGrabberPattern(String host) {
-    Pattern pattern = grabberPatterns.get(host);
+        if (pattern == null) {
+            pattern = grabberPatterns.get("default");
+        }
 
-    if ( pattern == null ) {
-      pattern = grabberPatterns.get("default");
+        return pattern;
     }
-
-    return pattern;
-  }
 }

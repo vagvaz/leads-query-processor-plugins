@@ -9,12 +9,12 @@ import java.net.URL;
  */
 public interface DownloaderController {
 
-  /**
-   * Returns {@link Downloader} for the specified url
-   *
-   * @param url
-   *
-   * @return
-   */
-  Downloader getDownloader(URL url);
+    /**
+     * Returns {@link Downloader} for the specified url
+     *
+     * @param url
+     *
+     * @return
+     */
+    Downloader getDownloader(URL url);
 }

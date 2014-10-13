@@ -5,8 +5,10 @@ package eu.leads.crawler.concurrent;
  */
 public abstract class BaseTask implements Task {
 
-  /** {@inheritDoc} */
-  public String getSequenceName() {
-    return null;
-  }
+    /**
+     * {@inheritDoc}
+     */
+    public String getSequenceName() {
+        return null;
+    }
 }

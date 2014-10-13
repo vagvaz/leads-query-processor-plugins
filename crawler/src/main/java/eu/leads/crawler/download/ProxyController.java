@@ -9,10 +9,10 @@ import java.net.Proxy;
  */
 public interface ProxyController {
 
-  /**
-   * Returns proxy
-   *
-   * @return
-   */
-  Proxy getProxy();
+    /**
+     * Returns proxy
+     *
+     * @return
+     */
+    Proxy getProxy();
 }

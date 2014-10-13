@@ -7,10 +7,10 @@ import eu.leads.crawler.model.CrawlerTask;
  */
 public interface Scheduler {
 
-  /**
-   * Schedulles crawling of page {@code url}
-   *
-   * @param url
-   */
-  void schedule(CrawlerTask crawlerTask);
+    /**
+     * Schedulles crawling of page {@code url}
+     *
+     * @param url
+     */
+    void schedule(CrawlerTask crawlerTask);
 }
