@@ -6,8 +6,8 @@ import eu.leads.crawler.model.Page;
 import eu.leads.processor.common.StringConstants;
 import eu.leads.processor.common.infinispan.InfinispanClusterSingleton;
 import eu.leads.processor.conf.LQPConfiguration;
-import eu.leads.processor.sentiment.Sentiment;
-import eu.leads.processor.sentiment.SentimentAnalysisModule;
+//import eu.leads.processor.sentiment.Sentiment;
+//import eu.leads.processor.sentiment.SentimentAnalysisModule;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.jsoup.Jsoup;
@@ -16,6 +16,9 @@ import org.vertx.java.core.json.JsonObject;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.ConcurrentMap;
 
 /**
@@ -26,11 +29,13 @@ public class PersistentCrawler extends DefaultCrawler {
     private static ConcurrentMap preprocessingMap;
     private static String prefix;
     private static ObjectMapper mapper;
-
+    private static Double minusOne = new Double(-1.9);
+    private static Double zero = new Double(0.0);
+    private static String englishLang = "en";
     private static Log log = LogFactory.getLog(PersistentCrawler.class.getName());
 
 //  private static JavaLanguageDetection det = JavaLanguageDetection.getInstance();
-   private SentimentAnalysisModule sentimentAnalysisModule;
+//   private SentimentAnalysisModule sentimentAnalysisModule;
     /**
      * Constructs a new PersistentCrawler.
      */
@@ -42,7 +47,7 @@ public class PersistentCrawler extends DefaultCrawler {
       prefix = LQPConfiguration.getConf()
                  .getString(StringConstants.CRAWLER_DEFAULT_CACHE);
         mapper = new com.fasterxml.jackson.databind.ObjectMapper();
-      sentimentAnalysisModule = new SentimentAnalysisModule("classifiers/english.all.3class.distsim.crf.ser.gz");
+//      sentimentAnalysisModule = new SentimentAnalysisModule("classifiers/english.all.3class.distsim.crf.ser.gz");
     }
 
     /**
@@ -83,10 +88,24 @@ public class PersistentCrawler extends DefaultCrawler {
     }
 
   private void additionalAttributes(JsonObject object) {
-     Double minusOne = new Double(-1.9);
+
     object.putNumber("pagerank", minusOne);
-    Sentiment sentiment = sentimentAnalysisModule.getOverallSentiment(object.getString("content"));
-    object.putValue("sentiment",sentiment.getValue());
+    object.putNumber("sentiment",zero);
+    object.putString("language",englishLang);
+    String dateAsString = object.getObject("headers").getString("date");
+     SimpleDateFormat f = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss");
+     Date date = null;
+     try {
+        date = f.parse(dateAsString);
+     } catch (ParseException e) {
+        e.printStackTrace();
+     }
+     if(date == null){
+        date = new Date(System.currentTimeMillis());
+     }
+     object.putNumber("timestamp",date.getTime());
+//    Sentiment sentiment = sentimentAnalysisModule.getOverallSentiment(object.getString("content"));
+//    object.putValue("sentiment",sentiment.getValue());
 //    String language = det.detectLanguage(object.getString("content"));
 //    object.putString("language",language);
   }

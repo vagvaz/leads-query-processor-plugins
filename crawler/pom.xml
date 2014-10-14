@@ -90,11 +90,11 @@
          <artifactId>leads-query-processor-common</artifactId>
          <version>1.0-SNAPSHOT</version>
       </dependency>
-      <dependency>
-         <groupId>gr.tuc.softnet</groupId>
-         <artifactId>sentiment-module</artifactId>
-         <version>1.0-SNAPSHOT</version>
-      </dependency>
+      <!--<dependency>-->
+         <!--<groupId>gr.tuc.softnet</groupId>-->
+         <!--<artifactId>sentiment-module</artifactId>-->
+         <!--<version>1.0-SNAPSHOT</version>-->
+      <!--</dependency>-->
       <dependency>
          <groupId>eu.leads.infext</groupId>
          <artifactId>lang-detection</artifactId>
