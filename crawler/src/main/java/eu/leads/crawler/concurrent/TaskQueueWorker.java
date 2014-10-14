@@ -5,32 +5,32 @@ package eu.leads.crawler.concurrent;
  */
 public interface TaskQueueWorker {
 
-  /**
-   * Starts task queue worker
-   */
-  void start();
+    /**
+     * Starts task queue worker
+     */
+    void start();
 
-  /**
-   * Stops task queue worker
-   */
-  void stop();
+    /**
+     * Stops task queue worker
+     */
+    void stop();
 
-  /**
-   * Joins worker thread
-   */
-  void join();
+    /**
+     * Joins worker thread
+     */
+    void join();
 
-  /**
-   * Joins worker thread (or waits for timeout to exceed)
-   *
-   * @param timeout
-   */
-  void join(long timeout);
+    /**
+     * Joins worker thread (or waits for timeout to exceed)
+     *
+     * @param timeout
+     */
+    void join(long timeout);
 
-  /**
-   * Sets this workers queue
-   *
-   * @param taskQueue
-   */
-  void setTaskQueue(TaskQueue taskQueue);
+    /**
+     * Sets this workers queue
+     *
+     * @param taskQueue
+     */
+    void setTaskQueue(TaskQueue taskQueue);
 }

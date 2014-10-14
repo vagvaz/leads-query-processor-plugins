@@ -1,0 +1,92 @@
+There are two plugins as we discussed in Monday. One that listens the crawled data and another that you should use a base to
+integrate your processing. The former plugin (cassandra-input-plugin) listens to the cache that the crawler puts data. You must
+implement the code that puts the data into cassandra (in the method processTuple). 
+The second plugin is the adidas-processing-plugin where you will put your processing code (also in the processTuple method).
+Both plugins have been tested that in  their simplest form that they work (simple stdout). In the test.ClusteredTest (mind that if you want to run the tests you must change the paths).
+You can put the configuration for connecting to cassandra into their xml configuration and read it inside the initialize method of the plugins.
+
+I also created a combined-test project that has just one main and deploys both plugins you  can also run the test and you will see that the plugins are run sequential (first the one that puts data into cassandra and then the one for processing).
+By default I sleep for 20 seconds and then I stop the crawler then to exit press ctrl + c. You might want to run the crawl indefinitely and just exit whenever you want.
+
+
+NOTES:
+*The seed in the crawler configuration found in the examples works.
+*I do not run the sentiment analysis module in order to reduce the jar files. However, I put a sentiment attribute in the 	webpage, as well as pagerank and language. 
+*I advise you removing all the .dat files from your tmp before running your test 
+* At the end of this README is the JsonDocument created by the crawler.
+* you might want to use the Tuple class which provides a simple interface for getting attributes from the webpage.
+
+  rm /tmp/*.dat
+
+  The command above will remove all the old data.
+
+Steps to use and test the plugins in the top level directory run:
+1) Compile and install the top-level project into the local maven repository
+
+    mvn clean compile package install
+
+2) Implement into the cassandra-input-plugin to connect and ouptut data to  cassandra then do a
+
+    mvn clean compile package install assembly:single
+
+3) Integrate your processing into the adidas-processing-plugin to test your processing
+
+    a) Add to your dependencies the following dependency for sentiment module
+
+	<dependency>
+	  <groupId>gr.tuc.softnet</groupId>
+	  <artifactId>sentiment-module</artifactId>
+	  <version>1.0-SNAPSHOT</version>
+	</dependency>
+    
+    b) compile and create a jar with dependencies
+	mvn clean compile package install assembly:single
+	
+4) Change the jar and config paths into the CombinedTests class of combined-test project
+
+5) you might also want to change when the crawler stops (more time or run indefinitely and stop the whole thing whenever you want)
+
+6) Compile the combined-test project and create a jar
+    mvn clean compile package assembly:single
+7) Run the test
+    java -cp target/combined-test-1.0-SNAPSHOT-jar-with-dependencies.jar test.CombinedTests
+    
+8) Feel joyous because we have pseudo-integrated :) 
+
+
+Webpage JsonDocument.
+
+{
+  "url" : "http://www.bbc.co.uk/cymru/",
+  "domainName" : "bbc.co.uk",
+  "content" : "blabla content",
+  "headers" : {
+    "content-type" : "text/html; charset=UTF-8",
+    "" : "HTTP/1.1 200 OK",
+    "connection" : "close",
+    "etag" : "\"6f862d5acdc0fed5a045ef9121af7399\"",
+    "transfer-encoding" : "chunked",
+    "x-cache-hits" : "17",
+    "x-cache-action" : "HIT",
+    "content-language" : "cy-GB",
+    "keep-alive" : "timeout=4, max=192",
+    "date" : "Sat, 04 Oct 2014 16:28:36 GMT",
+    "vary" : "X-CDN",
+    "cache-control" : "private, max-age=0, must-revalidate, no-cache=\"Set-Cookie\"",
+    "set-cookie" : "BBC-UID=0504936072b05384d6f89849d199c84ac4a41ad2107032f1c2788054b4ed52240; expires=Wed, 03-Oct-18 16:28:36 GMT; path=/; domain=bbc.co.uk;",
+    "x-cache-age" : "171",
+    "x-pal-host" : "pal044.cwwtf.bbc.co.uk:80",
+    "server" : "Apache"
+  },
+  "pagerank":-1.0,
+  "sentiment":0.0,
+  "language": "en",
+  "timestamp": 823947298191342,
+  "responseCode" : 200,
+  "charset" : "UTF-8",
+  "responseTime" : 321,
+  "links" : [ "http://static.bbci.co.uk/frameworks/barlesque/2.72.2/orb/4/style/orb-fixed.css", "http://static.bbci.co.uk/h4discoveryzone/0.233.7/style/h4discoveryzone.css", "http://static.bbci.co.uk/h4clock/0.69.3/style/h4clock.css", "http://static.bbci.co.uk/locator/0.119.7/style/locator.css", "http://static.bbci.co.uk/h4weather/0.81.4/style/h4weather.css", "http://static.bbci.co.uk/h4base/0.209.13/style/h4base.css", "http://static.bbci.co.uk/h4cymru/0.24.3/style/h4cymru.css", "http://www.bbc.co.uk/cymru/", "http://www.bbc.co.uk/", "http://www.bbc.co.uk/alba/", "http://www.bbc.com/", "http://static.bbci.co.uk/h4base/0.209.13/img/apple-touch-icon.png", "http://m.bbc.co.uk", "http://www.bbc.co.uk/", "http://www.bbc.co.uk/cymru/", "http://www.bbc.co.uk/accessibility/", "https://ssl.bbc.co.uk/id/cy-GB/status?ptrt=http%3A%2F%2Fwww.bbc.co.uk%2Fcymru%2F", "http://www.bbc.co.uk/newyddion/", "http://www.bbc.com/news/", "http://www.bbc.co.uk/sport/", "http://www.bbc.co.uk/weather/cy/", "http://shop.bbc.com/", "http://www.bbc.co.uk/iplayer/cy/", "http://www.bbc.com/capital/", "http://www.bbc.com/travel/", "http://www.bbc.com/culture/", "http://www.bbc.com/autos/", "http://www.bbc.com/future/", "http://www.bbc.co.uk/tv/", "http://www.bbc.co.uk/radio/", "http://www.bbc.co.uk/cbbc/", "http://www.bbc.co.uk/cbeebies/", "http://www.bbc.co.uk/arts/", "http://www.bbc.co.uk/ww1/", "http://www.bbc.co.uk/food/", "http://www.bbc.co.uk/history/", "http://www.bbc.co.uk/learning/", "http://www.bbc.co.uk/music/", "http://www.bbc.co.uk/science/", "http://www.bbc.co.uk/nature/", "http://www.bbc.co.uk/local/", "http://www.bbc.co.uk/travel/", "http://www.bbc.co.uk/a-z/", "http://www.bbc.co.uk/cymru/", "http://search.bbc.co.uk/search?scope=cymru", "http://www.bbc.co.uk/privacy/cookies/managing/cookie-settings.html", "http://www.bbc.co.uk/locator/default/desktop/cy-GB?ptrt=%2Fcymru%2F", "http://www.bbc.co.uk/cymru/", "http://www.bbc.co.uk/wales/", "http://www.bbc.co.uk/cymru/", "http://www.bbc.co.uk/weather/cy/2653822?day=0", "http://www.bbc.co.uk/weather/cy/2653822?day=1", "http://www.bbc.co.uk/weather/cy/2653822?day=2", "http://www.bbc.co.uk/weather/cy/2653822", "http://www.bbc.co.uk/cymrufyw/28789194", "http://www.bbc.co.uk/cymrufyw", "http://www.bbc.co.uk/radiocymru/highlights", "http://www.bbc.co.uk/newyddion/29481545", "http://www.bbc.co.uk/newyddion/29481542", "http://www.bbc.co.uk/newyddion/29489543", "http://www.bbc.co.uk/newyddion/29489538", "http://www.bbc.co.uk/newyddion/29489545", "http://www.bbc.co.uk/newyddion/de-ddwyrain/", "http://www.bbc.co.uk/newyddion/29492980", "http://www.bbc.co.uk/newyddion/29489536", "http://www.bbc.co.uk/newyddion/29466611", "http://www.bbc.co.uk/radiocymru", "http://www.bbc.co.uk/blogs/radiocymru/", "http://www.bbc.co.uk/blogs/radiocymru/2013/04/geirfa_pigion_i_ddysgwyr_2.shtml", "http://www.bbc.co.uk/blogs/radiocymru/2013/03/digwyddiadur_radio_cymru_1.shtml", "http://www.bbc.co.uk/blogs/radiocymru/2013/03/pigion_i_ddysgwyr_geirfa_07_ma.shtml", "http://www.bbc.co.uk/blogs/radiocymru/2013/02/525am_-_dwisho_gwely_rwaaan.shtml", "http://www.bbc.co.uk/c2/", "http://www.bbc.co.uk/blogs/c2/posts/Taith-C2-Ysgol-Bro-Dinefwr-Campws-Tregib", "http://www.bbc.co.uk/blogs/c2/posts/Taith-C2-Ysgol-Bro-Dinefwr-Campws-Pantycelyn", "http://www.bbc.co.uk/blogs/c2/posts/Ywain-Gwynedd-Da-Ni-Nol", "http://www.bbc.co.uk/cymru/?dzf=nation3", "http://www.bbc.co.uk/cymru/?dzf=nation2", "http://www.bbc.co.uk/terms/cymru.shtml", "http://www.bbc.co.uk/cymru/gwybodaeth/", "http://www.bbc.co.uk/privacy/cymru.shtml", "http://www.bbc.co.uk/privacy/bbc-cookies-policy.shtml", "http://www.bbc.co.uk/accessibility/", "http://www.bbc.co.uk/guidance/", "http://www.bbc.co.uk/contact/", "http://www.bbc.co.uk/bbctrust/", "http://www.bbc.co.uk/complaints/", "http://www.bbc.co.uk/help/web/links/" ],
+  "title" : " BBC - Cymru - Hafan",
+  "pagerank" : -1,
+  "sentiment" : -9.0
+}

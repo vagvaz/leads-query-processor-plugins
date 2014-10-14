@@ -10,13 +10,17 @@ import it.unimi.dsi.parser.callback.TextExtractor;
  */
 public class TextExtractorCallback extends TextExtractor implements ParserCallback {
 
-  /** {@inheritDoc} */
-  public void startPage(Page page) {
-    // Doing nothing
-  }
+    /**
+     * {@inheritDoc}
+     */
+    public void startPage(Page page) {
+        // Doing nothing
+    }
 
-  /** {@inheritDoc} */
-  public void endPage(Page page) {
-    page.setTitle(this.title.toString());
-  }
+    /**
+     * {@inheritDoc}
+     */
+    public void endPage(Page page) {
+        page.setTitle(this.title.toString());
+    }
 }

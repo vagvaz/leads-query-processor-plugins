@@ -11,12 +11,12 @@ import java.net.URL;
  */
 public interface Downloader {
 
-  /**
-   * Downloads specified page
-   *
-   * @param url
-   *
-   * @return
-   */
-  Page download(URL url) throws DownloadException;
+    /**
+     * Downloads specified page
+     *
+     * @param url
+     *
+     * @return
+     */
+    Page download(URL url) throws DownloadException;
 }

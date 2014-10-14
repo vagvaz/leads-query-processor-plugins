@@ -7,42 +7,42 @@ package eu.leads.crawler;
  */
 public class DomainConstraints {
 
-  private int maxLevel;
-  private int politenessPeriod;
+    private int maxLevel;
+    private int politenessPeriod;
 
-  /**
-   * Returns maximum crawling depth limit. 0 - unlimited. By default - 0.
-   *
-   * @return
-   */
-  public int getMaxLevel() {
-    return maxLevel;
-  }
+    /**
+     * Returns maximum crawling depth limit. 0 - unlimited. By default - 0.
+     *
+     * @return
+     */
+    public int getMaxLevel() {
+        return maxLevel;
+    }
 
-  /**
-   * Sets maximum crawling depth limit. 0 - unlimited. By default - 0.
-   *
-   * @param maxLevel
-   */
-  public void setMaxLevel(int maxLevel) {
-    this.maxLevel = maxLevel;
-  }
+    /**
+     * Sets maximum crawling depth limit. 0 - unlimited. By default - 0.
+     *
+     * @param maxLevel
+     */
+    public void setMaxLevel(int maxLevel) {
+        this.maxLevel = maxLevel;
+    }
 
-  /**
-   * Returns a delay between two requests to a single domain (ms).  0 - unlimited. By default - 0.
-   *
-   * @return
-   */
-  public int getPolitenessPeriod() {
-    return politenessPeriod;
-  }
+    /**
+     * Returns a delay between two requests to a single domain (ms).  0 - unlimited. By default - 0.
+     *
+     * @return
+     */
+    public int getPolitenessPeriod() {
+        return politenessPeriod;
+    }
 
-  /**
-   * Sets a delay between two requests to a single domain (ms).  0 - unlimited. By default - 0.
-   *
-   * @param politenessPeriod
-   */
-  public void setPolitenessPeriod(int politenessPeriod) {
-    this.politenessPeriod = politenessPeriod;
-  }
+    /**
+     * Sets a delay between two requests to a single domain (ms).  0 - unlimited. By default - 0.
+     *
+     * @param politenessPeriod
+     */
+    public void setPolitenessPeriod(int politenessPeriod) {
+        this.politenessPeriod = politenessPeriod;
+    }
 }

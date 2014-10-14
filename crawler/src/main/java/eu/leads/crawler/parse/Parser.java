@@ -9,11 +9,11 @@ import eu.leads.crawler.model.Page;
  */
 public interface Parser {
 
-  /**
-   * Parses specified page. Should set {@code Page.links} property if you want to schedulle next
-   * crawler tasks.
-   *
-   * @param page
-   */
-  void parse(Page page);
+    /**
+     * Parses specified page. Should set {@code Page.links} property if you want to schedulle next
+     * crawler tasks.
+     *
+     * @param page
+     */
+    void parse(Page page);
 }

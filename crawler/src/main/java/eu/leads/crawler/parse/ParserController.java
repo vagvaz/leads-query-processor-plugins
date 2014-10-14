@@ -9,13 +9,13 @@ import eu.leads.crawler.model.Page;
  */
 public interface ParserController {
 
-  /**
-   * Returns {@link eu.leads.crawler.parse.Parser} for the specified {@link
-   * eu.leads.crawler.model.Page}
-   *
-   * @param page
-   *
-   * @return
-   */
-  Parser getParser(Page page);
+    /**
+     * Returns {@link eu.leads.crawler.parse.Parser} for the specified {@link
+     * eu.leads.crawler.model.Page}
+     *
+     * @param page
+     *
+     * @return
+     */
+    Parser getParser(Page page);
 }

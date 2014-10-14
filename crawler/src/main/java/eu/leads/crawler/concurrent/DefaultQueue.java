@@ -9,30 +9,40 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  */
 public class DefaultQueue implements Queue {
 
-  private ConcurrentLinkedQueue innerList = new ConcurrentLinkedQueue();
+    private ConcurrentLinkedQueue innerList = new ConcurrentLinkedQueue();
 
-  /** {@inheritDoc} */
-  public void add(Object obj) {
-    innerList.add(obj);
-  }
+    /**
+     * {@inheritDoc}
+     */
+    public void add(Object obj) {
+        innerList.add(obj);
+    }
 
-  /** {@inheritDoc} */
-  public void defer(Object obj) {
-    add(obj);
-  }
+    /**
+     * {@inheritDoc}
+     */
+    public void defer(Object obj) {
+        add(obj);
+    }
 
-  /** {@inheritDoc} */
-  public Object poll() {
-    return innerList.poll();
-  }
+    /**
+     * {@inheritDoc}
+     */
+    public Object poll() {
+        return innerList.poll();
+    }
 
-  /** {@inheritDoc} */
-  public void dispose() {
-    // Do nothing
-  }
+    /**
+     * {@inheritDoc}
+     */
+    public void dispose() {
+        // Do nothing
+    }
 
-  /** {@inheritDoc} */
-  public int size() {
-    return innerList.size();
-  }
+    /**
+     * {@inheritDoc}
+     */
+    public int size() {
+        return innerList.size();
+    }
 }

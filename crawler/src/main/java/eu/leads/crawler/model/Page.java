@@ -26,269 +26,299 @@ import java.util.Map;
 
 public class Page {
 
-  static Log log = LogFactory.getLog(Page.class);
+    static Log log = LogFactory.getLog(Page.class);
 
-  private
-  @JsonProperty("url")
-  URL url;
-  private
-  @JsonProperty("domainName")
-  String domainName;
-  private
-  @JsonProperty("content")
-  String content;
-  private
-  @JsonProperty("headers")
-  Map<String, String> headers = new HashMap<String, String>();
-  private
-  @JsonProperty("responseCode")
-  int responseCode;
-  private
-  @JsonProperty("charset")
-  String charset;
-  private
-  @JsonProperty("responseTime")
-  long responseTime;
+    private
+    @JsonProperty("url")
+    URL url;
+    private
+    @JsonProperty("domainName")
+    String domainName;
+    private
+    @JsonProperty("content")
+    String content;
+    private
+    @JsonProperty("headers")
+    Map<String, String> headers = new HashMap<String, String>();
+    private
+    @JsonProperty("responseCode")
+    int responseCode;
+    private
+    @JsonProperty("charset")
+    String charset;
+    private
+    @JsonProperty("responseTime")
+    long responseTime;
 
-  private
-  @JsonProperty("links")
-  List<URL> links;
-  private
-  @JsonProperty("title")
-  String title;
-  private
-  @JsonIgnore
-  Map<String, Object> parseResults = new HashMap<String, Object>();
+    private
+    @JsonProperty("links")
+    List<URL> links;
+    private
+    @JsonProperty("title")
+    String title;
+    private
+    @JsonIgnore
+    Map<String, Object> parseResults = new HashMap<String, Object>();
+    private
+    @JsonProperty("pagerank")
+    double pagerank;
 
-
-  /** Constructs a new Page. */
-  public Page() {
-  }
-
-  /**
-   * Creates an instance of the Page class.
-   *
-   * @param url          Page url
-   * @param headers      Response headers map
-   * @param responseCode Reposne code
-   * @param charset      Page encoding
-   * @param responseTime Reponse time
-   * @param content      Page content
-   */
-  public Page(URL url,
-              Map<String, String> headers,
-              int responseCode,
-              String charset,
-              long responseTime,
-              byte[] content) {
-    this.url = url;
-    this.headers = headers;
-    this.responseCode = responseCode;
-    this.charset = charset;
-    this.responseTime = responseTime;
-
-    try {
-      this.content = Charset.forName(charset).newDecoder().
-                                                                  onMalformedInput(CodingErrorAction.REPLACE).
-                                                                                                                     onUnmappableCharacter(CodingErrorAction.REPLACE).
-                                                                                                                                                                             decode(ByteBuffer.wrap(content)).toString();
-    } catch ( Exception e ) {
-      log.debug("Unable to retrieve content for " + url);
-      this.content = new String();
-    }
-  }
-
-  /**
-   * Returns normalized domain name
-   *
-   * @return
-   */
-  public String getDomainName() {
-    if ( url == null ) {
-      return null;
+    public double getSentiment() {
+        return sentiment;
     }
 
-    if ( domainName == null ) {
-      domainName = UrlUtils.getDomainName(url);
+    public void setSentiment(double sentiment) {
+        this.sentiment = sentiment;
     }
 
-    return domainName;
-  }
+    public double getPagerank() {
+        return pagerank;
+    }
 
-  /**
-   * Returns Page url
-   *
-   * @return
-   */
-  public URL getUrl() {
-    return url;
-  }
+    public void setPagerank(double pagerank) {
+        this.pagerank = pagerank;
+    }
+
+    private
+
+    @JsonProperty("sentiment")
+    double sentiment;
+
+    /**
+     * Constructs a new Page.
+     */
+    public Page() {
+    }
+
+    /**
+     * Creates an instance of the Page class.
+     *
+     * @param url          Page url
+     * @param headers      Response headers map
+     * @param responseCode Reposne code
+     * @param charset      Page encoding
+     * @param responseTime Reponse time
+     * @param content      Page content
+     */
+    public Page(URL url,
+                   Map<String, String> headers,
+                   int responseCode,
+                   String charset,
+                   long responseTime,
+                   byte[] content) {
+        this.url = url;
+        this.headers = headers;
+        this.responseCode = responseCode;
+        this.charset = charset;
+        this.responseTime = responseTime;
+
+        try {
+            this.content = Charset.forName(charset).newDecoder().
+                                                                    onMalformedInput(CodingErrorAction.REPLACE)
+                               .
+                                   onUnmappableCharacter(CodingErrorAction.REPLACE).
+                                                                                       decode(ByteBuffer
+                                                                                                  .wrap(content))
+                               .toString();
+        } catch (Exception e) {
+            log.debug("Unable to retrieve content for " + url);
+            this.content = new String();
+        }
+    }
+
+    /**
+     * Returns normalized domain name
+     *
+     * @return
+     */
+    public String getDomainName() {
+        if (url == null) {
+            return null;
+        }
+
+        if (domainName == null) {
+            domainName = UrlUtils.getDomainName(url);
+        }
+
+        return domainName;
+    }
+
+    /**
+     * Returns Page url
+     *
+     * @return
+     */
+    public URL getUrl() {
+        return url;
+    }
 
 
-  /**
-   * Setter for property 'url'.
-   *
-   * @param url Value to set for property 'url'.
-   */
-  public void setUrl(URL url) {
-    this.url = url;
-  }
+    /**
+     * Setter for property 'url'.
+     *
+     * @param url Value to set for property 'url'.
+     */
+    public void setUrl(URL url) {
+        this.url = url;
+    }
 
-  /**
-   * Returns response headers
-   *
-   * @return
-   */
-  public Map<String, String> getHeaders() {
-    return headers;
-  }
+    /**
+     * Returns response headers
+     *
+     * @return
+     */
+    public Map<String, String> getHeaders() {
+        return headers;
+    }
 
-  /**
-   * Returns response code
-   *
-   * @return
-   */
-  public int getResponseCode() {
-    return responseCode;
-  }
+    /**
+     * Returns response code
+     *
+     * @return
+     */
+    public int getResponseCode() {
+        return responseCode;
+    }
 
-  /**
-   * Returns page charset
-   *
-   * @return
-   */
-  public String getCharset() {
-    return charset;
-  }
+    /**
+     * Returns page charset
+     *
+     * @return
+     */
+    public String getCharset() {
+        return charset;
+    }
 
-  /**
-   * Sets page charset
-   *
-   * @param charset
-   */
-  public void setCharset(String charset) {
-    this.charset = charset;
-  }
+    /**
+     * Sets page charset
+     *
+     * @param charset
+     */
+    public void setCharset(String charset) {
+        this.charset = charset;
+    }
 
-  /**
-   * Returns response time
-   *
-   * @return
-   */
-  public long getResponseTime() {
-    return responseTime;
-  }
+    /**
+     * Returns response time
+     *
+     * @return
+     */
+    public long getResponseTime() {
+        return responseTime;
+    }
 
-  /**
-   * Returns page content
-   *
-   * @return
-   */
-  public String getContent() {
-    return content;
-  }
+    /**
+     * Returns page content
+     *
+     * @return
+     */
+    public String getContent() {
+        return content;
+    }
 
-  /**
-   * Location URL if request was redirected. Otherwise returns {@code null}
-   *
-   * @return
-   */
-  @JsonIgnore
-  public URL getRedirectUrl() {
-    if ( responseCode >= 300 && responseCode < 400 ) {
-      try {
-        // Response was redirected, returning "Location" header
-        URL redirectUrl = URLNormalizer.normalize(getHeader("location"), url, charset);
-        return redirectUrl;
-      } catch ( Exception ex ) {
-        // Ignoring exception
+    /**
+     * Location URL if request was redirected. Otherwise returns {@code null}
+     *
+     * @return
+     */
+    @JsonIgnore
+    public URL getRedirectUrl() {
+        if (responseCode >= 300 && responseCode < 400) {
+            try {
+                // Response was redirected, returning "Location" header
+                URL redirectUrl = URLNormalizer.normalize(getHeader("location"), url, charset);
+                return redirectUrl;
+            } catch (Exception ex) {
+                // Ignoring exception
+                return null;
+            }
+        }
+
         return null;
-      }
     }
 
-    return null;
-  }
+    /**
+     * Returns specified header's value
+     *
+     * @param header
+     *
+     * @return
+     */
+    public String getHeader(String header) {
+        return headers.get(header == null ? null : header.toLowerCase());
+    }
 
-  /**
-   * Returns specified header's value
-   *
-   * @param header
-   *
-   * @return
-   */
-  public String getHeader(String header) {
-    return headers.get(header == null ? null : header.toLowerCase());
-  }
+    /**
+     * Returns Content-Encoding header
+     *
+     * @return
+     */
+    @JsonIgnore
+    public String getContentEncoding() {
+        return headers == null ? null : getHeader("content-encoding");
+    }
 
-  /**
-   * Returns Content-Encoding header
-   *
-   * @return
-   */
-  @JsonIgnore
-  public String getContentEncoding() {
-    return headers == null ? null : getHeader("content-encoding");
-  }
+    /**
+     * Returns links parsed from this page. <b>Attention: </b> links are available only after using
+     * default parser. Links collection used to create next crawler tasks.
+     *
+     * @return
+     */
+    public List<URL> getLinks() {
+        return links;
+    }
 
-  /**
-   * Returns links parsed from this page. <b>Attention: </b> links are available only after using
-   * default parser. Links collection used to create next crawler tasks.
-   *
-   * @return
-   */
-  public List<URL> getLinks() {
-    return links;
-  }
+    /**
+     * Sets links
+     *
+     * @param links
+     */
+    public void setLinks(List<URL> links) {
+        this.links = links;
+    }
 
-  /**
-   * Sets links
-   *
-   * @param links
-   */
-  public void setLinks(List<URL> links) {
-    this.links = links;
-  }
+    /**
+     * Returns page title
+     *
+     * @return
+     */
+    public String getTitle() {
+        return title;
+    }
 
-  /**
-   * Returns page title
-   *
-   * @return
-   */
-  public String getTitle() {
-    return title;
-  }
+    /**
+     * Sets page title
+     *
+     * @param title
+     */
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
-  /**
-   * Sets page title
-   *
-   * @param title
-   */
-  public void setTitle(String title) {
-    this.title = title;
-  }
+    /**
+     * Returns parse results. Any parser can save its result in parse results
+     *
+     * @return
+     */
+    public Object getParseResults(String key) {
+        return parseResults.get(key);
+    }
 
-  /**
-   * Returns parse results. Any parser can save its result in parse results
-   *
-   * @return
-   */
-  public Object getParseResults(String key) {
-    return parseResults.get(key);
-  }
+    /**
+     * Saves parse result
+     *
+     * @param key
+     * @param result
+     */
+    @JsonIgnore
+    public void addParseResult(String key, Object result) {
+        this.parseResults.put(key, result);
+    }
 
-  /**
-   * Saves parse result
-   *
-   * @param key
-   * @param result
-   */
-  @JsonIgnore
-  public void addParseResult(String key, Object result) {
-    this.parseResults.put(key, result);
-  }
-
-  /** {@inheritDoc} */
-  public String toString() {
-    return this.url.toString();
-  }
+    /**
+     * {@inheritDoc}
+     */
+    public String toString() {
+        return this.url.toString();
+    }
 }

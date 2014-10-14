@@ -9,15 +9,15 @@ import java.security.NoSuchAlgorithmException;
 public class Digest {
 
 
-  public static byte[] digest(byte[] content) {
-    MessageDigest md = null;
-    try {
-      md = MessageDigest.getInstance("MD5");
-    } catch ( NoSuchAlgorithmException e ) {
-      // unreachable code
+    public static byte[] digest(byte[] content) {
+        MessageDigest md = null;
+        try {
+            md = MessageDigest.getInstance("MD5");
+        } catch (NoSuchAlgorithmException e) {
+            // unreachable code
+        }
+        md.update(content);
+        return md.digest();
     }
-    md.update(content);
-    return md.digest();
-  }
 
 }
