@@ -17,6 +17,7 @@ import eu.leads.infext.logging.redirect.StdLoggerRedirect;
 import eu.leads.infext.proc.batch.exec.part.AbstractPartialSiteDefiner;
 import eu.leads.infext.proc.batch.exec.part.EcomSiteDefiner;
 import eu.leads.infext.proc.batch.exec.part.BlogNewsSiteDefiner;
+import eu.leads.infext.proc.batch.exec.part.EcomSiteDefinerMR;
 import eu.leads.infext.proc.batch.mapreduce.DefaultReducer;
 import eu.leads.infext.proc.batch.mapreduce.EcomSiteDefinerMapper;
 import eu.leads.infext.proc.com.categorization.ecom.EcommerceSiteExtractionSchemaDeterminer;
@@ -87,7 +88,7 @@ public class SiteDefinerExecutor {
 			pagesNoMap.put("", dirPagesNo);
 			
 			// Check if Ecom
-			AbstractPartialSiteDefiner partDefiner = new EcomSiteDefiner(fqdn,pagesNoMap,dirUris);
+			AbstractPartialSiteDefiner partDefiner = new EcomSiteDefinerMR(fqdn,pagesNoMap,dirUris);
 			isEcom = partDefiner.defineAndStore();
 			
 			if(!isEcom) {	

@@ -84,7 +84,7 @@ public class SiteGeneralExecutor {
 		
 		// Run query: SELECT lang, count(*) from webpages where fqdn = fqdn GROUP BY lang;
 		HashMap<String, Integer> languagesCounters = new HashMap<>();
-		String query = "SELECT lang FROM leads.page_core WHERE fqdnurl='"+fqdn+"';";
+		String query = "SELECT lang FROM "+ mapping.getProperty("leads_core") +" WHERE fqdnurl='"+fqdn+"';";
 		ResultSet rs = session.execute(query);
 		for(Row row : rs) {
 			String lang = row.getString(0);
