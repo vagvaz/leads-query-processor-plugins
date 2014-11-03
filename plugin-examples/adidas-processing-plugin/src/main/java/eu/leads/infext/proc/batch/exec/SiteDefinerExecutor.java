@@ -93,7 +93,7 @@ public class SiteDefinerExecutor {
 			if(!isEcom) {	
 				// Check if in the Google News stream
 				partDefiner = new BlogNewsSiteDefiner(fqdn,pagesNoMap,dirUris);
-				isNewsOrBlog = partDefiner.defineAndStore(); // <- add inside "article_extraction":"boilerpipe"
+				isNewsOrBlog = partDefiner.defineAndStore();
 			}
 			
 		}
