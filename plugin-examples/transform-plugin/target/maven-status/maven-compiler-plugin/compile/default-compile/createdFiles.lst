@@ -1,0 +1,3 @@
+test/LocalTest.class
+eu/leads/processor/plugins/transform/TransformPlugin.class
+test/ClusteredTest.class

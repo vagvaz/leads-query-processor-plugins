@@ -460,3 +460,236 @@ INFO Thread-8 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk
 INFO Thread-8 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/news/world-africa-29607774 violates this downloader constraints
 INFO Thread-8 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/news/business-29611742 content length exceeded limit, stopping downloading
 INFO Thread-8 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/news/business-29611742 violates this downloader constraints
+INFO main eu.leads.processor.common.infinispan.CacheManagerFactory - Starting Clustered Infinispan Manager
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for clustered is not clustered so using default cluster configuration
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN
+WARN main org.jgroups.stack.Configurator - JGRP000014: TP.loopback has been deprecated: enabled by default
+WARN main org.jgroups.protocols.MFC - The fragmentation size of the fragmentation protocol is 60000, which is greater than min_credits (40000). This can lead to blockings (https://issues.jboss.org/browse/JGRP-1659)
+WARN main org.jgroups.protocols.TCP - JGRP000046: bundler_type=new has been removed; using transfer-queue
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-19051|0] (1) [leads-ps-19051]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is leads-ps-19051, physical addresses are [10.0.2.15:38102]
+INFO main org.infinispan.factories.GlobalComponentRegistry - ISPN000128: Infinispan version: Infinispan 'Guinness' 7.0.0.Alpha5
+WARN pool-4-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for mycache is not clustered so using default cluster configuration
+WARN pool-5-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.plugins.PluginManager - Plugin eu.leads.processor.plugins.CassandraPlugin could not create an instance
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for active_plugins_cache: is not clustered so using default cluster configuration
+WARN pool-6-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for processor_plugins: is not clustered so using default cluster configuration
+WARN pool-7-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main eu.leads.processor.plugins.PluginManager - Plugin eu.leads.processor.plugins.CassandraPlugin was not found in plugin cache
+INFO main eu.leads.processor.common.infinispan.CacheManagerFactory - Starting Clustered Infinispan Manager
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for clustered is not clustered so using default cluster configuration
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN
+WARN main org.jgroups.stack.Configurator - JGRP000014: TP.loopback has been deprecated: enabled by default
+WARN main org.jgroups.protocols.MFC - The fragmentation size of the fragmentation protocol is 60000, which is greater than min_credits (40000). This can lead to blockings (https://issues.jboss.org/browse/JGRP-1659)
+WARN main org.jgroups.protocols.TCP - JGRP000046: bundler_type=new has been removed; using transfer-queue
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-14514|0] (1) [leads-ps-14514]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is leads-ps-14514, physical addresses are [10.0.2.15:60586]
+INFO main org.infinispan.factories.GlobalComponentRegistry - ISPN000128: Infinispan version: Infinispan 'Guinness' 7.0.0.Alpha5
+WARN pool-4-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for mycache is not clustered so using default cluster configuration
+WARN pool-5-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.plugins.PluginManager - Plugin eu.leads.processor.plugins.CassandraPlugin could not create an instance
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for active_plugins_cache: is not clustered so using default cluster configuration
+WARN pool-6-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for processor_plugins: is not clustered so using default cluster configuration
+WARN pool-7-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main eu.leads.processor.plugins.PluginManager - Plugin eu.leads.processor.plugins.CassandraPlugin was not found in plugin cache
+INFO main eu.leads.processor.common.infinispan.CacheManagerFactory - Starting Clustered Infinispan Manager
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for clustered is not clustered so using default cluster configuration
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN
+WARN main org.jgroups.stack.Configurator - JGRP000014: TP.loopback has been deprecated: enabled by default
+WARN main org.jgroups.protocols.MFC - The fragmentation size of the fragmentation protocol is 60000, which is greater than min_credits (40000). This can lead to blockings (https://issues.jboss.org/browse/JGRP-1659)
+WARN main org.jgroups.protocols.TCP - JGRP000046: bundler_type=new has been removed; using transfer-queue
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-3540|0] (1) [leads-ps-3540]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is leads-ps-3540, physical addresses are [10.0.2.15:58218]
+INFO main org.infinispan.factories.GlobalComponentRegistry - ISPN000128: Infinispan version: Infinispan 'Guinness' 7.0.0.Alpha5
+WARN pool-4-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for mycache is not clustered so using default cluster configuration
+WARN pool-5-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.plugins.PluginManager - Plugin eu.leads.processor.plugins.CassandraPlugin could not create an instance
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for active_plugins_cache: is not clustered so using default cluster configuration
+WARN pool-6-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for processor_plugins: is not clustered so using default cluster configuration
+WARN pool-7-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main eu.leads.processor.plugins.PluginManager - Plugin eu.leads.processor.plugins.CassandraPlugin was not found in plugin cache
+INFO main eu.leads.processor.common.infinispan.CacheManagerFactory - Starting Clustered Infinispan Manager
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for clustered is not clustered so using default cluster configuration
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN
+WARN main org.jgroups.stack.Configurator - JGRP000014: TP.loopback has been deprecated: enabled by default
+WARN main org.jgroups.protocols.MFC - The fragmentation size of the fragmentation protocol is 60000, which is greater than min_credits (40000). This can lead to blockings (https://issues.jboss.org/browse/JGRP-1659)
+WARN main org.jgroups.protocols.TCP - JGRP000046: bundler_type=new has been removed; using transfer-queue
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-35240|0] (1) [leads-ps-35240]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is leads-ps-35240, physical addresses are [10.0.2.15:48783]
+INFO main org.infinispan.factories.GlobalComponentRegistry - ISPN000128: Infinispan version: Infinispan 'Guinness' 7.0.0.Alpha5
+WARN pool-4-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for mycache is not clustered so using default cluster configuration
+WARN pool-5-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.plugins.PluginManager - Plugin eu.leads.processor.plugins.CassandraPlugin could not create an instance
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for active_plugins_cache: is not clustered so using default cluster configuration
+WARN pool-6-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for processor_plugins: is not clustered so using default cluster configuration
+WARN pool-7-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main eu.leads.processor.plugins.PluginManager - Plugin eu.leads.processor.plugins.CassandraPlugin was not found in plugin cache
+INFO main eu.leads.processor.common.infinispan.CacheManagerFactory - Starting Clustered Infinispan Manager
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for clustered is not clustered so using default cluster configuration
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN
+WARN main org.jgroups.stack.Configurator - JGRP000014: TP.loopback has been deprecated: enabled by default
+WARN main org.jgroups.protocols.MFC - The fragmentation size of the fragmentation protocol is 60000, which is greater than min_credits (40000). This can lead to blockings (https://issues.jboss.org/browse/JGRP-1659)
+WARN main org.jgroups.protocols.TCP - JGRP000046: bundler_type=new has been removed; using transfer-queue
+INFO Incoming-2,leads-ps-35240 org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-35240|1] (2) [leads-ps-35240, leads-ps-62221]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-35240|1] (2) [leads-ps-35240, leads-ps-62221]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is leads-ps-62221, physical addresses are [10.0.2.15:49372]
+INFO main org.infinispan.factories.GlobalComponentRegistry - ISPN000128: Infinispan version: Infinispan 'Guinness' 7.0.0.Alpha5
+WARN pool-4-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for mycache is not clustered so using default cluster configuration
+WARN pool-5-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.plugins.PluginManager - Plugin eu.leads.processor.plugins.CassandraPlugin could not create an instance
+INFO main eu.leads.processor.common.infinispan.CacheManagerFactory - Starting Clustered Infinispan Manager
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for clustered is not clustered so using default cluster configuration
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN
+WARN main org.jgroups.stack.Configurator - JGRP000014: TP.loopback has been deprecated: enabled by default
+WARN main org.jgroups.protocols.MFC - The fragmentation size of the fragmentation protocol is 60000, which is greater than min_credits (40000). This can lead to blockings (https://issues.jboss.org/browse/JGRP-1659)
+WARN main org.jgroups.protocols.TCP - JGRP000046: bundler_type=new has been removed; using transfer-queue
+INFO Incoming-1,leads-ps-35240 org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-35240|2] (3) [leads-ps-35240, leads-ps-62221, leads-ps-38317]
+INFO Incoming-1,leads-ps-62221 org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-35240|2] (3) [leads-ps-35240, leads-ps-62221, leads-ps-38317]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-35240|2] (3) [leads-ps-35240, leads-ps-62221, leads-ps-38317]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is leads-ps-38317, physical addresses are [10.0.2.15:38578]
+INFO main org.infinispan.factories.GlobalComponentRegistry - ISPN000128: Infinispan version: Infinispan 'Guinness' 7.0.0.Alpha5
+WARN pool-4-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for mycache is not clustered so using default cluster configuration
+WARN pool-5-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.plugins.PluginManager - Plugin eu.leads.processor.plugins.CassandraPlugin could not create an instance
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for active_plugins_cache: is not clustered so using default cluster configuration
+WARN pool-6-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for processor_plugins: is not clustered so using default cluster configuration
+WARN pool-7-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main eu.leads.processor.plugins.PluginManager - Plugin eu.leads.processor.plugins.CassandraPlugin was not found in plugin cache
+INFO Incoming-2,leads-ps-35240 org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-35240|3] (2) [leads-ps-35240, leads-ps-62221]
+INFO Incoming-1,leads-ps-62221 org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-35240|3] (2) [leads-ps-35240, leads-ps-62221]
+INFO Incoming-2,leads-ps-35240 org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-35240|4] (1) [leads-ps-35240]

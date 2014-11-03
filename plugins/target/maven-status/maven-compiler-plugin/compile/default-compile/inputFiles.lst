@@ -1,0 +1,13 @@
+/data/workspace/leads-query-processor-plugins/plugins/src/main/java/eu/leads/processor/plugins/PluginManager.java
+/data/workspace/leads-query-processor-plugins/plugins/src/main/java/eu/leads/processor/test/TestSimpleRunner.java
+/data/workspace/leads-query-processor-plugins/plugins/src/main/java/eu/leads/processor/plugins/UndeployPluginCallable.java
+/data/workspace/leads-query-processor-plugins/plugins/src/main/java/eu/leads/processor/plugins/EventType.java
+/data/workspace/leads-query-processor-plugins/plugins/src/main/java/eu/leads/processor/infinispan/PluginClusteredListener.java
+/data/workspace/leads-query-processor-plugins/plugins/src/main/java/eu/leads/processor/test/LocalTest.java
+/data/workspace/leads-query-processor-plugins/plugins/src/main/java/eu/leads/processor/infinispan/PluginKeyValueFilter.java
+/data/workspace/leads-query-processor-plugins/plugins/src/main/java/eu/leads/processor/plugins/PluginBaseImpl.java
+/data/workspace/leads-query-processor-plugins/plugins/src/main/java/eu/leads/processor/test/CachePutter.java
+/data/workspace/leads-query-processor-plugins/plugins/src/main/java/eu/leads/processor/plugins/SimplePluginRunner.java
+/data/workspace/leads-query-processor-plugins/plugins/src/main/java/eu/leads/processor/plugins/PluginPackage.java
+/data/workspace/leads-query-processor-plugins/plugins/src/main/java/eu/leads/processor/plugins/PluginInterface.java
+/data/workspace/leads-query-processor-plugins/plugins/src/main/java/eu/leads/processor/infinispan/PluginListener.java

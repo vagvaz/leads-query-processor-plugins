@@ -27,9 +27,9 @@ public class CombinedTests {
       }
 
       PluginPackage cassandraPlugin = new PluginPackage(CassandraPlugin.class.getCanonicalName(), CassandraPlugin.class.getCanonicalName(),
-                                                      "/home/vagvaz/Projects/idea/leads-query-processor-plugins/plugin-examples/cassandra-input-plugin/target/cassandra-input" +
+                                                      "/data/workspace/leads-query-processor-plugins/plugin-examples/cassandra-input-plugin/target/cassandra-input" +
                                                               "-plugin-1.0-SNAPSHOT-jar-with-dependencies.jar",
-                                                      "/home/vagvaz/Projects/idea/leads-query-processor-plugins/plugin-examples/cassandra-input-plugin/cassandra-plugin-conf.xml");
+                                                      "/data/workspace/leads-query-processor-plugins/plugin-examples/cassandra-input-plugin/cassandra-plugin-conf.xml");
 
 
       //upload plugin
@@ -44,8 +44,8 @@ public class CombinedTests {
       //Create plugin package for upload (id,class name, jar file path, xml configuration)
         /*PluginPackage plugin = new PluginPackage();*/
       PluginPackage plugin = new PluginPackage(AdidasProcessingPlugin.class.getCanonicalName(), AdidasProcessingPlugin.class.getCanonicalName(),
-                                                      "/home/vagvaz/Projects/idea/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/target/adidas-processing-plugin-1.0-SNAPSHOT-jar-with-dependencies.jar",
-                                                      "/home/vagvaz/Projects/idea/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/adidas-processing-plugin-conf.xml");
+                                                      "/data/workspace/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/target/adidas-processing-plugin-1.0-SNAPSHOT-jar-with-dependencies.jar",
+                                                      "/data/workspace/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/adidas-processing-plugin-conf.xml");
 
 
       //upload plugin

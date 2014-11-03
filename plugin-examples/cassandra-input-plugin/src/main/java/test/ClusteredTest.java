@@ -27,9 +27,8 @@ public class ClusteredTest {
      //Create plugin package for upload (id,class name, jar file path, xml configuration)
         /*PluginPackage plugin = new PluginPackage();*/
      PluginPackage plugin = new PluginPackage(CassandraPlugin.class.getCanonicalName(), CassandraPlugin.class.getCanonicalName(),
-                                                     "/home/vagvaz/Projects/idea/leads-query-processor-plugins/plugin-examples/cassandra-input-plugin/target/cassandra-input-plugin-1.0-SNAPSHOT-jar-with-dependencies.jar",
-                                                     "/home/vagvaz/Projects/idea/leads-query-processor-plugins/plugin-examples/cassandra-input-plugin/cassandra-plugin-conf.xml");
-
+                                                     "/data/workspace/leads-query-processor-plugins/plugin-examples/cassandra-input-plugin/target/cassandra-input-plugin-1.0-SNAPSHOT-jar-with-dependencies.jar",
+                                                     "/data/workspace/leads-query-processor-plugins/plugin-examples/cassandra-input-plugin/cassandra-plugin-conf.xml");
 
      //upload plugin
      PluginManager.uploadPlugin(plugin);
@@ -38,7 +37,7 @@ public class ClusteredTest {
      //PluginManager.deployPlugin();
      PluginManager.deployPlugin(CassandraPlugin.class.getCanonicalName(), "webpages", EventType.CREATEANDMODIFY);
 
-        /*Start putting values to the cache */
+     /*Start putting values to the cache */
 
      //Put some configuration properties for crawler
      LQPConfiguration.getConf().setProperty("crawler.seed", "http://www.bbc.co.uk"); //For some reason it is ignored news.yahoo.com is used by default

@@ -19,7 +19,7 @@ public class LocalTest {
 
         //IF you want you can load config from file
         if (args.length == 0) {
-            configPath = "/home/vagvaz/Projects/idea/basic_plugin.xml";
+            configPath = "/data/workspace/basic_plugin.xml";
         } else {
             configPath = args[0];
         }

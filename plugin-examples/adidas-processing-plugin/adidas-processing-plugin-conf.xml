@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
+	<technology>cassandra</technology>
+	<host>127.0.0.1</host>
+	<port>9160</port>
+	<resources_path>/data/workspace/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/resources</resources_path>
 </config>

@@ -1,0 +1,14 @@
+eu/leads/processor/plugins/PluginPackage.class
+eu/leads/processor/test/CachePutter.class
+eu/leads/processor/test/TestSimpleRunner.class
+eu/leads/processor/plugins/PluginBaseImpl.class
+eu/leads/processor/infinispan/PluginListener.class
+eu/leads/processor/plugins/PluginManager.class
+eu/leads/processor/test/LocalTest.class
+eu/leads/processor/infinispan/PluginKeyValueFilter$1.class
+eu/leads/processor/infinispan/PluginClusteredListener.class
+eu/leads/processor/infinispan/PluginKeyValueFilter.class
+eu/leads/processor/plugins/EventType.class
+eu/leads/processor/plugins/PluginInterface.class
+eu/leads/processor/plugins/SimplePluginRunner.class
+eu/leads/processor/plugins/UndeployPluginCallable.class

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="common/src/main/java"/>
+	<classpathentry kind="src" path="common/src/test/java"/>
+	<classpathentry kind="src" path="crawler/src/main/java"/>
+	<classpathentry kind="src" path="plugin-examples/plugins-template/src/main/java"/>
+	<classpathentry kind="src" path="plugin-examples/sentiment-plugin/src/main/java"/>
+	<classpathentry kind="src" path="plugin-examples/transform-plugin/src/main/java"/>
+	<classpathentry kind="src" path="plugins/src/main/java"/>
+	<classpathentry kind="src" path="plugin-examples/adidas-processing-plugin/src/main/java"/>
+	<classpathentry kind="src" path="plugin-examples/cassandra-input-plugin/src/main/java"/>
+	<classpathentry kind="src" path="plugin-examples/combined-test/src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

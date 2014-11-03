@@ -33,8 +33,8 @@ public class ClusteredTest {
     //Create plugin package for upload (id,class name, jar file path, xml configuration)
         /*PluginPackage plugin = new PluginPackage();*/
     PluginPackage plugin = new PluginPackage(TransformPlugin.class.getCanonicalName(), TransformPlugin.class.getCanonicalName(),
-                                                    "/home/vagvaz/Projects/idea/transform-plugin/target/transform-plugin-1.0-SNAPSHOT-jar-with-dependencies.jar",
-                                                    "/home/vagvaz/Projects/idea/transform-plugin/transform-plugin-conf.xml");
+                                                    "/data/workspace/transform-plugin/target/transform-plugin-1.0-SNAPSHOT-jar-with-dependencies.jar",
+                                                    "/data/workspace/transform-plugin/transform-plugin-conf.xml");
 
 
     //upload plugin

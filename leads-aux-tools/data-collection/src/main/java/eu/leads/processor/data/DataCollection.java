@@ -44,10 +44,10 @@ public class DataCollection {
      String pagerankPluginClassName = "eu.leads.processor.plugins.pagerank.PagerankPlugin";
      String sentimentPluginClassName = "eu.leads.processor.plugins.sentiment.SentimentAnalysisPlugin";
 
-     String pagerankJar = "/home/vagvaz/Projects/idea/leads-query-processor/nqe/system-plugins/pagerank-plugin/target/pagerank-plugin-1.0-SNAPSHOT-jar-with-dependencies.jar";
-     String pagerankConf = "/home/vagvaz/Projects/idea/leads-query-processor/nqe/system-plugins/pagerank-plugin/pagerank-conf.xml";
-     String sentimentConf = "/home/vagvaz/Projects/idea/leads-query-processor/nqe/system-plugins/sentiment-plugin/sentiment-conf.xml";
-     String sentimentJar = "/home/vagvaz/Projects/idea/leads-query-processor/nqe/system-plugins/sentiment-plugin/target/sentiment-plugin-1.0-SNAPSHOT-jar-with-dependencies.jar";
+     String pagerankJar = "/data/workspace/leads-query-processor/nqe/system-plugins/pagerank-plugin/target/pagerank-plugin-1.0-SNAPSHOT-jar-with-dependencies.jar";
+     String pagerankConf = "/data/workspace/leads-query-processor/nqe/system-plugins/pagerank-plugin/pagerank-conf.xml";
+     String sentimentConf = "/data/workspace/leads-query-processor/nqe/system-plugins/sentiment-plugin/sentiment-conf.xml";
+     String sentimentJar = "/data/workspace/leads-query-processor/nqe/system-plugins/sentiment-plugin/target/sentiment-plugin-1.0-SNAPSHOT-jar-with-dependencies.jar";
 
       //Set desired target cache
       LQPConfiguration.getConf().setProperty(StringConstants.CRAWLER_DEFAULT_CACHE, webCacheName);

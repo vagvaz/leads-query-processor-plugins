@@ -1,8 +1,14 @@
 package eu.leads.processor;
 
+import java.util.HashMap;
+
+import eu.leads.PropertiesSingleton;
+import eu.leads.datastore.DataStoreSingleton;
+import eu.leads.infext.proc.realtime.env.pojo.PageProcessingPojo;
 import eu.leads.processor.common.infinispan.InfinispanManager;
 import eu.leads.processor.core.Tuple;
 import eu.leads.processor.plugins.PluginInterface;
+
 import org.apache.commons.configuration.Configuration;
 import org.infinispan.Cache;
 
@@ -10,12 +16,13 @@ import org.infinispan.Cache;
  * Created by vagvaz on 10/14/14.
  */
 public class AdidasProcessingPlugin implements PluginInterface {
-   private final String id = AdidasProcessingPlugin.class.getCanonicalName();
+   private final String className = AdidasProcessingPlugin.class.getCanonicalName();
    private Configuration configuration;
    private InfinispanManager manager;
+   private PageProcessingPojo pageProcessingPojo;
    @Override
    public String getId() {
-      return id;
+      return className;
    }
 
    @Override
@@ -25,22 +32,33 @@ public class AdidasProcessingPlugin implements PluginInterface {
 
    @Override
    public String getClassName() {
-      return AdidasProcessingPlugin.class.getCanonicalName();
+      return className;
    }
-
 
    @Override
    public void initialize(Configuration config, InfinispanManager manager) {
       this.configuration = config;
       this.manager = manager;
-     //READ Configuration for Cassandra?
+      
+      // READ Configuration for Cassandra
+      DataStoreSingleton.configureDataStore(config);
+      
+      // READ Configuration for the plugin
+      PropertiesSingleton.setResourcesDir(config.getString("resources_path"));
+      // TODO something more ??
+      
+      try {
+    	  pageProcessingPojo = new PageProcessingPojo();
+	  } catch (Exception e) {
+		  e.printStackTrace();
+		  // TODO
+	  }
    }
 
    @Override
    public void cleanup() {
 
    }
-
 
    @Override
    public void modified(Object key, Object value, Cache<Object, Object> cache) {
@@ -54,19 +72,28 @@ public class AdidasProcessingPlugin implements PluginInterface {
    }
 
    private void processTuple(Object key, Object value) {
-      String urlKey = (String) key;
+      String uri = (String) key;
       String webpageJson = (String)value;
       Tuple webpage = new Tuple(webpageJson);
+      
+      String content = webpage.getAttribute("content");
+      String timestamp = webpage.getNumberAttribute("timestamp").toString();
+      HashMap<String,String> cacheColumns = new HashMap<>();
+      cacheColumns.put("content", content);
+      cacheColumns.put("fetchTime", timestamp);
 
       // Here Do the heavy processing stuff
       System.out.println("########:"+getClassName().toString() + " heavily processed key " + key);
-
-
+      try {
+		pageProcessingPojo.execute(uri, timestamp, "webpages", cacheColumns);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
    }
 
    @Override
    public void removed(Object key, Object value, Cache<Object, Object> cache) {
-      //Do Nothing probably never called.
+      // Do Nothing probably never called.
 
    }
 

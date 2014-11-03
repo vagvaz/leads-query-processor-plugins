@@ -50,8 +50,8 @@ public class ClusteredTest {
         PluginPackage plugin = new PluginPackage(SentimentAnalysisPlugin.class.getCanonicalName(),
                                                     SentimentAnalysisPlugin.class
                                                         .getCanonicalName(),
-                                                    "/home/vagvaz/Projects/idea/sentiment-plugins/target/sentiment-plugin-1.0-SNAPSHOT-jar-with-dependencies.jar",
-                                                    "/home/vagvaz/Projects/idea/sentiment-plugins/sentiment-conf.xml");
+                                                    "/data/workspace/sentiment-plugins/target/sentiment-plugin-1.0-SNAPSHOT-jar-with-dependencies.jar",
+                                                    "/data/workspace/sentiment-plugins/sentiment-conf.xml");
 
         //upload plugin
         PluginManager.uploadPlugin(plugin);

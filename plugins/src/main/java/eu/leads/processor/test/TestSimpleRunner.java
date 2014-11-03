@@ -38,9 +38,9 @@ public class TestSimpleRunner {
         String configPath = null;
         String jarPath = null;
         if (args.length == 0) {
-            configPath = "/home/vagvaz/Projects/idea/basic_plugin.xml";
+            configPath = "/data/workspace/basic_plugin.xml";
             jarPath =
-                "/home/vagvaz/Projects/idea/leads-query-processor/plugins/target/leads-query-processor-plugins-1.0.0-SNAPSHOT.jar";
+                "/data/workspace/leads-query-processor/plugins/target/leads-query-processor-plugins-1.0.0-SNAPSHOT.jar";
 
         } else {
             configPath = args[0];
@@ -109,9 +109,9 @@ public class TestSimpleRunner {
         String configPath = null;
         String jarPath = null;
         if (args.length == 0) {
-            configPath = "/home/vagvaz/Projects/idea/basic_plugin.xml";
+            configPath = "/data/workspace/basic_plugin.xml";
             jarPath =
-                "/home/vagvaz/Projects/idea/leads-query-processor/plugins/target/leads-query-processor-plugins-1.0-SNAPSHOT.jar";
+                "/data/workspace/leads-query-processor/plugins/target/leads-query-processor-plugins-1.0-SNAPSHOT.jar";
 
         } else {
             configPath = args[0];
