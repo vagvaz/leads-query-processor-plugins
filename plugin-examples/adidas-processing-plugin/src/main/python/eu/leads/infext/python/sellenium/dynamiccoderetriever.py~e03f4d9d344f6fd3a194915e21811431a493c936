@@ -1,0 +1,30 @@
+'''
+Created on Jan 9, 2014
+
+@author: nonlinear
+'''
+
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+class DynamicCodeRetriever(object):
+    '''
+    classdocs
+    '''
+
+    def __enter__(self):
+        self.driver = webdriver.Firefox()
+        return self
+        
+    def get_code(self, url):
+        self.driver.get(url)
+        page_source = self.driver.page_source
+        return page_source
+        
+    def __exit__(self, type, value, traceback):
+        self.driver.close()
+      
+      
+          
+#with DynamicCodeRetriever() as dcr:
+#    dcr.get_code("http://www.adidas.com/us/product/mens-running-supernova-glide-6-shoes/IET69")

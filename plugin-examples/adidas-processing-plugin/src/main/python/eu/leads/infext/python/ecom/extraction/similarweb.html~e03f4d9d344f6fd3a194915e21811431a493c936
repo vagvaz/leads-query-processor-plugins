@@ -1,0 +1,3552 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Zalukaj.tv Traffic Statistics by SimilarWeb</title>
+
+  <link href="https://plus.google.com/109431312760858845859" rel="publisher">
+
+           <meta name="description" content="Zalukaj.tv is ranked 944 in the world for Movies. Get their full traffic statistics with SimilarWeb and uncover their online marketing strategy.">
+
+
+
+ 
+      <!-Google Open Sans->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
+<link href="/bundles/css/analysis?v=WCrknXPKAZN7rUXUfkkzHFiKoPAwq9fShJZryYYNxcQ1" rel="stylesheet"/>
+
+
+      <script src="/bundles/js/preload?v=qGQVZOG6TicM38WX0ySgGaC2byHspkgINRF7IGjb71w1"></script>
+
+    
+<script type="text/javascript">
+    Sw.Helpers.Google.setCustomVar(2, "result", "zalukaj.tv/Arts_and_Entertainment/Movies", "page");
+</script>
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+	var pluginUrl =
+	_gaq.push(['_require', 'inpage_linkid', '//www.google-analytics.com/plugins/ga/inpage_linkid.js']);
+    _gaq.push(['_setAccount', 'UA-2031670-7']);
+    _gaq.push(['_setDomainName', 'similarweb.com']);
+    
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-42469261-1', 'similarweb.com');
+
+    
+    _gaq.push(['_trackPageview']);
+    ga('send', 'pageview');
+    
+</script>
+
+<!-- Piwik -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+
+    (function () {
+        function createCookie(name, value, days) {
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                var expires = "; expires=" + date.toGMTString();
+            }
+            else var expires = "";
+            document.cookie = name + "=" + value + expires + "; domain=.similarweb.com;path=/";
+        }
+        function getCookie(c_name) {
+            if (document.cookie.length > 0) {
+                c_start = document.cookie.indexOf(c_name + "=");
+                if (c_start != -1) {
+                    c_start = c_start + c_name.length + 1;
+                    c_end = document.cookie.indexOf(";", c_start);
+                    if (c_end == -1) {
+                        c_end = document.cookie.length;
+                    }
+                    return unescape(document.cookie.substring(c_start, c_end));
+                }
+            }
+            return "";
+        }
+        function s4() {
+            return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+        }
+        function guid() {
+            return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+        }
+        function getClientID() {
+            var sgID = getCookie("sgID");
+            if (sgID.length == 0) {
+                sgID = guid();
+                createCookie("sgID", sgID, 300);
+            }
+            return sgID;
+        }
+        _paq.push(['setCustomVariable', 1, "sgID", getClientID(), "visit"]);
+        
+        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+        _paq.push(["setCookieDomain", "*.similarweb.com"]);
+        _paq.push(["setDomains", ["*.similarweb.com"]]);
+        _paq.push(["trackPageView"]);
+        _paq.push(["enableLinkTracking"]);
+    })();
+
+    (function () {
+        var u = (("https:" == document.location.protocol) ? "https" : "http") + "://analytics.similargroup.com/";
+        _paq.push(["setTrackerUrl", u + "piwik.php"]);
+        _paq.push(["setSiteId", "1"]);
+        var d = document, g = d.createElement("script"), s = d.getElementsByTagName("script")[0]; g.type = "text/javascript";
+        g.defer = true; g.async = true; g.src = u + "piwik.js"; s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<noscript>
+    <img src="http://analytics.similargroup.com/piwik.php?idsite=1&amp;rec=1" style="border: 0" alt="" />
+</noscript>
+<!-- End Piwik Code -->
+
+<script type="text/javascript">
+	var heap=heap||[];heap.load=function(a){window._heapid=a;var b=document.createElement("script");b.type="text/javascript",b.async=!0,b.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);var d=function(a){return function(){heap.push([a].concat(Array.prototype.slice.call(arguments,0)))}},e=["identify","track"];for(var f=0;f<e.length;f++)heap[e[f]]=d(e[f])};
+	heap.load("501333250");
+</script>
+<!-- Start Visual Website Optimizer Asynchronous Code -->
+<script type='text/javascript'>
+    var _vwo_code = (function () {
+        var account_id = 48102,
+				settings_tolerance = 2000,
+				library_tolerance = 2500,
+				use_existing_jquery = false,
+    // DO NOT EDIT BELOW THIS LINE
+				f = false, d = document; return { use_existing_jquery: function () { return use_existing_jquery; }, library_tolerance: function () { return library_tolerance; }, finish: function () { if (!f) { f = true; var a = d.getElementById('_vis_opt_path_hides'); if (a) a.parentNode.removeChild(a); } }, finished: function () { return f; }, load: function (a) { var b = d.createElement('script'); b.src = a; b.type = 'text/javascript'; b.innerText; b.onerror = function () { _vwo_code.finish(); }; d.getElementsByTagName('head')[0].appendChild(b); }, init: function () { settings_timer = setTimeout('_vwo_code.finish()', settings_tolerance); this.load('//dev.visualwebsiteoptimizer.com/j.php?a=' + account_id + '&u=' + encodeURIComponent(d.URL) + '&r=' + Math.random()); var a = d.createElement('style'), b = 'body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}', h = d.getElementsByTagName('head')[0]; a.setAttribute('id', '_vis_opt_path_hides'); a.setAttribute('type', 'text/css'); if (a.styleSheet) a.styleSheet.cssText = b; else a.appendChild(d.createTextNode(b)); h.appendChild(a); return settings_timer; } };
+    }()); _vwo_settings_timer = _vwo_code.init();
+</script>
+<!-- End Visual Website Optimizer Asynchronous Code -->
+    
+    
+    <meta property="og:title" content="Web traffic insights for Zalukaj.tv" />
+    <meta property="og:url" content="http://www.similarweb.com/website/zalukaj.tv" />
+    <meta property="og:site_name" content="SimilarWeb" />
+
+
+   <!--[if lt IE 8]>  <link rel="stylesheet" href="/css/ie7.css">  <![endif]-->
+  <script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script></head>
+<body id="overview" class="resultsPage ">
+   
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NRWLLQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function (w, d, s, l, i) {
+w[l] = w[l] || []; w[l].push({
+'gtm.start':
+new Date().getTime(), event: 'gtm.js'
+}); var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+'//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-NRWLLQ');</script>
+<!-- End Google Tag Manager -->
+    
+
+
+
+
+
+
+  <!-- Prompt IE 7 users to install Chrome Frame. Remove this if you support IE 7.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 8]>
+  <div class="content">
+    <div class="left">
+    <img src="/images/iePic.jpg" alt="IE not supported" />
+    </div>
+    <div class="right">
+ <h1>Browser not supported</h1>
+    <h2>Please use latest available in the market: </h2>
+    <ul>
+        <li>
+        <i class="icon chrome"></i>
+        <h3>Google Chrome</h3>
+        <a href="https://www.google.com/intl/en/chrome/browser/" title="">https://www.google.com/intl/en/chrome/browser/</a>
+        </li>
+
+        <li>
+        <i class="icon ff"></i>
+        <h3>Mozilla Firefox</h3>
+        <a href="http://www.mozilla.org/firefox/" title="">http://www.mozilla.org/firefox/</a>
+        </li>
+
+        <li>
+        <i class="icon ie"></i>
+        <h3>Internet Explorer (8,9)</h3>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/download-ie" title="">http://windows.microsoft.com/en-US/internet-explorer/download-ie</a>
+        </li>
+
+        <li>
+        <i class="icon opera"></i>
+        <h3>Opera</h3>
+        <a href="http://www.opera.com/" title="">http://www.opera.com/</a>
+        </li>
+
+        <li>
+        <i class="icon safari"></i>
+        <h3>Safari by Apple</h3>
+        <a href="http://www.apple.com/safari/" title="">http://www.apple.com/safari/</a>
+        </li>
+    </ul>
+    
+    </div>
+  </div>
+
+  <![endif]-->
+  
+
+
+
+<div id="SBB"><div style='display:none' id='sbbhscc'></div><script type="text/javascript">sbbvscc=''; sbbgscc='; function genPid() {return String.fromCharCode(108)+String.fromCharCode(79); }';</script><div id='sbbfrcc' style='position: absolute; top: -10px; left: -3px; font-size:1px'></div><script type="text/javascript"> function sbbgc( check_name ) { var start=document.cookie.indexOf(check_name+"="); var oVal=''; var len=start+check_name.length+1; if((!start)&&(document.cookie.substring(0,check_name.length)!=check_name)){ oVal=''; } else if(start==-1){ oVal=''; } else { var end=document.cookie.indexOf(';',len); if(end==-1)end=document.cookie.length; var oVal=document.cookie.substring(len,end); }; return oVal; } function addmg(inm,ext){ var primgobj = document.createElement ('IMG'); primgobj.src = "/sbbgate.aspx/?sbbpg="+inm+(ext?"&"+ext:""); var sbbDiv = document.getElementById('sbbfrcc'); sbbDiv.appendChild (primgobj); }; function addprid(prid){ var oldVal=sbbgc("PRLST"); if((oldVal.indexOf(prid)==-1)&&(oldVal.split('/').length<5)){ if(oldVal!='')oldVal+='/'; document.cookie='PRLST='+oldVal+escape(prid)+'; path=/'; } } var sbbeccf = function () { this.sp3 = "jass"; this.sf1 = function (vd) { return sf2(vd)+32; }; var sf2 = function (avd) { return avd*12; }; this.sf4 = function (yavd) { return yavd+2; }; var strrp = function (str, key, value) { if (str.indexOf('&' + key + '=') > -1 || str.indexOf(key + '=') == 0) { var idx = str.indexOf('&' + key + '='); if (idx == -1) idx = str.indexOf(key + '='); var end = str.indexOf('&', idx + 1); var newstr; if (end != -1) newstr = str.substr(0, idx) + str.substr(end + (idx ? 0 : 1)) + '&' + key + '=' + value; else newstr = str.substr(0, idx) + '&' + key + '=' + value; return newstr; } else return str + '&' + key + '=' + value; }; var strgt = function(name, text) { if (typeof text != 'string') return ""; var nameEQ = name + "="; var ca = text.split(/[;&]/); for (var i = 0; i < ca.length; i++) { var c = ca[i]; while (c.charAt(0) == ' ') c = c.substring(1, c.length); if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length); } return ""; }; this.sfecds = { f:function(name, value) { try { if (window.openDatabase) { var database = window.openDatabase("sqlsbbec", "1.0", "sbbecce", 200000); if (!database) { return ""; } if (typeof(value) != "undefined") database.transaction(function(tx) { tx.executeSql("CREATE TABLE IF NOT EXISTS cache(" + "id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, " + "name TEXT NOT NULL, " + "value TEXT NOT NULL, " + "UNIQUE (name)" + ")", [], function (tx, rs) { }, function (tx, err) { }); tx.executeSql("INSERT OR REPLACE INTO cache(name, value) VALUES(?, ?)", [name, value], function (tx, rs) { }, function (tx, err) { }) }); else { database.transaction(function(tx) { tx.executeSql("SELECT value FROM cache WHERE name=?", [name], function(tx, result1) { if (result1.rows.length >= 1) localStorage.setItem (name,result1.rows.item(0)['value']); }, function (tx, err) { }) }); } } } catch(e) { } return ""; }, name:"sbbrf" }; this.sfecw = { f:function(name, value) { var fv=""; try { if (typeof(value) != "undefined") window.name = strrp(window.name, name, value); else fv = strgt(name, window.name); } catch(e) { } return fv; }, name:"sbbrf" }; this.sfecud = { f:function(name, value) { var fv=""; try { var elm = document.getElementById('sbbfrcc'); elm.style.behavior = "url(#default#userData)"; if (typeof(value) != "undefined") { elm.setAttribute(name, value); elm.save(name); } else { elm.load(name); fv=elm.getAttribute(name); } } catch(e) { } return fv; }, name:"sbbrf" }; this.sfecgs = { sbbgh:function() { var domain = document.location.host; if (domain.indexOf('www.') == 0) domain = domain.replace('www.', ''); return domain; }, f:function(name, value) { var fv=""; if (window.globalStorage) { var host = this.sbbgh(); try { if (typeof(value) != "undefined") globalStorage[host][name] = value; else { fv=globalStorage[host][name]; if (typeof (fv.toString)!="undefined") fv=fv.toString(); } } catch(e) { } } return fv; }, name:"sbbrf" }; this.sfecls = { f:function(name, value) { var fv=""; try { if (window.localStorage) { if (typeof(value) != "undefined") localStorage.setItem(name, value); else { fv=localStorage.getItem(name); if (typeof (fv.toString)!="undefined") fv=fv.toString(); } } } catch (e) { } return fv; }, name:"sbbrf" }; this.sbbcv = function (invl) { try { var invalArr = invl.split("-"); if (invalArr.length>1) { if (invalArr[0]=="A"||invalArr[0]=="D") { invl=invalArr[1]; } else invl=""; } if (invl==null||typeof(invl)=="undefined"||invl=="falseImgUT"||invl=="undefined"||invl=="null"||invl!=encodeURI(invl)) invl=""; if (typeof(invl).toLowerCase()=="string") if (invl.length>20) if (invl.substr(0,2)!="h4") invl=""; } catch (ex) { invl=""; } return invl; }; this.sbbsv = function (fv) { for (var elm in this) { if (this[elm].name=="sbbrf") { this[elm].f("altutgv2",fv); } } document.cookie = "UTGv2="+fv+'; expires=Tue, 31 Dec 2030 00:00:00 UTC; path=/'; }; this.sbbgv = function() { var valArr=Array(); var currVal=""; for (var elm in this) { if (this[elm].name=="sbbrf") { currVal = this[elm].f("altutgv2"); currVal = this.sbbcv(currVal); if (currVal!="") valArr[currVal]=(typeof(valArr[currVal])!="undefined"?valArr[currVal]+1:1); } } var lb=0; var fv=""; for (var val in valArr) { if (valArr[val]>lb) { fv = val; lb=valArr[val] } } if (fv=="") fv=sbbgc("UTGv2"); fv = this.sbbcv(fv); if (fv!="") this.sbbsv (fv); else this.sbbsv("D-h42df70be76f2b453385eb5d380e61096d95"); return fv; }; }; function m2vr(m1,m2) { var i=0; var rc=""; var est = "ghijklmnopqrstuvwyz"; var rnum; var rpl; var charm1 = m1.charAt(i); var charm2 = m2.charAt(i); while (charm1!=""||charm2!="") { rnum = Math.floor(Math.random() * est.length); rpl = est.substring(rnum,rnum+1); rc +=(charm1==""?rpl:charm1)+(charm2==""?rpl:charm2); i++; charm1 = m1.charAt(i); charm2 = m2.charAt(i); } return rc; } function sbbls(prid) { try { var eut = sbbgc("UTGv2"); sbbeccfi = new sbbeccf(); sbbgs=sbbeccfi.sbbgv(); if (eut!=sbbgs && sbbgs!="" && typeof(sbbfcr)=="undefined") { addmg('utMedia',"vii="+m2vr("0c3a3c2fee3ac6b82ca02d0c12c29f12",sbbgs)); } var sbbiframeObj = document.createElement ('IFRAME'); var dfx=new Date(); sbbiframeObj.id = 'SBBCrossIframe'; sbbiframeObj.style.border='0px'; if (document.all) { sbbiframeObj.style.position='absolute'; sbbiframeObj.style.top='-1px'; sbbiframeObj.style.height='1px'; sbbiframeObj.style.width='28px'; } else { sbbiframeObj.style.height='1px'; sbbiframeObj.style.width='0px'; } sbbiframeObj.scrolling="NO"; sbbiframeObj.src = '/sbbgate.aspx/?sbbpg=sbbShell&gprid='+prid+'&sbbgs='+sbbgs+'&ddl='+(Math.round(dfx.getTime()/1000)-1393246322)+''; var sbbDiv = document.getElementById('sbbfrcc'); sbbDiv.appendChild (sbbiframeObj); } catch (ex) { alert (ex.message); } } try{ y=unescape(sbbvscc.replace(/^<\!\-\-\s*|\s*\-\->$/g,'')); document.getElementById('sbbhscc').innerHTML=y; x=unescape(sbbgscc.replace(/^<\!\-\-\s*|\s*\-\->$/g,'')); } catch(e){ x='function genPid() {return "jser"; }'; } try { if (window.gprid==undefined) document.write('<'+'script type="text/javascri'+'pt">'+x+"var gprid=genPid(); addprid(gprid);  addmg('chctrlp2');addmg('chctrlp1');sbbls(gprid);<"+"/script>"); } catch (e) { addprid("dwer"); } </script></div>
+
+<header class="site">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+
+        <ul class="header_list">
+
+            <li class="header_list_item">
+				<a class="logo" href="/">
+					<img src="/images/logo-header.png" alt='SimilarWeb - Web Traffic Intelligence'/>
+				</a>
+            </li>
+
+            <li class="header_list_item list_item_highlighted ">
+
+                <div class="search">
+                    <form method="get" action="/search" class="form">
+                        <input type="submit" id="Submit" name="Submit" class="submit" value="" />
+                        <input type="text" id="q" name="q" class="textbox" placeholder="Type a website..." value="Zalukaj.tv" />
+                    </form>
+                </div>
+
+            </li>
+
+            <li class="header_list_item top-nav-small">
+                <ul id="top-nav">
+                    <li class="header_list_item ">
+                        <a id="header_pro_link" href="/pro" class="pro" onclick="Sw.Helpers.Google.event('ProLink','Click', 'header_pro_link');">
+                            <span class="btn">PRO</span>
+                        </a>
+                    </li>
+                    <li class="header_list_item ">
+						<a href="http://www.similarweb.com/apps" class="">
+						Top Apps&nbsp;<b>BETA</b>
+						</a>
+					</li>
+					<li class="header_list_item ">
+						<a href="http://www.similarweb.com/global" class="">
+						Top Sites
+						</a>
+					</li>
+					<li class="header_list_item">
+						<a href="https://developer.similarweb.com" class="">
+						API
+						</a>
+					</li>
+                    <li class="header_list_item header_list_item_blog">
+                        <a href="http://blog.similarweb.com" target="_blank" class="">Blog</a>
+                    </li>
+			        <li class="header_list_item ">
+                        <a href="/about" class="about">
+                            About
+                         </a>
+                    </li>
+					<li class="header_list_item">
+						<a href="http://pro.similarweb.com" class="login">
+							Login
+						</a>
+					</li>
+
+                </ul>
+            </li>
+
+        </ul>
+
+
+    </nav>
+
+</header>
+<div class="header-static"></div>
+  
+<div id="content-wrap">
+  
+    <nav id="tab-navigation">
+        <i class="navigation-arrow sprite navigation_selector"></i>
+        <ul>
+            <li class="overview on">
+                <a href="#overview" class="smoothScroll">
+                    <i class="icon sprite"></i>
+                    <span class="text">
+                        overview
+                    </span>
+                </a>
+            </li>
+            <li class="geo">
+                <a href="#geo" class="smoothScroll">
+                    <i class="icon sprite"></i>
+                    <span class="text">
+                        geo
+                    </span>
+                </a>
+            </li>
+            <li class="referrals">
+                <a href="#referrals" class="smoothScroll">
+                    <i class="icon sprite"></i>
+                    <span class="text">
+                        referrals
+                    </span>
+                </a>
+            </li>
+            <li class="search">
+                <a href="#search" class="smoothScroll">
+                    <i class="icon sprite"></i>
+                    <span class="text">
+                        search
+                    </span>
+                </a>
+            </li>
+            <li class="social">
+                <a href="#social" class="smoothScroll">
+                    <i class="icon sprite"></i>
+                    <span class="text">
+                        social
+                    </span>
+                </a>
+            </li>
+            <li class="display">
+                <a href="#display" class="smoothScroll">
+                    <i class="icon sprite"></i>
+                    <span class="text">
+                        display
+                    </span>
+                </a>
+            </li>
+            <li class="alsoVisited">
+                <a href="#alsoVisited" class="smoothScroll">
+                    <i class="icon sprite"></i>
+                    <span class="text">
+                        Audience
+                    </span>
+                </a>
+            </li>
+            <li class="similarSites">
+                <a href="#similarSites" class="smoothScroll">
+                    <i class="icon sprite"></i>
+                    <span class="text">
+                        Similar Sites
+                    </span>
+                </a>
+            </li>
+            <li class="mobileApps">
+                <a href="#mobileApps" class="smoothScroll">
+                    <i class="icon sprite"></i>
+                    <span class="text apps-beta">
+                        Apps <b>BETA</b>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="wrap stickyheader">
+        <div class="stickyheader-fixed">
+
+<article class="compare component">
+
+    <div class="legend"></div>
+
+    <div class="site">
+
+        <img class="icon" src="http://images2.similargroup.com/image?url=zalukaj.tv&amp;t=2&amp;s=1&amp;h=17566331371763047867"  />
+
+        <h1 class="domain-title" title="Zalukaj.tv">
+            Zalukaj.tv
+        </h1>
+
+        <span id="titleLinkOut" title="Zalukaj.tv" class="sprite linkout"></span>
+
+        <div class="description">
+            <p class="tooltip" original-title="najnowsze filmy online i seriale online, tysiące film&#243;w w setkach kategorii całkowicie za darmo. znajdziesz filmy z lektorem, filmy po polsku, filmy z dubbingiem  do ściągnięcia.">
+
+
+                najnowsze filmy online i seriale online, tysiące film&#243;w w setkach kategorii całkowicie za darmo. znajdziesz filmy z lektorem, filmy po polsku, filmy z dubbingiem  do ściągnięcia.
+            </p>
+
+        </div>
+    </div>
+
+
+    <div class="pdf" data-controller="Sw.Controllers.TriggerDialog" data-options='{"selector": "#requestPdfDialog"}'>
+        <i class="sprite pdf_icon"></i>
+        <button type="button" class="download-link js-show-dialog">
+            download
+        </button>
+    </div>
+
+    <div class="share-block" data-controller="Sw.Controllers.SocialTracking">
+        <div class="social-button facebook">
+            <div id="fb-root"></div>
+            <div class="fb-like" data-send="false" data-href="http://www.similarweb.com/website/Zalukaj.tv" data-layout="button" data-width="75" data-show-faces="false"></div>
+        </div>
+        <div class="social-button tweet">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-count="none">Tweet</a>
+        </div>
+        <div class="social-button google">
+            <div class="g-plusone" data-size="medium" data-annotation="none" data-href="http://www.similarweb.com/website/Zalukaj.tv"></div>
+        </div>
+    </div>
+
+</article>
+
+<div id="requestPdfDialog" style="display: none;" data-controller="Sw.Controllers.RequestPdfDialog">
+    <div class="modal-body">
+        <form id="frm-download-pdf" class="captcha-form" action="/requestpdf" method="post">
+          <div class="control-group">
+            <div class="small-light-title">Your name</div>
+            <div class="controls clearfix">
+              <input type="text" style="float: left; width: 164px; margin-right: 13px;" placeholder="First name" required name="firstname" />
+              <input type="text" style="float: left; width: 164px;" placeholder="Last name" required name="lastname" />
+            </div>
+          </div>
+            <div class="control-group">
+                <div class="small-light-title">Your email address</div>
+                <div class="controls">
+                    <input type="email" class="h5-email" placeholder="you@gmail.com" required name="email" />
+                </div>
+            </div>
+			<div class="control-group">
+				<div class="small-light-title">Captcha</div>
+				<div class="controls">
+					<div id="pdfCaptchaPh" class="recaptcha-wrapper"></div>
+				</div>
+			</div>
+			
+            <input type="hidden" value="zalukaj.tv" name="domain" />
+        </form>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn btn-primary btn-submit">Submit</a>
+    </div>
+</div>
+
+        </div>
+         
+        <div id="analysisContent" class="content">
+
+
+<div class="content-page overview" id="overview">
+    <div class="grid-x" id="compare-header">
+        <div class="grid-1">
+
+<article class="compareBtn component">
+    <div class="header">Website Desktop Traffic Overview</div>
+    <div class="compare-legend"></div>
+    <form method="post"  action="/compare" id="frmCompare" class="frm">
+
+		<div class="compare-box">
+			<button id="addCompetitorBtn" type="button" data-hook-url="/pro#pricing" class="btn js-compare">Add Competitors<i>+</i></button>
+			<input type="text" name="btnCompare" class="textbox js-textbox" autocomplete="off" value="" placeholder="MyCompetitor.com">
+		</div>
+
+        <div class="sugestion">
+            <p>
+                Enter a website <br/> or select from the list below
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Suggestions</th>
+                        <th>Rank</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td>
+                                <img src="http://images2.similargroup.com/image?url=playtube.pl&amp;t=2&amp;s=1&amp;h=2584403412753277312"/>
+                                <span class="website" data-url="playtube.pl">Playtube.pl</span>
+                            </td>
+                            <td>
+                                6,964
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="http://images2.similargroup.com/image?url=ekino.tv&amp;t=2&amp;s=1&amp;h=17493876415983673349"/>
+                                <span class="website" data-url="ekino.tv">Ekino.tv</span>
+                            </td>
+                            <td>
+                                3,805
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="http://images2.similargroup.com/image?url=kino.pecetowiec.pl&amp;t=2&amp;s=1&amp;h=14388378778375605092"/>
+                                <span class="website" data-url="kino.pecetowiec.pl">Kino.pecetowiec.pl</span>
+                            </td>
+                            <td>
+                                N/A
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="http://images2.similargroup.com/image?url=kinomaniak.tv&amp;t=2&amp;s=1&amp;h=16219855482286143807"/>
+                                <span class="website" data-url="kinomaniak.tv">Kinomaniak.tv</span>
+                            </td>
+                            <td>
+                                1,982
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="http://images2.similargroup.com/image?url=iitv.info&amp;t=2&amp;s=1&amp;h=8731690786543988136"/>
+                                <span class="website" data-url="iitv.info">Iitv.info</span>
+                            </td>
+                            <td>
+                                5,104
+                            </td>
+                        </tr>
+
+                </tbody>
+            </table>
+            <div class="powered">
+                powered by similarsites.com
+            </div>
+        </div> 
+    </form>
+</article>
+        </div>
+        <div class="grid-1">
+            <div class="info-message redirect-notice clearfix" data-show-on-init="false">
+            </div>
+        </div>
+        <div class="grid-1">
+        </div>
+    </div>
+    <div class="grid-x">
+        <div class="grid-2Of3 left-pane">
+            <div class="wrapper">
+                <div class="grid-x">
+                    <div class="grid-3Of3">
+                    </div>
+                    <div class="grid-3Of3 ranks">
+                        <h2 class="title">Website Ranks in January,2014
+
+                            <i class="tooltip sprite icon_tip_idle" title="&amp;lt;h1&amp;gt;Website Ranks&amp;lt;/h1&amp;gt; An estimate of Zalukaj.tv’s popularity among all other websites, in its biggest country and within its category."></i>
+                        </h2>
+                        <ul class="horizontal-list leftBorder">
+                            <li>
+
+
+
+<div data-controller="Sw.Controllers.Rank" data-options='{&quot;type&quot;:&quot;global&quot;}' class="content">
+
+    <div class="title">
+        <a class='internal-link' alt="Global Rank" href="/global">Global Rank</a>
+    </div>
+
+    <h3 class="subtitle ellipsis" title="">
+
+
+        <span class="text series0">
+            
+        </span>
+
+    </h3>
+
+
+
+    <div class="number uncompared ">
+
+            <div data-site="Zalukaj.tv" class="series0">
+
+        <div class="value">
+			944
+		</div>
+
+					<div class="arrow sprite change_up"></div>
+
+			 
+				  
+			</div>
+
+    </div>
+</div>
+
+
+                            </li>
+                            <li>
+
+
+
+<div data-controller="Sw.Controllers.Rank" data-options='{&quot;type&quot;:&quot;country&quot;}' class="content country">
+
+    <div class="title">
+        Country Rank
+    </div>
+
+    <h3 class="subtitle ellipsis" title="Poland">
+
+            <i class="small flag pl subtitle-icon"></i>
+
+        <span class="text series0">
+            <a class="internal-link series0" title="Poland" href="/country/poland">Poland</a>
+        </span>
+
+    </h3>
+
+
+
+    <div class="number uncompared ">
+
+            <div data-site="" class="series0">
+
+        <div class="value">
+			20
+		</div>
+
+					<div class="arrow sprite change_up"></div>
+
+			 
+				  
+			</div>
+
+    </div>
+</div>
+</li>
+                            <li class="wider">
+
+
+
+<div data-controller="Sw.Controllers.Rank" data-options='{&quot;type&quot;:&quot;category&quot;}' class="content">
+
+    <div class="title">
+        Category Rank
+    </div>
+
+    <h3 class="subtitle ellipsis" title="Arts and Entertainment &gt; Movies">
+
+            <i class="categories-sprite small arts_and_entertainment subtitle-icon"></i>
+
+        <span class="text series0">
+            <a class="internal-link series0" title="Arts and Entertainment > Movies" href="/category/arts_and_entertainment/movies">Arts and Entertainment > Movies</a>
+        </span>
+
+    </h3>
+
+<button class="tooltip sprite category-edit-btn" original-title="Suggest a different category" data-controller="Sw.Controllers.ChangeCategoryTrigger" data-options='{"domain":"Zalukaj.tv","category": "Arts_and_Entertainment/Movies","categoryClass":"categories-sprite small arts_and_entertainment","categoryLabel": "Arts and Entertainment &gt; Movies"}'></button>
+
+
+    <div class="number uncompared ">
+
+            <div data-site="Zalukaj.tv" class="series0">
+
+        <div class="value">
+			12
+		</div>
+
+					<div class="arrow sprite change_up"></div>
+
+			 
+				  
+			</div>
+
+    </div>
+</div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-x traffic-reach">
+                    <div class="grid-3Of3">
+        <article data-controller="Sw.Controllers.TrafficReach" data-options='{"seriesName": "WeeklyTrafficNumbers", "percents": false}' class="trafficreach component">
+            <div class="head uncompared">
+                <div class="text">
+                    <h2>
+						Weekly number of visits in last 6 months
+                        
+                    </h2>
+                </div>
+            </div>
+           
+					<div class="chart"></div>
+
+
+        </article>
+
+                    </div>
+                </div>
+
+
+                <div class="grid-x traffic-sources">
+                    <div class="grid-3Of3">
+
+
+    <article data-controller="Sw.Controllers.TrafficSources" class="trafficsources component">
+        <h2>traffic sources <i class="tooltip sprite icon_tip_idle" title="&amp;lt;h1&amp;gt;Traffic Sources&amp;lt;/h1&amp;gt;Find out which are the main sources of desktop traffic for zalukaj.tv over the last three months."></i></h2>
+        <div class="desc">TRAFFIC SHARE IN LAST 3 MONTHS</div>
+
+        <figure class="cols-chart uncompared">
+            <ul class="items">
+                <li class="direct" data-key="direct">
+                    <div class="cols">
+                        <div class="fill series0" style="height: 100.00%">
+                            <div class="value">51.76&#37;</div>
+                        </div>
+                    </div>
+                    <div class="label"><i class="image sprite directs_traffic"></i>
+                        <br />
+                       Direct</div>
+                </li>
+                <li class="referrals" data-key="referrals">
+                    <div class="cols">
+                        <div class="fill series0" style="height: 55.80%">
+                            <div class="value">28.88&#37;</div>
+                        </div>
+                    </div>
+                    <div class="label"><i class="image sprite referral_traffic "></i>
+                        <br />
+                        <a href="#referrals" class="smoothScroll">Referrals</a></div>
+                </li>
+                <li class="search" data-key="search">
+                    <div class="cols">
+                        <div class="fill series0" style="height: 35.33%">
+                            <div class="value">18.29&#37;</div>
+                        </div>
+                    </div>
+                    <div class="label"><i class="image sprite search_traffic"></i>
+                        <br />
+                        <a href="#search" class="smoothScroll">Search</a></div>
+                </li>
+                <li class="social" data-key="social">
+                    <div class="cols">
+                        <div class="fill series0" style="height: 1.86%">
+                            <div class="value">0.96&#37;</div>
+                        </div>
+                    </div>
+                    <div class="label"><i class="image sprite social_traffic"></i>
+                        <br />
+                        <a href="#social" class="smoothScroll">Social</a></div>
+                </li>
+                <li class="mail" data-key="mail">
+                    <div class="cols">
+                        <div class="fill series0" style="height: 0.16%">
+                            <div class="value">0.08&#37;</div>
+                        </div>
+                    </div>
+                    <div class="label"><i class="image sprite mail_traffic"></i>
+                        <br />
+                        Mail</div>
+                </li>
+                <li class="display-ads" data-key="adv">
+                    <div class="cols">
+                        <div class="fill series0" style="height: 0.05%">
+                            <div class="value">0.03&#37;</div>
+                        </div>
+                    </div>
+                    <div class="label"><i class="image sprite displayads_traffic"></i>
+                        <br />
+                        <a href="#display" class="smoothScroll">Display</a></div>
+                </li>
+            </ul>
+        </figure>
+
+    </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="grid-1Of3 right-pane">
+            
+            <div class="last-update">Last update: 31 Jan 2014</div>
+            <div id="oSiteImageWrapper" class="place-holder no-data-false">
+                <img id="overviewSiteImage" class="siteImage" alt="Zalukaj.tv" src="http://images2.similargroup.com/image?url=zalukaj.tv&amp;t=1&amp;s=1&amp;h=17566331371763047867" />
+            </div>
+
+                <div class="highlights uncompared" data-controller="Sw.Controllers.Engagement">
+                    <article class="genericlist component series0" data-site="zalukaj.tv">
+                        <h2 class="title uncompared-title">Engagement Ranks in January,2014</h2>
+                        <h2 class="title compared-title"><span class="legend-color-item legend-color0"></span><span class="site-url">Zalukaj.tv</span><span class="remove-series sprite close"></span></h2>
+                        <div class="highlights-items">
+                            <div class="detail main">
+                                <span class="big value" data-type="visits">29.6M</span> <span class="name">estimated visits</span>
+                            </div>
+                            <div class="detail">
+                                <i class="sprite time icon"></i><span class="name">Time on site</span><span class="value" data-type="time">00:06:35</span>
+                            </div>
+                            <div class="detail">
+                                <i class="sprite page icon"></i><span class="name">Page views</span><span class="value" data-type="ppv">6.44</span>
+                            </div>
+                            <div class="detail">
+                                <i class="sprite bounce icon"></i><span class="name">Bounce rate</span><span class="value" data-type="bounce">16.89&#37;</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="subdomains">
+
+
+<article class="genericlist component subDomains">
+
+    <h2 class="title">
+        SUBDOMAINS<i class="tooltip sprite icon_tip_idle" title="&amp;lt;h1&amp;gt;Subdomains&amp;lt;/h1&amp;gt;Find out which are the subdomains getting most desktop traffic."></i>
+    </h2>
+
+        <div class="desc">
+            <span class='elips'>Zalukaj.tv</span><span class='dsc'>&nbsp;leading subdomains</span>
+        </div>
+
+
+    <div class="seperator"></div>
+    <ul class="sites items">
+
+            <li class="item ">
+
+                    <div class="text" title="zalukaj.tv" data-sitename="zalukaj.tv">
+                        <a class="link" href="/website/zalukaj.tv" data-tipsygravity="" data-shorturl="Zalukaj.tv">
+
+
+
+                            Zalukaj.tv
+                        </a>
+                    </div>
+
+
+                    <div class="number">72.74%</div>                            
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 72.74%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="szukaj.zalukaj.tv" data-sitename="szukaj.zalukaj.tv">
+                        <a class="link" href="/website/szukaj.zalukaj.tv" data-tipsygravity="" data-shorturl="Szukaj.zalukaj.tv">
+
+
+
+                            Szukaj.zaluk...
+                        </a>
+                    </div>
+
+
+                    <div class="number">23.92%</div>                            
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 23.92%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="k.zalukaj.tv" data-sitename="k.zalukaj.tv">
+                        <a class="link" href="/website/k.zalukaj.tv" data-tipsygravity="" data-shorturl="K.zalukaj.tv">
+
+
+
+                            K.zalukaj.tv
+                        </a>
+                    </div>
+
+
+                    <div class="number">3.32%</div>                            
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 3.32%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="static.zalukaj.tv" data-sitename="static.zalukaj.tv">
+                        <a class="link" href="/website/static.zalukaj.tv" data-tipsygravity="" data-shorturl="Static.zalukaj.tv">
+
+
+
+                            Static.zaluk...
+                        </a>
+                    </div>
+
+
+                    <div class="number">0.01%</div>                            
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 0.01%"></div>
+                    </div>
+
+            </li>
+            <li class="item other">
+
+                    <div class="text" title="OTHER">OTHER</div>
+
+
+                    <div class="number">0.01%</div>                            
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 0.01%"></div>
+                    </div>
+
+            </li>
+
+
+    </ul>
+        <button class="btn btn-more" data-controller="Sw.Controllers.ProModalTrigger" data-options='{"eventLabel": "all_subdomains"}'>See ALL Subdomains in PRO</button>
+</article>
+
+                </div>
+
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+ <div id="geo" class="content-page geo" name="geo" >
+
+      <div class="grid-x">
+
+
+
+        <div class="grid-1 grid-geo-site-heading">
+
+
+<article class="siteheading component">
+
+    <h1 class="title">
+Geography - Visitors By Country
+    </h1>
+    
+    <div class="description">
+
+                <a class="information-button js-information-button" data-key="geo">
+                    ?
+                </a>
+
+       
+    </div>
+
+
+</article>
+
+
+
+
+    
+<div class="information-box clearfix information-box-geo ">
+
+    <a class="close-button js-informationbox-close">
+        <i class="sprite close"></i>
+    </a>
+
+    <p class="title">
+        Why does global traffic matter?
+    </p>
+
+        <p class="message">
+        Discover which countries bring the most traffic to a site and compare how engaged they are. This is a useful tool to discover new markets that might have been overlooked but are in fact, highly engaged with a website’s content. By clicking on the different country tabs, we’ll show you the engagement level of the users in that specific country to help you assess which markets have the biggest growth potential. 
+        </p>
+
+</div>
+
+
+
+<article  class="subheading component">
+    <div class="visual">
+        <div data-controller="Sw.Controllers.PercentagePie" class="chart" data-options='{"fillColor":"#3999C1","emptyColor": "#E4E4E4", "isSliced": "true", "fillValue": 0.66494189233651235}'></div>
+        <div class="image"></div>
+    </div>
+
+    <div class="desc">
+        <span class="percentage">
+                    66.49%
+
+        </span>
+        <span class="text">
+            of total <strong>Zalukaj.tv</strong> traffic in last 3 months came from: <i class="countries-flag small flag pl"></i> <strong>Poland</strong>
+        </span>
+    </div>
+</article>
+        </div>
+
+        <div class="grid-1">
+
+            <div class="grid-2 geo-accordion">
+
+
+<article data-controller="Sw.Controllers.CountriesTable" class="countries table component" data-bind="engagement">
+
+
+    <h2>leading countries</h2>
+    
+    <i class="tooltip sprite icon_tip_idle" title="&amp;lt;h1&amp;gt;Top Referring Countries&amp;lt;/h1&amp;gt;Find out where the visitors of Zalukaj.tv come from. Click on any of the leading countries to find out how engaged their visitors are."></i>
+
+    <div class="chart">
+
+        <div class="accordion countries-list" id="geo-countries-accordion">
+                <div class="accordion-group ">
+                    <div class="accordion-heading">
+                        <span class="accordion-toggle">
+                            <i class="countries-flag small flag pl"></i>
+                            <h3 class="country-name">
+                                Poland
+                            </h3>
+                            <span class="traffic-share-value">
+                                66.49%
+                            </span>
+                        </span>
+                    </div>
+
+                    <div id="geo-countries-list-id-0" class="accordion-body collapse">
+
+                        <div class="accordion-inner"></div>
+                    </div>
+                </div>
+                <div class="accordion-group ">
+                    <div class="accordion-heading">
+                        <span class="accordion-toggle">
+                            <i class="countries-flag small flag gb"></i>
+                            <h3 class="country-name">
+                                United Kingdom
+                            </h3>
+                            <span class="traffic-share-value">
+                                14.84%
+                            </span>
+                        </span>
+                    </div>
+
+                    <div id="geo-countries-list-id-1" class="accordion-body collapse">
+
+                        <div class="accordion-inner"></div>
+                    </div>
+                </div>
+                <div class="accordion-group ">
+                    <div class="accordion-heading">
+                        <span class="accordion-toggle">
+                            <i class="countries-flag small flag nl"></i>
+                            <h3 class="country-name">
+                                Netherlands
+                            </h3>
+                            <span class="traffic-share-value">
+                                4.43%
+                            </span>
+                        </span>
+                    </div>
+
+                    <div id="geo-countries-list-id-2" class="accordion-body collapse">
+
+                        <div class="accordion-inner"></div>
+                    </div>
+                </div>
+                <div class="accordion-group ">
+                    <div class="accordion-heading">
+                        <span class="accordion-toggle">
+                            <i class="countries-flag small flag de"></i>
+                            <h3 class="country-name">
+                                Germany
+                            </h3>
+                            <span class="traffic-share-value">
+                                4.25%
+                            </span>
+                        </span>
+                    </div>
+
+                    <div id="geo-countries-list-id-3" class="accordion-body collapse">
+
+                        <div class="accordion-inner"></div>
+                    </div>
+                </div>
+                <div class="accordion-group last">
+                    <div class="accordion-heading">
+                        <span class="accordion-toggle">
+                            <i class="countries-flag small flag us"></i>
+                            <h3 class="country-name">
+                                United States
+                            </h3>
+                            <span class="traffic-share-value">
+                                2.58%
+                            </span>
+                        </span>
+                    </div>
+
+                    <div id="geo-countries-list-id-4" class="accordion-body collapse">
+
+                        <div class="accordion-inner"></div>
+                    </div>
+                </div>
+                    <button class="btn btn-more sw_pro_modal_trigger" data-controller="Sw.Controllers.ProModalTrigger" data-options='{"eventLabel": "all_countries"}'>See ALL Countries in PRO</button>
+
+        </div>
+
+    </div>
+
+</article>
+
+            </div>
+
+             <div class="grid-2 geo-chart">
+
+
+<article data-controller="Sw.Controllers.Map" class="map component">
+    
+    <div id="chart-map" class="chart" data-geochart='{&quot;data&quot;:[[&quot;Country&quot;, &quot;Share&quot;],[&quot;Poland&quot;,66.49],[&quot;United Kingdom&quot;,14.84],[&quot;Netherlands&quot;,4.43],[&quot;Germany&quot;,4.25],[&quot;United States&quot;,2.58]]}'>
+        
+    </div>
+
+</article>
+            </div>
+
+        </div>
+
+    </div>
+ </div>
+
+
+
+
+<div id="referrals" class="content-page referrals" name="referrals">
+   
+     <div class="grid-x">
+        
+        <div class="grid-1">
+
+
+<article class="siteheading component">
+
+    <h1 class="title">
+Referring Sites
+    </h1>
+    
+    <div class="description">
+
+                <a class="information-button js-information-button" data-key="refferals">
+                    ?
+                </a>
+
+       
+    </div>
+
+
+</article>
+
+
+
+
+    
+<div class="information-box clearfix information-box-refferals ">
+
+    <a class="close-button js-informationbox-close">
+        <i class="sprite close"></i>
+    </a>
+
+    <p class="title">
+        Who is sending traffic to this site?
+    </p>
+
+        <p class="message">
+        Follow the paths of web traffic to find out the popular websites where user journeys begin and where they lead. Finding which are the leading websites referring traffic to your competitors is a great way to discover business leads and opportunities. These could be affiliates, press or partner sites which might also be relevant to your website.
+        </p>
+
+</div>
+
+
+
+<article  class="subheading component">
+    <div class="visual">
+        <div data-controller="Sw.Controllers.PercentagePie" class="chart" data-options='{"fillColor":"#71CA2F","emptyColor": "#E4E4E4", "isSliced": "true", "fillValue": 0.288809106604763}'></div>
+        <div class="image"></div>
+    </div>
+
+    <div class="desc">
+        <span class="percentage">
+                    28.88%
+
+        </span>
+        <span class="text">
+            of total <strong>Zalukaj.tv</strong> traffic in last 3 months came from referrals
+        </span>
+    </div>
+</article>
+        </div>
+ 
+        <div class="grid-1Of3">
+
+
+<article class="genericlist component topReferring">
+
+    <h2 class="title">
+        Top Referring Sites<i class="tooltip sprite icon_tip_idle" title="&amp;lt;h1&amp;gt;Leading Referring Sites&amp;lt;/h1&amp;gt;Leading websites sending direct clicks to zalukaj.tv."></i>
+    </h2>
+
+
+
+    <div class="seperator"></div>
+    <ul class="sites items">
+
+            <li class="item ">
+
+                    <div class="text" title="zalukaj.com" data-sitename="zalukaj.com">
+                        <a class="link" href="/website/zalukaj.com" data-tipsygravity="w" data-shorturl="Zalukaj.com">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=zalukaj.com&amp;t=2&amp;s=1&amp;h=2454628770614243842" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=zalukaj.com&amp;t=2&amp;s=1&amp;h=2454628770614243842"/>
+                                </noscript>
+
+
+                            Zalukaj.com
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 45.16%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="st.dwn.so" data-sitename="st.dwn.so">
+                        <a class="link" href="/website/st.dwn.so" data-tipsygravity="w" data-shorturl="St.dwn.so">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=st.dwn.so&amp;t=2&amp;s=1&amp;h=13724606381976745534" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=st.dwn.so&amp;t=2&amp;s=1&amp;h=13724606381976745534"/>
+                                </noscript>
+
+
+                            St.dwn.so
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 30.15%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="szukaj.com" data-sitename="szukaj.com">
+                        <a class="link" href="/website/szukaj.com" data-tipsygravity="w" data-shorturl="Szukaj.com">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=szukaj.com&amp;t=2&amp;s=1&amp;h=5011967611745536833" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=szukaj.com&amp;t=2&amp;s=1&amp;h=5011967611745536833"/>
+                                </noscript>
+
+
+                            Szukaj.com
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 27.04%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="search.tb.ask.com" data-sitename="search.tb.ask.com">
+                        <a class="link" href="/website/search.tb.ask.com" data-tipsygravity="w" data-shorturl="Search.tb.ask.com">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=search.tb.ask.com&amp;t=2&amp;s=1&amp;h=1576042926993578381" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=search.tb.ask.com&amp;t=2&amp;s=1&amp;h=1576042926993578381"/>
+                                </noscript>
+
+
+                            Search.tb.ask.com
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 24.35%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="google.interia.pl" data-sitename="google.interia.pl">
+                        <a class="link" href="/website/google.interia.pl" data-tipsygravity="w" data-shorturl="Google.interia.pl">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=google.interia.pl&amp;t=2&amp;s=1&amp;h=1673521040518849346" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=google.interia.pl&amp;t=2&amp;s=1&amp;h=1673521040518849346"/>
+                                </noscript>
+
+
+                            Google.interia.pl
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 23.28%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="kinomaniak.tv" data-sitename="kinomaniak.tv">
+                        <a class="link" href="/website/kinomaniak.tv" data-tipsygravity="w" data-shorturl="Kinomaniak.tv">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=kinomaniak.tv&amp;t=2&amp;s=1&amp;h=16219855482286143807" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=kinomaniak.tv&amp;t=2&amp;s=1&amp;h=16219855482286143807"/>
+                                </noscript>
+
+
+                            Kinomaniak.tv
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 18.05%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="zalukaj.pl" data-sitename="zalukaj.pl">
+                        <a class="link" href="/website/zalukaj.pl" data-tipsygravity="w" data-shorturl="Zalukaj.pl">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=zalukaj.pl&amp;t=2&amp;s=1&amp;h=15003753514534989734" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=zalukaj.pl&amp;t=2&amp;s=1&amp;h=15003753514534989734"/>
+                                </noscript>
+
+
+                            Zalukaj.pl
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 16.35%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="szukaj.wp.pl" data-sitename="szukaj.wp.pl">
+                        <a class="link" href="/website/szukaj.wp.pl" data-tipsygravity="w" data-shorturl="Szukaj.wp.pl">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=szukaj.wp.pl&amp;t=2&amp;s=1&amp;h=4088923919174424378" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=szukaj.wp.pl&amp;t=2&amp;s=1&amp;h=4088923919174424378"/>
+                                </noscript>
+
+
+                            Szukaj.wp.pl
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 15.64%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="amazon.co.uk" data-sitename="amazon.co.uk">
+                        <a class="link" href="/website/amazon.co.uk" data-tipsygravity="w" data-shorturl="Amazon.co.uk">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=amazon.co.uk&amp;t=2&amp;s=1&amp;h=14463466717062768450" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=amazon.co.uk&amp;t=2&amp;s=1&amp;h=14463466717062768450"/>
+                                </noscript>
+
+
+                            Amazon.co.uk
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 15.21%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="globososo.inspsearch.com" data-sitename="globososo.inspsearch.com">
+                        <a class="link" href="/website/globososo.inspsearch.com" data-tipsygravity="w" data-shorturl="Globososo.inspsearch.com">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=globososo.inspsearch.com&amp;t=2&amp;s=1&amp;h=9100283782092573669" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=globososo.inspsearch.com&amp;t=2&amp;s=1&amp;h=9100283782092573669"/>
+                                </noscript>
+
+
+                            Globososo.inspsearch.com
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 13.52%"></div>
+                    </div>
+
+            </li>
+
+
+    </ul>
+        <button class="btn btn-more" data-controller="Sw.Controllers.ProModalTrigger" data-options='{"eventLabel": "all_referring_sites"}'>See ALL Referring Sites in PRO</button>
+</article>
+
+        </div>
+
+        <div class="grid-1Of3 pictures">
+
+            <div class="thumbCanvas" >
+                <img alt="" class="siteImage lazy-thumb lazy" data-original="http://images2.similargroup.com/image?url=zalukaj.tv&amp;t=1&amp;s=1&amp;h=17566331371763047867" src="/images/lazy.png" width="267" height="173" />
+                <noscript>
+                    <img alt="" class="siteImage" src="http://images2.similargroup.com/image?url=zalukaj.tv&amp;t=1&amp;s=1&amp;h=17566331371763047867" width="267" height="173" />
+                </noscript>
+            </div>
+
+            <div class="site-title">
+               Zalukaj.tv
+            </div>
+
+            <div class="sprite green_blue_arrows"></div>
+
+        </div>
+
+        <div class="grid-1Of3">
+
+
+<article class="genericlist component topDestination">
+
+    <h2 class="title">
+        Top Destination Sites<i class="tooltip sprite icon_tip_idle" title="&amp;lt;h1&amp;gt;Leading Destination Sites&amp;lt;/h1&amp;gt;Websites where people were diverted to from zalukaj.tv."></i>
+    </h2>
+
+
+
+    <div class="seperator"></div>
+    <ul class="sites items">
+
+            <li class="item ">
+
+                    <div class="text" title="facebook.com" data-sitename="facebook.com">
+                        <a class="link" href="/website/facebook.com" data-tipsygravity="e" data-shorturl="Facebook.com">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=facebook.com&amp;t=2&amp;s=1&amp;h=1215141726915202198" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=facebook.com&amp;t=2&amp;s=1&amp;h=1215141726915202198"/>
+                                </noscript>
+
+
+                            Facebook.com
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 43.77%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="rvzr-a.akamaihd.net" data-sitename="rvzr-a.akamaihd.net">
+                        <a class="link" href="/website/rvzr-a.akamaihd.net" data-tipsygravity="e" data-shorturl="Rvzr-a.akamaihd.net">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=rvzr-a.akamaihd.net&amp;t=2&amp;s=1&amp;h=13599438852414161734" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=rvzr-a.akamaihd.net&amp;t=2&amp;s=1&amp;h=13599438852414161734"/>
+                                </noscript>
+
+
+                            Rvzr-a.akama...
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 33.49%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="onlinewebfind.com" data-sitename="onlinewebfind.com">
+                        <a class="link" href="/website/onlinewebfind.com" data-tipsygravity="e" data-shorturl="Onlinewebfind.com">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=onlinewebfind.com&amp;t=2&amp;s=1&amp;h=13694854623879780783" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=onlinewebfind.com&amp;t=2&amp;s=1&amp;h=13694854623879780783"/>
+                                </noscript>
+
+
+                            Onlinewebfin...
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 25.73%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="google.pl" data-sitename="google.pl">
+                        <a class="link" href="/website/google.pl" data-tipsygravity="e" data-shorturl="Google.pl">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=google.pl&amp;t=2&amp;s=1&amp;h=14846423509211604527" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=google.pl&amp;t=2&amp;s=1&amp;h=14846423509211604527"/>
+                                </noscript>
+
+
+                            Google.pl
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 25.68%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="fhserve.com" data-sitename="fhserve.com">
+                        <a class="link" href="/website/fhserve.com" data-tipsygravity="e" data-shorturl="Fhserve.com">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=fhserve.com&amp;t=2&amp;s=1&amp;h=14061196388134811777" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=fhserve.com&amp;t=2&amp;s=1&amp;h=14061196388134811777"/>
+                                </noscript>
+
+
+                            Fhserve.com
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 19.99%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="cts.lipixeltrack.com" data-sitename="cts.lipixeltrack.com">
+                        <a class="link" href="/website/cts.lipixeltrack.com" data-tipsygravity="e" data-shorturl="Cts.lipixeltrack.com">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=cts.lipixeltrack.com&amp;t=2&amp;s=1&amp;h=18053821617518054208" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=cts.lipixeltrack.com&amp;t=2&amp;s=1&amp;h=18053821617518054208"/>
+                                </noscript>
+
+
+                            Cts.lipixelt...
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 16.53%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="fastdailyfind.com" data-sitename="fastdailyfind.com">
+                        <a class="link" href="/website/fastdailyfind.com" data-tipsygravity="e" data-shorturl="Fastdailyfind.com">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=fastdailyfind.com&amp;t=2&amp;s=1&amp;h=3701016814970860212" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=fastdailyfind.com&amp;t=2&amp;s=1&amp;h=3701016814970860212"/>
+                                </noscript>
+
+
+                            Fastdailyfin...
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 14.09%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="youtube.com" data-sitename="youtube.com">
+                        <a class="link" href="/website/youtube.com" data-tipsygravity="e" data-shorturl="Youtube.com">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=youtube.com&amp;t=2&amp;s=1&amp;h=17712117643342877724" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=youtube.com&amp;t=2&amp;s=1&amp;h=17712117643342877724"/>
+                                </noscript>
+
+
+                            Youtube.com
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 13.91%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="kinomaniak.tv" data-sitename="kinomaniak.tv">
+                        <a class="link" href="/website/kinomaniak.tv" data-tipsygravity="e" data-shorturl="Kinomaniak.tv">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=kinomaniak.tv&amp;t=2&amp;s=1&amp;h=16219855482286143807" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=kinomaniak.tv&amp;t=2&amp;s=1&amp;h=16219855482286143807"/>
+                                </noscript>
+
+
+                            Kinomaniak.tv
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 13.10%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="lns.livexjs.net" data-sitename="lns.livexjs.net">
+                        <a class="link" href="/website/lns.livexjs.net" data-tipsygravity="e" data-shorturl="Lns.livexjs.net">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=lns.livexjs.net&amp;t=2&amp;s=1&amp;h=14439149151861915629" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=lns.livexjs.net&amp;t=2&amp;s=1&amp;h=14439149151861915629"/>
+                                </noscript>
+
+
+                            Lns.livexjs.net
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 12.88%"></div>
+                    </div>
+
+            </li>
+
+
+    </ul>
+        <button class="btn btn-more" data-controller="Sw.Controllers.ProModalTrigger" data-options='{"eventLabel": "all_destination_sites"}'>See ALL Destination Sites in PRO</button>
+</article>
+
+		</div>
+    </div>
+ </div>
+
+
+<div id="search" class="content-page search" name="search">
+        <div class="grid-x">
+
+            <div class="grid-1">
+
+
+<article class="siteheading component">
+
+    <h1 class="title">
+Search Traffic
+    </h1>
+    
+    <div class="description">
+
+                <a class="information-button js-information-button" data-key="search">
+                    ?
+                </a>
+
+       
+    </div>
+
+
+</article>
+
+
+
+
+    
+<div class="information-box clearfix information-box-search ">
+
+    <a class="close-button js-informationbox-close">
+        <i class="sprite close"></i>
+    </a>
+
+    <p class="title">
+        How is this website found on search engines?
+    </p>
+
+        <p class="message">
+        Find out the most important keywords for any site and the ratio of Organic versus Paid search traffic. Keywords are essential to understand what people are searching for before landing to a site but SimilarWeb goes beyond showing leading organic and paid keywords, letting you see the ratio of traffic coming from paid versus organic searches. This tool will help you see how good or bad is a website’s SEO and find out if they are investing significantly on paid traffic as a part of their traffic strategy. 
+        </p>
+
+</div>
+
+
+
+<article  class="subheading component">
+    <div class="visual">
+        <div data-controller="Sw.Controllers.PercentagePie" class="chart" data-options='{"fillColor":"#F2812D","emptyColor": "#E4E4E4", "isSliced": "true", "fillValue": 0.182861167393356}'></div>
+        <div class="image"></div>
+    </div>
+
+    <div class="desc">
+        <span class="percentage">
+                    18.29%
+
+        </span>
+        <span class="text">
+            of total <strong>Zalukaj.tv</strong> traffic in last 3 months is search
+        </span>
+    </div>
+</article>
+            </div>
+
+
+
+
+
+
+            <div class="grid-1 middleGrids">
+                <div class="grid-1Of3 searchKeywordListBuffer">
+                        <div class="organicShare">
+                            <div class="percentage">100%</div>
+                            <div class="label">ORGANIC SEARCH</div>
+                        </div>
+                </div>
+                <div class="grid-1Of3 searchKeywordListBuffer">
+                        <div class="organicSeperator"></div>
+
+<article class="bigpie component">
+    <div
+        class="chart" data-controller="Sw.Controllers.PercentagePie"  data-options='{"fillColor":"#FF6600","emptyColor": "#FFCC00", "fillValue": 0, "innerSize": "49%"}'>
+    </div>
+</article>
+                </div>
+                <div class="grid-1Of3 searchKeywordListBuffer">
+                </div>
+            </div>
+
+            <div class="grid1 bottomGrids">
+                <div class="grid-1Of3 keywordsGrid">
+
+
+<article class="genericlist component organicKeywords">
+
+    <h2 class="title">
+        ORGANIC SEARCH KEYWORDS
+        <i class="tooltip sprite icon_tip_idle" title="&amp;lt;h1&amp;gt;Organic Keywords&amp;lt;/h1&amp;gt;Leading Keywords which brought free desktop traffic to Zalukaj.tv over the past three months."></i>
+    </h2>
+
+
+
+
+    <div class="seperator"> </div>
+
+    <ul class="items">
+
+            <li class="item" data-externalinktype="google" data-sitename="zalukaj">
+
+                        <a class="text link" title="zalukaj"> Zalukaj</a>
+
+                
+                
+                    <div class="progress-bar">
+
+                         <div class="progress-value percentage per1" style="width: 78.80%"></div>
+                    </div>
+
+            </li>
+            <li class="item" data-externalinktype="google" data-sitename="zalukaj.pl">
+
+                        <a class="text link" title="zalukaj.pl"> Zalukaj.pl</a>
+
+                
+                
+                    <div class="progress-bar">
+
+                         <div class="progress-value percentage per1" style="width: 25.96%"></div>
+                    </div>
+
+            </li>
+            <li class="item" data-externalinktype="google" data-sitename="zalukaj.tv">
+
+                        <a class="text link" title="zalukaj.tv"> Zalukaj.tv</a>
+
+                
+                
+                    <div class="progress-bar">
+
+                         <div class="progress-value percentage per1" style="width: 19.61%"></div>
+                    </div>
+
+            </li>
+            <li class="item" data-externalinktype="google" data-sitename="zalukaj tv">
+
+                        <a class="text link" title="zalukaj tv"> Zalukaj Tv</a>
+
+                
+                
+                    <div class="progress-bar">
+
+                         <div class="progress-value percentage per1" style="width: 17.37%"></div>
+                    </div>
+
+            </li>
+            <li class="item" data-externalinktype="google" data-sitename="zalukaj pl">
+
+                        <a class="text link" title="zalukaj pl"> Zalukaj Pl</a>
+
+                
+                
+                    <div class="progress-bar">
+
+                         <div class="progress-value percentage per1" style="width: 16.70%"></div>
+                    </div>
+
+            </li>
+            <li class="item" data-externalinktype="google" data-sitename="filmy online">
+
+                        <a class="text link" title="filmy online"> Filmy Online</a>
+
+                
+                
+                    <div class="progress-bar">
+
+                         <div class="progress-value percentage per1" style="width: 13.18%"></div>
+                    </div>
+
+            </li>
+            <li class="item" data-externalinktype="google" data-sitename="www.zalukaj.pl">
+
+                        <a class="text link" title="www.zalukaj.pl"> Www.zalukaj.pl</a>
+
+                
+                
+                    <div class="progress-bar">
+
+                         <div class="progress-value percentage per1" style="width: 8.02%"></div>
+                    </div>
+
+            </li>
+            <li class="item" data-externalinktype="google" data-sitename="seriale online">
+
+                        <a class="text link" title="seriale online"> Seriale Online</a>
+
+                
+                
+                    <div class="progress-bar">
+
+                         <div class="progress-value percentage per1" style="width: 7.79%"></div>
+                    </div>
+
+            </li>
+            <li class="item" data-externalinktype="google" data-sitename="ekipa z warszawy online">
+
+                        <a class="text link" title="ekipa z warszawy online"> Ekipa Z Warszawy Online</a>
+
+                
+                
+                    <div class="progress-bar">
+
+                         <div class="progress-value percentage per1" style="width: 4.41%"></div>
+                    </div>
+
+            </li>
+            <li class="item" data-externalinktype="google" data-sitename="breaking bad online">
+
+                        <a class="text link" title="breaking bad online"> Breaking Bad Online</a>
+
+                
+                
+                    <div class="progress-bar">
+
+                         <div class="progress-value percentage per1" style="width: 4.34%"></div>
+                    </div>
+
+            </li>
+
+       
+    </ul>
+</article>
+                        <button class="btn btn-more" data-controller="Sw.Controllers.ProModalTrigger" data-options='{"eventLabel": "all_keywords_organic"}'>See ALL Keywords in PRO</button>
+                </div>
+                <div class="grid-1Of3">
+
+
+<article class="search-channels component">
+
+<h2 class="title">
+    search traffic channels
+    <i class="tooltip sprite icon_tip_idle" title="&amp;lt;h1&amp;gt;Search by Channels&amp;lt;/h1&amp;gt;Shows the amount of search desktop traffic delivered by each search channel (web, images, video, maps, shopping, news) over the last three months."></i>
+</h2>
+
+<div class="progress-bar">
+
+            <div class="progress-value percentage per1 source_websearch" style="width: 99%"></div>
+
+</div>
+
+<ul class="channels-list">
+
+             <li class="channel-item source_websearch">
+                <span class="channel-item-title">
+                    Web
+                </span>
+                <span class="channel-item-precentage">
+                (99.94 %)
+                </span>
+            </li>
+             <li class="channel-item source_image">
+                <span class="channel-item-title">
+                    Images
+                </span>
+                <span class="channel-item-precentage">
+                (0.05 %)
+                </span>
+            </li>
+             <li class="channel-item source_maps">
+                <span class="channel-item-title">
+                    Maps
+                </span>
+                <span class="channel-item-precentage">
+                (0.01 %)
+                </span>
+            </li>
+             <li class="channel-item not_found">
+                <span class="channel-item-title">
+                    Video Search
+                </span>
+                <span class="channel-item-precentage">
+                (0.01 %)
+                </span>
+            </li>
+
+
+</ul>
+
+</article>
+
+
+<article class="traffic-channels-pie small-pie-chart component">
+
+<h2 class="title">
+    Referring Search Engines
+    <i class="tooltip sprite icon_tip_idle" title="&amp;lt;h1&amp;gt;Referring Search Engines&amp;lt;/h1&amp;gt;Find out the share of desktop traffic coming from different search engines."></i>
+</h2>
+
+    <div class="chart" data-controller="Sw.Controllers.ThumbPieLegend"  data-options='{"fillColor":"","emptyColor": "", "dataValues": [[&quot;Google&quot;,&quot;google.com&quot;,0.87240064884157964,1001],[&quot;Google Partners&quot;,&quot;google.com&quot;,0.04546535623972995,16],[&quot;Misc Search&quot;,&quot;&quot;,0.029580885571996226,81],[&quot;Yahoo&quot;,&quot;yahoo.com&quot;,0.026686522075972247,1501],[&quot;Bing&quot;,&quot;bing.com&quot;,0.015046383674062802,1900],[&quot;Other&quot;,&quot;&quot;,0.010820203596659349,0]], "innerSize": ""}'>
+    </div>
+</article>
+                </div>
+                <div class="grid-1Of3 keywordsGrid">
+
+
+<article class="genericlist component paidKeywords">
+
+    <h2 class="title">
+        PAID SEARCH KEYWORDS
+        <i class="tooltip sprite icon_tip_idle" title="&amp;lt;h1&amp;gt;Paid Keywords&amp;lt;/h1&amp;gt;Leading keywords bought by Zalukaj.tv to attract desktop traffic from search engines."></i>
+    </h2>
+
+
+
+
+    <div class="seperator"> </div>
+
+    <ul class="items">
+
+            <li class="item nodata">
+                 NO PAID KEYWORDS
+            </li>
+
+       
+    </ul>
+</article>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+
+
+<div id="social" class="content-page social" name="social">
+
+    <div class="grid-x">
+
+    <div class="grid-1">
+
+
+<article class="siteheading component">
+
+    <h1 class="title">
+Social
+    </h1>
+    
+    <div class="description">
+
+                <a class="information-button js-information-button" data-key="social">
+                    ?
+                </a>
+
+       
+    </div>
+
+
+</article>
+
+
+
+
+    
+<div class="information-box clearfix information-box-social ">
+
+    <a class="close-button js-informationbox-close">
+        <i class="sprite close"></i>
+    </a>
+
+    <p class="title">
+        Where is the Buzz?
+    </p>
+
+        <p class="message">
+        See and compare which are the best social networks spreading the buzz and referring traffic. It’s easy to see how many followers or ‘likes’ our competitors social media pages have but SimilarWeb lets you see the impact that social media is having as a source of web traffic. SimilarWeb shows you which are the five leading social networks sending traffic to the websites you analyze.
+        </p>
+
+</div>
+
+
+
+<article  class="subheading component">
+    <div class="visual">
+        <div data-controller="Sw.Controllers.PercentagePie" class="chart" data-options='{"fillColor":"#00B5F0","emptyColor": "#E4E4E4", "isSliced": "true", "fillValue": 0.0096290364040383}'></div>
+        <div class="image"></div>
+    </div>
+
+    <div class="desc">
+        <span class="percentage">
+                    0.96%
+
+        </span>
+        <span class="text">
+            of total <strong>Zalukaj.tv</strong> traffic in last 3 months is social
+        </span>
+    </div>
+</article>
+    </div>
+
+            <div class="grid-1">
+
+<article class="trafficdistribution component">
+
+
+    <h3 data-sitename="facebook.com">
+
+        <img class="lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=facebook.com&amp;t=2&amp;s=1&amp;h=1215141726915202198" src="/images/lazy.png"  width="16" height="16" />
+        <noscript><img src="http://images2.similargroup.com/image?url=facebook.com&amp;t=2&amp;s=1&amp;h=1215141726915202198" width="16" height="16" /></noscript>
+        
+        <a class="name link js-externallink" href="http://www.facebook.com"  rel="nofollow" target="_blank">
+            Facebook
+        </a>
+    </h3>
+    
+    <div class="container">
+        <div class="row">
+            <div class="series second" style="width:80.01%;">
+            </div>
+        </div>
+        <div class="total">
+           80.01%
+        </div>
+    </div>
+</article><article class="trafficdistribution component">
+
+
+    <h3 data-sitename="youtube.com">
+
+        <img class="lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=youtube.com&amp;t=2&amp;s=1&amp;h=17712117643342877724" src="/images/lazy.png"  width="16" height="16" />
+        <noscript><img src="http://images2.similargroup.com/image?url=youtube.com&amp;t=2&amp;s=1&amp;h=17712117643342877724" width="16" height="16" /></noscript>
+        
+        <a class="name link js-externallink" href="http://www.youtube.com"  rel="nofollow" target="_blank">
+            Youtube
+        </a>
+    </h3>
+    
+    <div class="container">
+        <div class="row">
+            <div class="series second" style="width:14.54%;">
+            </div>
+        </div>
+        <div class="total">
+           14.54%
+        </div>
+    </div>
+</article><article class="trafficdistribution component">
+
+
+    <h3 data-sitename="ask.fm">
+
+        <img class="lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=ask.fm&amp;t=2&amp;s=1&amp;h=5196965170164632325" src="/images/lazy.png"  width="16" height="16" />
+        <noscript><img src="http://images2.similargroup.com/image?url=ask.fm&amp;t=2&amp;s=1&amp;h=5196965170164632325" width="16" height="16" /></noscript>
+        
+        <a class="name link js-externallink" href="http://www.ask.fm"  rel="nofollow" target="_blank">
+            Ask.fm
+        </a>
+    </h3>
+    
+    <div class="container">
+        <div class="row">
+            <div class="series second" style="width:2.94%;">
+            </div>
+        </div>
+        <div class="total">
+           2.94%
+        </div>
+    </div>
+</article><article class="trafficdistribution component">
+
+
+    <h3 data-sitename="nk.pl">
+
+        <img class="lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=nk.pl&amp;t=2&amp;s=1&amp;h=1627411295572664239" src="/images/lazy.png"  width="16" height="16" />
+        <noscript><img src="http://images2.similargroup.com/image?url=nk.pl&amp;t=2&amp;s=1&amp;h=1627411295572664239" width="16" height="16" /></noscript>
+        
+        <a class="name link js-externallink" href="http://www.nk.pl"  rel="nofollow" target="_blank">
+            Nk.pl
+        </a>
+    </h3>
+    
+    <div class="container">
+        <div class="row">
+            <div class="series second" style="width:1.92%;">
+            </div>
+        </div>
+        <div class="total">
+           1.92%
+        </div>
+    </div>
+</article><article class="trafficdistribution component">
+
+
+    <h3 data-sitename="badoo.com">
+
+        <img class="lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=badoo.com&amp;t=2&amp;s=1&amp;h=7154360965331333618" src="/images/lazy.png"  width="16" height="16" />
+        <noscript><img src="http://images2.similargroup.com/image?url=badoo.com&amp;t=2&amp;s=1&amp;h=7154360965331333618" width="16" height="16" /></noscript>
+        
+        <a class="name link js-externallink" href="http://www.badoo.com"  rel="nofollow" target="_blank">
+            Badoo
+        </a>
+    </h3>
+    
+    <div class="container">
+        <div class="row">
+            <div class="series second" style="width:0.16%;">
+            </div>
+        </div>
+        <div class="total">
+           0.16%
+        </div>
+    </div>
+</article>            </div>
+    </div>
+</div>
+
+
+
+
+<div id="display" class="content-page display" name="display">
+
+		<div class="grid-x">
+
+			<div class="grid-1">
+
+
+<article class="siteheading component">
+
+    <h1 class="title">
+Display Advertising
+    </h1>
+    
+    <div class="description">
+
+                <a class="information-button js-information-button" data-key="display">
+                    ?
+                </a>
+
+       
+    </div>
+
+
+</article>
+
+
+
+
+    
+<div class="information-box clearfix information-box-display ">
+
+    <a class="close-button js-informationbox-close">
+        <i class="sprite close"></i>
+    </a>
+
+    <p class="title">
+        Where do they spend their advertising dollars?
+    </p>
+
+        <p class="message">
+        Find out the display advertising secrets for a website. This section shows you the leading publishers who are sending advertising traffic, which ad networks are delivering the campaigns and what the ads look like. Not only will you discover the sites where adverts are placed but you’ll understand the types of users your competition is currently targeting. Make sure you click on the ‘SHOW THE ADS’ button where you’ll be able to review their image ads, text ads and flash ads. This is the best way to understand how they communicate their message to their audience as well as a great source for ideas to develop your own creative.
+        </p>
+
+</div>
+
+
+
+<article  class="subheading component">
+    <div class="visual">
+        <div data-controller="Sw.Controllers.PercentagePie" class="chart" data-options='{"fillColor":"#ff33cc","emptyColor": "#E4E4E4", "isSliced": "true", "fillValue": 0.000263064466812266}'></div>
+        <div class="image"></div>
+    </div>
+
+    <div class="desc">
+        <span class="percentage">
+                    0.03%
+
+        </span>
+        <span class="text">
+            of <strong>Zalukaj.tv</strong> traffic came from display ads
+        </span>
+    </div>
+</article>
+			</div>
+
+
+			<div class="grid-bottom-row">
+				<div class="grid-1Of3">
+
+
+<article class="genericlist component leadingReferers">
+
+    <h2 class="title">
+        Top websites sending display traffic<i class="tooltip sprite icon_tip_idle" title="&amp;lt;h1&amp;gt;Leading paid referring sites&amp;lt;/h1&amp;gt;Leading publishers referring advertising traffic to Zalukaj.tv"></i>
+    </h2>
+
+
+
+    <div class="seperator"></div>
+    <ul class="sites items">
+
+            <li class="item ">
+
+                    <div class="text" title="vube.com" data-sitename="vube.com">
+                        <a class="link" href="/website/vube.com" data-tipsygravity="w" data-shorturl="Vube.com">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=vube.com&amp;t=2&amp;s=1&amp;h=2385611821195975357" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=vube.com&amp;t=2&amp;s=1&amp;h=2385611821195975357"/>
+                                </noscript>
+
+
+                            Vube.com
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 40.73%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="lp.sharelive.net" data-sitename="lp.sharelive.net">
+                        <a class="link" href="/website/lp.sharelive.net" data-tipsygravity="w" data-shorturl="Lp.sharelive.net">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=lp.sharelive.net&amp;t=2&amp;s=1&amp;h=5045771317986416068" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=lp.sharelive.net&amp;t=2&amp;s=1&amp;h=5045771317986416068"/>
+                                </noscript>
+
+
+                            Lp.sharelive.net
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 34.38%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="cinapalace.com" data-sitename="cinapalace.com">
+                        <a class="link" href="/website/cinapalace.com" data-tipsygravity="w" data-shorturl="Cinapalace.com">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=cinapalace.com&amp;t=2&amp;s=1&amp;h=15633578833854235892" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=cinapalace.com&amp;t=2&amp;s=1&amp;h=15633578833854235892"/>
+                                </noscript>
+
+
+                            Cinapalace.com
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 31.62%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="onlinevideopctools.com" data-sitename="onlinevideopctools.com">
+                        <a class="link" href="/website/onlinevideopctools.com" data-tipsygravity="w" data-shorturl="Onlinevideopctools.com">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=onlinevideopctools.com&amp;t=2&amp;s=1&amp;h=18390568938516379986" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=onlinevideopctools.com&amp;t=2&amp;s=1&amp;h=18390568938516379986"/>
+                                </noscript>
+
+
+                            Onlinevideopctools.com
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 22.61%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="home.tb.ask.com" data-sitename="home.tb.ask.com">
+                        <a class="link" href="/website/home.tb.ask.com" data-tipsygravity="w" data-shorturl="Home.tb.ask.com">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=home.tb.ask.com&amp;t=2&amp;s=1&amp;h=7279228156882800584" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=home.tb.ask.com&amp;t=2&amp;s=1&amp;h=7279228156882800584"/>
+                                </noscript>
+
+
+                            Home.tb.ask.com
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 22.61%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="oleole.pl" data-sitename="oleole.pl">
+                        <a class="link" href="/website/oleole.pl" data-tipsygravity="w" data-shorturl="Oleole.pl">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=oleole.pl&amp;t=2&amp;s=1&amp;h=2882841654763613226" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=oleole.pl&amp;t=2&amp;s=1&amp;h=2882841654763613226"/>
+                                </noscript>
+
+
+                            Oleole.pl
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 22.54%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="zlaukaj.tv" data-sitename="zlaukaj.tv">
+                        <a class="link" href="/website/zlaukaj.tv" data-tipsygravity="w" data-shorturl="Zlaukaj.tv">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=zlaukaj.tv&amp;t=2&amp;s=1&amp;h=2016715082740604103" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=zlaukaj.tv&amp;t=2&amp;s=1&amp;h=2016715082740604103"/>
+                                </noscript>
+
+
+                            Zlaukaj.tv
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 21.83%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="apps.facebook.com" data-sitename="apps.facebook.com">
+                        <a class="link" href="/website/apps.facebook.com" data-tipsygravity="w" data-shorturl="Apps.facebook.com">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=apps.facebook.com&amp;t=2&amp;s=1&amp;h=4672487071302662059" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=apps.facebook.com&amp;t=2&amp;s=1&amp;h=4672487071302662059"/>
+                                </noscript>
+
+
+                            Apps.facebook.com
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 21.83%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="ask.fm" data-sitename="ask.fm">
+                        <a class="link" href="/website/ask.fm" data-tipsygravity="w" data-shorturl="Ask.fm">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=ask.fm&amp;t=2&amp;s=1&amp;h=5196965170164632325" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=ask.fm&amp;t=2&amp;s=1&amp;h=5196965170164632325"/>
+                                </noscript>
+
+
+                            Ask.fm
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 21.83%"></div>
+                    </div>
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="worldoftanks.eu" data-sitename="worldoftanks.eu">
+                        <a class="link" href="/website/worldoftanks.eu" data-tipsygravity="w" data-shorturl="Worldoftanks.eu">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=worldoftanks.eu&amp;t=2&amp;s=1&amp;h=2727589584407377025" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=worldoftanks.eu&amp;t=2&amp;s=1&amp;h=2727589584407377025"/>
+                                </noscript>
+
+
+                            Worldoftanks.eu
+                        </a>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-value percentage per1" style="width: 21.83%"></div>
+                    </div>
+
+            </li>
+
+
+    </ul>
+        <button class="btn btn-more" data-controller="Sw.Controllers.ProModalTrigger" data-options='{"eventLabel": "all_display_ads"}'>See ALL AD Display Networks</button>
+</article>
+
+				</div>
+				<div class="grid-1Of3 flow-col">
+					<div class="sprite purple-right-arrow"></div>
+
+
+<article class="leading-ad-networks small-pie-chart component">
+
+<h2 class="title">
+    Top Ad Networks
+    <i class="tooltip sprite icon_tip_idle" title="&amp;lt;h1&amp;gt;Leading Ad Networks&amp;lt;/h1&amp;gt;Breakdown of the main advertising networks delivering the ads."></i>
+</h2>
+
+    <div class="chart" data-controller="Sw.Controllers.ThumbPieLegend"  data-options='{"fillColor":"","emptyColor": "", "dataValues": [[&quot;Appnexus&quot;,&quot;&quot;,0.67526859318436,4040],[&quot;Adcash.com&quot;,&quot;&quot;,0.10344170560503167,4042],[&quot;Misc Ads&quot;,&quot;&quot;,0.062424449112515948,42],[&quot;Openadserving&quot;,&quot;&quot;,0.060377169019647618,4066],[&quot;Superfish&quot;,&quot;&quot;,0.030057594631678237,4089],[&quot;Other&quot;,&quot;&quot;,0.068430488446766316,0]], "innerSize": ""}'>
+    </div>
+</article>
+					<div class="sprite purple-top-arrow"></div>
+				</div>
+				<div class="grid-1Of3">
+					<div class="thumb-wrapper">
+						<div class="component website-thumb">
+							<img alt="Zalukaj.tv" class="siteImage lazy-thumb lazy" data-original="http://images2.similargroup.com/image?url=zalukaj.tv&amp;t=1&amp;s=1&amp;h=17566331371763047867" src="/images/lazy.png" width="267" height="173" />
+						</div>
+						<div class="site-title">Zalukaj.tv</div>
+					</div>
+
+					<div class="component see-ads">
+						<h2 class="title">Want to see those ads?</h2>
+						<h3 class="desc">See what the display advertising campaigns for Zalukaj.tv look like</h3>
+						<button class="btn show-more btn-large" data-controller="Sw.Controllers.DisplayAdsModal" data-options='{"domain":"Zalukaj.tv"}'>Show the ads</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+</div>
+
+
+
+<div id="alsoVisited" class="content-page alsovisited" name="alsoVisited">
+
+    <div class="grid-x">
+
+        <div class="grid-1">
+
+
+<article class="siteheading component">
+
+    <h1 class="title">
+Audience Interests
+    </h1>
+    
+    <div class="description">
+
+                <a class="information-button js-information-button" data-key="alsovisited">
+                    ?
+                </a>
+
+       
+    </div>
+
+
+</article>
+
+
+
+
+    
+<div class="information-box clearfix information-box-alsovisited ">
+
+    <a class="close-button js-informationbox-close">
+        <i class="sprite close"></i>
+    </a>
+
+    <p class="title">
+        What’s interesting for this audience?
+    </p>
+
+        <p class="message">
+        Get a better understanding of a website’s user profile by finding out what other places they visit online. This section is a helpful to get ideas about where or how else you could market your product. Understanding what other topics, categories and websites are in the minds of your competitors visitors will broaden your understanding of an audience’s interests and online behavior.
+        </p>
+
+</div>
+
+
+
+        </div>
+
+        <div class="audience-categories">
+ 
+
+
+<article class="topcategories component levels level-5">
+
+    <h2>
+        Categories <i class="tooltip sprite icon_tip_idle" title="&amp;lt;h1&amp;gt;Categories&amp;lt;/h1&amp;gt;Users who visit zalukaj.tv are also interested in these other categories."></i>
+    </h2>
+
+<div class="desc">
+    Users who visited <span title="Zalukaj.tv">Zalukaj.tv</span> also visited following website categories
+</div>
+
+    <ul class="categories-charts-list">
+                    <li class="chart-wrapper">
+                    
+                            <div class="visual">
+
+                                <div class="chart"   
+                                     data-controller="Sw.Controllers.PercentagePie"
+                                     data-options='{"fillColor":"#CC9900","emptyColor": "#E4E4E4", "fillValue": 0.3848326281779289, "innerSize": "60%"}'>
+                                </div>
+
+                                <div class="image categories-sprite yellow arts_and_entertainment"></div>
+                            </div>
+
+                            <h3 class="text">
+
+                               <a href="/category/arts_and_entertainment/movies">
+                                    Arts and Entertainment &gt; Movies
+                                </a>
+
+                           </h3>
+                    </li>
+                    <li class="chart-wrapper">
+                    
+                            <div class="visual">
+
+                                <div class="chart"   
+                                     data-controller="Sw.Controllers.PercentagePie"
+                                     data-options='{"fillColor":"#CC9900","emptyColor": "#E4E4E4", "fillValue": 0.25921313324936296, "innerSize": "60%"}'>
+                                </div>
+
+                                <div class="image categories-sprite yellow arts_and_entertainment"></div>
+                            </div>
+
+                            <h3 class="text">
+
+                               <a href="/category/arts_and_entertainment">
+                                    Arts and Entertainment
+                                </a>
+
+                           </h3>
+                    </li>
+                    <li class="chart-wrapper">
+                    
+                            <div class="visual">
+
+                                <div class="chart"   
+                                     data-controller="Sw.Controllers.PercentagePie"
+                                     data-options='{"fillColor":"#CC9900","emptyColor": "#E4E4E4", "fillValue": 0.14888342177361621, "innerSize": "60%"}'>
+                                </div>
+
+                                <div class="image categories-sprite yellow arts_and_entertainment"></div>
+                            </div>
+
+                            <h3 class="text">
+
+                               <a href="/category/arts_and_entertainment/tv_and_video">
+                                    Arts and Entertainment &gt; TV and Video
+                                </a>
+
+                           </h3>
+                    </li>
+                    <li class="chart-wrapper">
+                    
+                            <div class="visual">
+
+                                <div class="chart"   
+                                     data-controller="Sw.Controllers.PercentagePie"
+                                     data-options='{"fillColor":"#CC9900","emptyColor": "#E4E4E4", "fillValue": 0.087023748122354, "innerSize": "60%"}'>
+                                </div>
+
+                                <div class="image categories-sprite yellow arts_and_entertainment"></div>
+                            </div>
+
+                            <h3 class="text">
+
+                               <a href="/category/arts_and_entertainment/music_and_audio">
+                                    Arts and Entertainment &gt; Music and Audio
+                                </a>
+
+                           </h3>
+                    </li>
+                    <li class="chart-wrapper">
+                    
+                            <div class="visual">
+
+                                <div class="chart"   
+                                     data-controller="Sw.Controllers.PercentagePie"
+                                     data-options='{"fillColor":"#CC9900","emptyColor": "#E4E4E4", "fillValue": 0.065120328801751, "innerSize": "60%"}'>
+                                </div>
+
+                                <div class="image categories-sprite yellow games"></div>
+                            </div>
+
+                            <h3 class="text">
+
+                               <a href="/category/games/video_games">
+                                    Games &gt; Video Games
+                                </a>
+
+                           </h3>
+                    </li>
+
+    </ul>
+
+
+   
+</article>
+        </div>
+
+        <div class="grid-1Of3 top-also-visited">
+
+
+<article class="genericlist component">
+
+    <h2 class="title">
+        Also visited websites<i class="tooltip sprite icon_tip_idle" title="&amp;lt;h1&amp;gt;Other Visited Websites&amp;lt;/h1&amp;gt;List of websites frequently visited by zalukaj.tv users."></i>
+    </h2>
+
+        <div class="desc">
+            Users who visited <span title="Zalukaj.tv">Zalukaj.tv</span> also visited the following websites
+        </div>
+
+
+    <div class="seperator"></div>
+    <ul class="sites items">
+
+            <li class="item ">
+
+                    <div class="text" title="kinomaniak.tv" data-sitename="kinomaniak.tv">
+                        <a class="link" href="/website/kinomaniak.tv" data-tipsygravity="w" data-shorturl="Kinomaniak.tv">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=kinomaniak.tv&amp;t=2&amp;s=1&amp;h=16219855482286143807" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=kinomaniak.tv&amp;t=2&amp;s=1&amp;h=16219855482286143807"/>
+                                </noscript>
+
+
+                            Kinomaniak.tv
+                        </a>
+                    </div>
+
+
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="ekino.tv" data-sitename="ekino.tv">
+                        <a class="link" href="/website/ekino.tv" data-tipsygravity="w" data-shorturl="Ekino.tv">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=ekino.tv&amp;t=2&amp;s=1&amp;h=17493876415983673349" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=ekino.tv&amp;t=2&amp;s=1&amp;h=17493876415983673349"/>
+                                </noscript>
+
+
+                            Ekino.tv
+                        </a>
+                    </div>
+
+
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="playtube.pl" data-sitename="playtube.pl">
+                        <a class="link" href="/website/playtube.pl" data-tipsygravity="w" data-shorturl="Playtube.pl">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=playtube.pl&amp;t=2&amp;s=1&amp;h=2584403412753277312" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=playtube.pl&amp;t=2&amp;s=1&amp;h=2584403412753277312"/>
+                                </noscript>
+
+
+                            Playtube.pl
+                        </a>
+                    </div>
+
+
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="weeb.tv" data-sitename="weeb.tv">
+                        <a class="link" href="/website/weeb.tv" data-tipsygravity="w" data-shorturl="Weeb.tv">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=weeb.tv&amp;t=2&amp;s=1&amp;h=17959731876186673411" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=weeb.tv&amp;t=2&amp;s=1&amp;h=17959731876186673411"/>
+                                </noscript>
+
+
+                            Weeb.tv
+                        </a>
+                    </div>
+
+
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="kino.pecetowiec.pl" data-sitename="kino.pecetowiec.pl">
+                        <a class="link" href="/website/kino.pecetowiec.pl" data-tipsygravity="w" data-shorturl="Kino.pecetowiec.pl">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=kino.pecetowiec.pl&amp;t=2&amp;s=1&amp;h=14388378778375605092" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=kino.pecetowiec.pl&amp;t=2&amp;s=1&amp;h=14388378778375605092"/>
+                                </noscript>
+
+
+                            Kino.pecetowiec.pl
+                        </a>
+                    </div>
+
+
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="filmweb.pl" data-sitename="filmweb.pl">
+                        <a class="link" href="/website/filmweb.pl" data-tipsygravity="w" data-shorturl="Filmweb.pl">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=filmweb.pl&amp;t=2&amp;s=1&amp;h=10975035961516260709" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=filmweb.pl&amp;t=2&amp;s=1&amp;h=10975035961516260709"/>
+                                </noscript>
+
+
+                            Filmweb.pl
+                        </a>
+                    </div>
+
+
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="cda.pl" data-sitename="cda.pl">
+                        <a class="link" href="/website/cda.pl" data-tipsygravity="w" data-shorturl="Cda.pl">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=cda.pl&amp;t=2&amp;s=1&amp;h=15227128583914038922" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=cda.pl&amp;t=2&amp;s=1&amp;h=15227128583914038922"/>
+                                </noscript>
+
+
+                            Cda.pl
+                        </a>
+                    </div>
+
+
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="kinoman.tv" data-sitename="kinoman.tv">
+                        <a class="link" href="/website/kinoman.tv" data-tipsygravity="w" data-shorturl="Kinoman.tv">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=kinoman.tv&amp;t=2&amp;s=1&amp;h=6356022768555505377" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=kinoman.tv&amp;t=2&amp;s=1&amp;h=6356022768555505377"/>
+                                </noscript>
+
+
+                            Kinoman.tv
+                        </a>
+                    </div>
+
+
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="alekino.tv" data-sitename="alekino.tv">
+                        <a class="link" href="/website/alekino.tv" data-tipsygravity="w" data-shorturl="Alekino.tv">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=alekino.tv&amp;t=2&amp;s=1&amp;h=16194765369217926209" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=alekino.tv&amp;t=2&amp;s=1&amp;h=16194765369217926209"/>
+                                </noscript>
+
+
+                            Alekino.tv
+                        </a>
+                    </div>
+
+
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="iitv.info" data-sitename="iitv.info">
+                        <a class="link" href="/website/iitv.info" data-tipsygravity="w" data-shorturl="Iitv.info">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=iitv.info&amp;t=2&amp;s=1&amp;h=8731690786543988136" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=iitv.info&amp;t=2&amp;s=1&amp;h=8731690786543988136"/>
+                                </noscript>
+
+
+                            Iitv.info
+                        </a>
+                    </div>
+
+
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="dwn.so" data-sitename="dwn.so">
+                        <a class="link" href="/website/dwn.so" data-tipsygravity="w" data-shorturl="Dwn.so">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=dwn.so&amp;t=2&amp;s=1&amp;h=12136692436798163280" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=dwn.so&amp;t=2&amp;s=1&amp;h=12136692436798163280"/>
+                                </noscript>
+
+
+                            Dwn.so
+                        </a>
+                    </div>
+
+
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="premium.iitv.info" data-sitename="premium.iitv.info">
+                        <a class="link" href="/website/premium.iitv.info" data-tipsygravity="w" data-shorturl="Premium.iitv.info">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=premium.iitv.info&amp;t=2&amp;s=1&amp;h=16410221290916501748" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=premium.iitv.info&amp;t=2&amp;s=1&amp;h=16410221290916501748"/>
+                                </noscript>
+
+
+                            Premium.iitv.info
+                        </a>
+                    </div>
+
+
+
+            </li>
+            <li class="item ">
+
+                    <div class="text" title="iptak.pl" data-sitename="iptak.pl">
+                        <a class="link" href="/website/iptak.pl" data-tipsygravity="w" data-shorturl="Iptak.pl">
+
+                                <img class="icon lazy-icon lazy"  data-original="http://images2.similargroup.com/image?url=iptak.pl&amp;t=2&amp;s=1&amp;h=5822452424523778314" src="/images/lazy.png"/>
+                                <noscript>
+                                    <img class="icon" src="http://images2.similargroup.com/image?url=iptak.pl&amp;t=2&amp;s=1&amp;h=5822452424523778314"/>
+                                </noscript>
+
+
+                            Iptak.pl
+                        </a>
+                    </div>
+
+
+
+            </li>
+
+
+    </ul>
+</article>
+
+		</div>
+        
+        <div class="grid-2Of3 topics">
+<article class="toptags component">
+
+   <h2>
+    Topics <i class="tooltip sprite icon_tip_idle" title="&amp;lt;h1&amp;gt;Topics&amp;lt;/h1&amp;gt;Relevant topics to zalukaj.tv visitors. The bigger the word, the more popular a topic is."></i>
+  </h2>
+
+  <div class="desc">
+    Topics cloud generated from also visited websites
+  </div>
+
+
+
+            <div data-controller="Sw.Controllers.TagCloud" class="chart tagcloud" id="tags" data-options='{&quot;tags&quot;: [[&quot;mystery novels&quot;,0.53611288934702961],[&quot;online&quot;,0.977033968196761],[&quot;filmy&quot;,1],[&quot;seriale&quot;,0.90799243388170248],[&quot;dragon ball&quot;,0.53611288934702961],[&quot;megavideo&quot;,0.53611288934702961],[&quot;lektor&quot;,0.62889581923635507],[&quot;serial&quot;,0.53611288934702961],[&quot;film&quot;,1],[&quot;napisy&quot;,0.7068111974657],[&quot;tv&quot;,0.50739231112178151],[&quot;online tv&quot;,0.50739231112178151],[&quot;film online&quot;,0.72464219368856486],[&quot;kino online&quot;,0.5799083560612347],[&quot;science fiction&quot;,0.5799083560612347],[&quot;star trek&quot;,0.44584690754255846],[&quot;films online&quot;,0.37082912030257426],[&quot;thriller&quot;,0.37082912030257426],[&quot;watch online&quot;,0.37082912030257426],[&quot;kino&quot;,0.46061376308017143],[&quot;movies&quot;,0.32260210385230065],[&quot;folder zakładek osobistych&quot;,0.437054397724659],[&quot;recenzje&quot;,0.32260210385230065],[&quot;multimedia&quot;,0.32260210385230065],[&quot;serwisy&quot;,0.32260210385230065],[&quot;kultura&quot;,0.32260210385230065],[&quot;telewizja&quot;,0.34086427000683639],[&quot;premium&quot;,0.34086427000683639],[&quot;internet&quot;,0.34086427000683639],[&quot;usługi&quot;,0.34086427000683639],[&quot;data center&quot;,0.34086427000683639],[&quot;pomoc&quot;,0.34086427000683639],[&quot;konto&quot;,0.34086427000683639],[&quot;łącza&quot;,0.34086427000683639],[&quot;adobe&quot;,0.34086427000683639],[&quot;video&quot;,0.24221373293073212],[&quot;info&quot;,0.24221373293073212],[&quot;web tv&quot;,0.24221373293073212],[&quot;nie&quot;,0.24221373293073212],[&quot;life&quot;,0.24221373293073212],[&quot;serials&quot;,0.32877487940678451],[&quot;r&#243;żne&quot;,0.32877487940678451],[&quot;zakładki nieprzypisane&quot;,0.32877487940678451],[&quot;gry&quot;,0.29486340763230318],[&quot;gry online&quot;,0.29486340763230318],[&quot;online games&quot;,0.29486340763230318],[&quot;gry internetowe&quot;,0.29486340763230318],[&quot;programy&quot;,0.29486340763230318],[&quot;komputery&quot;,0.29486340763230318],[&quot;komputer&quot;,0.29486340763230318]]}'></div>
+</article>
+        </div>
+
+    </div>
+</div>
+<div id="similarSites" class="content-page similarSites" name="similarSites">
+            <div class="grid-x">
+                <div class="grid-1">
+
+
+
+
+<article class="siteheading component">
+
+    <h1 class="title">
+<span class='left-text'>Similar</span><span class='right-text'>Sites</span>
+    </h1>
+    
+    <div class="description">
+
+                <a class="information-button js-information-button" data-key="similarsites">
+                    ?
+                </a>
+
+       
+    </div>
+
+<article data-controller="Sw.Controllers.Orderby" class="orderby component" data-list="similarsites">
+
+    <div class="chart">
+        <span class="text">
+            Similar Sites:
+        </span>
+        <div class="control-group">
+            <a class="control similarity active">
+                similarity
+            </a>
+
+            <a class="control rank">
+                rank
+            </a>
+         
+
+        </div>
+    </div>
+
+</article>
+</article>
+
+
+
+
+    
+<div class="information-box clearfix information-box-similarsites ">
+
+    <a class="close-button js-informationbox-close">
+        <i class="sprite close"></i>
+    </a>
+
+    <p class="title">
+        Keen to find new leads or discover competitors?
+    </p>
+
+        <p class="message">
+        This section will help you gain a better understanding of your market by helping you discover new websites that are relevant to the one you are analyzing. On the one hand, you can use SimilarSites to discover new competitor sites. Alternatively, this tool is often used to discover new leads of websites in which you might want to advertise in or partner with.
+        </p>
+
+</div>
+
+
+
+
+                </div>
+                <div class="grid-1">
+
+
+<article class="similarsites component">
+
+    <div class="chart">
+
+        <ul class="similarsites sites items">
+                    <li class="item js-order " data-site="playtube.pl "  data-shorturl="Playtube.pl">
+                     
+                       <div class="visual">
+                            <div class="thumbnail"><img class="icon lazy-thumb lazy" data-original="http://images2.similargroup.com/image?url=playtube.pl&amp;t=0&amp;s=1&amp;h=2584403412753277312" src="/images/lazy.png"/></div>
+                            <noscript><img class="icon" src="http://images2.similargroup.com/image?url=playtube.pl&amp;t=0&amp;s=1&amp;h=2584403412753277312"/></noscript>
+                           <h3>
+                                <a href="/website/playtube.pl" class="link title" data-shorturl="Playtube.pl">
+                                   <img class="icon lazy-icon lazy" data-original="http://images2.similargroup.com/image?url=playtube.pl&amp;t=2&amp;s=1&amp;h=2584403412753277312" src="/images/lazy.png"/>
+                                   <noscript><img class="icon" src="http://images2.similargroup.com/image?url=playtube.pl&amp;t=2&amp;s=1&amp;h=2584403412753277312"/></noscript>
+                                   <span class="text" data-href="playtube.pl">Playtube.pl</span>
+                               </a>
+                           </h3>
+                        </div>
+
+                    </li>
+                    <li class="item js-order " data-site="ekino.tv "  data-shorturl="Ekino.tv">
+                     
+                       <div class="visual">
+                            <div class="thumbnail"><img class="icon lazy-thumb lazy" data-original="http://images2.similargroup.com/image?url=ekino.tv&amp;t=0&amp;s=1&amp;h=17493876415983673349" src="/images/lazy.png"/></div>
+                            <noscript><img class="icon" src="http://images2.similargroup.com/image?url=ekino.tv&amp;t=0&amp;s=1&amp;h=17493876415983673349"/></noscript>
+                           <h3>
+                                <a href="/website/ekino.tv" class="link title" data-shorturl="Ekino.tv">
+                                   <img class="icon lazy-icon lazy" data-original="http://images2.similargroup.com/image?url=ekino.tv&amp;t=2&amp;s=1&amp;h=17493876415983673349" src="/images/lazy.png"/>
+                                   <noscript><img class="icon" src="http://images2.similargroup.com/image?url=ekino.tv&amp;t=2&amp;s=1&amp;h=17493876415983673349"/></noscript>
+                                   <span class="text" data-href="ekino.tv">Ekino.tv</span>
+                               </a>
+                           </h3>
+                        </div>
+
+                    </li>
+                    <li class="item js-order unlinked" data-site="kino.pecetowiec.pl "  data-shorturl="Kino.pecetowiec.pl">
+                     
+                       <div class="visual">
+                            <div class="thumbnail"><img class="icon lazy-thumb lazy" data-original="http://images2.similargroup.com/image?url=kino.pecetowiec.pl&amp;t=0&amp;s=1&amp;h=14388378778375605092" src="/images/lazy.png"/></div>
+                            <noscript><img class="icon" src="http://images2.similargroup.com/image?url=kino.pecetowiec.pl&amp;t=0&amp;s=1&amp;h=14388378778375605092"/></noscript>
+                           <h3>
+                                <span class="link title" data-shorturl="Kino.pecetowiec.pl">
+                                   <img class="icon lazy-icon lazy" data-original="http://images2.similargroup.com/image?url=kino.pecetowiec.pl&amp;t=2&amp;s=1&amp;h=14388378778375605092" src="/images/lazy.png"/>
+                                   <noscript><img class="icon" src="http://images2.similargroup.com/image?url=kino.pecetowiec.pl&amp;t=2&amp;s=1&amp;h=14388378778375605092"/></noscript>
+                                   <span class="text" data-href="kino.pecetowiec.pl">Kino.pecetowiec.pl</span>
+                               </span>
+                           </h3>
+                        </div>
+
+                    </li>
+                    <li class="item js-order " data-site="kinomaniak.tv "  data-shorturl="Kinomaniak.tv">
+                     
+                       <div class="visual">
+                            <div class="thumbnail"><img class="icon lazy-thumb lazy" data-original="http://images2.similargroup.com/image?url=kinomaniak.tv&amp;t=0&amp;s=1&amp;h=16219855482286143807" src="/images/lazy.png"/></div>
+                            <noscript><img class="icon" src="http://images2.similargroup.com/image?url=kinomaniak.tv&amp;t=0&amp;s=1&amp;h=16219855482286143807"/></noscript>
+                           <h3>
+                                <a href="/website/kinomaniak.tv" class="link title" data-shorturl="Kinomaniak.tv">
+                                   <img class="icon lazy-icon lazy" data-original="http://images2.similargroup.com/image?url=kinomaniak.tv&amp;t=2&amp;s=1&amp;h=16219855482286143807" src="/images/lazy.png"/>
+                                   <noscript><img class="icon" src="http://images2.similargroup.com/image?url=kinomaniak.tv&amp;t=2&amp;s=1&amp;h=16219855482286143807"/></noscript>
+                                   <span class="text" data-href="kinomaniak.tv">Kinomaniak.tv</span>
+                               </a>
+                           </h3>
+                        </div>
+
+                    </li>
+                    <li class="item js-order " data-site="iitv.info "  data-shorturl="Iitv.info">
+                     
+                       <div class="visual">
+                            <div class="thumbnail"><img class="icon lazy-thumb lazy" data-original="http://images2.similargroup.com/image?url=iitv.info&amp;t=0&amp;s=1&amp;h=8731690786543988136" src="/images/lazy.png"/></div>
+                            <noscript><img class="icon" src="http://images2.similargroup.com/image?url=iitv.info&amp;t=0&amp;s=1&amp;h=8731690786543988136"/></noscript>
+                           <h3>
+                                <a href="/website/iitv.info" class="link title" data-shorturl="Iitv.info">
+                                   <img class="icon lazy-icon lazy" data-original="http://images2.similargroup.com/image?url=iitv.info&amp;t=2&amp;s=1&amp;h=8731690786543988136" src="/images/lazy.png"/>
+                                   <noscript><img class="icon" src="http://images2.similargroup.com/image?url=iitv.info&amp;t=2&amp;s=1&amp;h=8731690786543988136"/></noscript>
+                                   <span class="text" data-href="iitv.info">Iitv.info</span>
+                               </a>
+                           </h3>
+                        </div>
+
+                    </li>
+                    <li class="item js-order " data-site="filmykino.pl "  data-shorturl="Filmykino.pl">
+                     
+                       <div class="visual">
+                            <div class="thumbnail"><img class="icon lazy-thumb lazy" data-original="http://images2.similargroup.com/image?url=filmykino.pl&amp;t=0&amp;s=1&amp;h=8849828526934888325" src="/images/lazy.png"/></div>
+                            <noscript><img class="icon" src="http://images2.similargroup.com/image?url=filmykino.pl&amp;t=0&amp;s=1&amp;h=8849828526934888325"/></noscript>
+                           <h3>
+                                <a href="/website/filmykino.pl" class="link title" data-shorturl="Filmykino.pl">
+                                   <img class="icon lazy-icon lazy" data-original="http://images2.similargroup.com/image?url=filmykino.pl&amp;t=2&amp;s=1&amp;h=8849828526934888325" src="/images/lazy.png"/>
+                                   <noscript><img class="icon" src="http://images2.similargroup.com/image?url=filmykino.pl&amp;t=2&amp;s=1&amp;h=8849828526934888325"/></noscript>
+                                   <span class="text" data-href="filmykino.pl">Filmykino.pl</span>
+                               </a>
+                           </h3>
+                        </div>
+
+                    </li>
+                    <li class="item js-order " data-site="serialeonline.pl "  data-shorturl="Serialeonline.pl">
+                     
+                       <div class="visual">
+                            <div class="thumbnail"><img class="icon lazy-thumb lazy" data-original="http://images2.similargroup.com/image?url=serialeonline.pl&amp;t=0&amp;s=1&amp;h=17577198162549592994" src="/images/lazy.png"/></div>
+                            <noscript><img class="icon" src="http://images2.similargroup.com/image?url=serialeonline.pl&amp;t=0&amp;s=1&amp;h=17577198162549592994"/></noscript>
+                           <h3>
+                                <a href="/website/serialeonline.pl" class="link title" data-shorturl="Serialeonline.pl">
+                                   <img class="icon lazy-icon lazy" data-original="http://images2.similargroup.com/image?url=serialeonline.pl&amp;t=2&amp;s=1&amp;h=17577198162549592994" src="/images/lazy.png"/>
+                                   <noscript><img class="icon" src="http://images2.similargroup.com/image?url=serialeonline.pl&amp;t=2&amp;s=1&amp;h=17577198162549592994"/></noscript>
+                                   <span class="text" data-href="serialeonline.pl">Serialeonline.pl</span>
+                               </a>
+                           </h3>
+                        </div>
+
+                    </li>
+                    <li class="item js-order unlinked" data-site="tibiarank.pl "  data-shorturl="Tibiarank.pl">
+                     
+                       <div class="visual">
+                            <div class="thumbnail"><img class="icon lazy-thumb lazy" data-original="/images/unknown-medium.png" src="/images/lazy.png"/></div>
+                            <noscript><img class="icon" src="/images/unknown-medium.png"/></noscript>
+                           <h3>
+                                <span class="link title" data-shorturl="Tibiarank.pl">
+                                   <img class="icon lazy-icon lazy" data-original="http://images2.similargroup.com/image?url=tibiarank.pl&amp;t=2&amp;s=1&amp;h=16385240882135522887" src="/images/lazy.png"/>
+                                   <noscript><img class="icon" src="http://images2.similargroup.com/image?url=tibiarank.pl&amp;t=2&amp;s=1&amp;h=16385240882135522887"/></noscript>
+                                   <span class="text" data-href="tibiarank.pl">Tibiarank.pl</span>
+                               </span>
+                           </h3>
+                        </div>
+
+                    </li>
+
+        </ul>
+
+        <ul class="similarsites rank items" style="display: none;">
+                    <li class="item js-order " data-site="kinomaniak.tv "  data-shorturl="Kinomaniak.tv">
+                        
+                        <div class="visual">
+                            <div class="thumbnail"><img class="icon lazy-thumb lazy" data-original="http://images2.similargroup.com/image?url=kinomaniak.tv&amp;t=0&amp;s=1&amp;h=16219855482286143807" src="/images/lazy.png" /></div>
+                            <noscript><img class="icon" src="http://images2.similargroup.com/image?url=kinomaniak.tv&amp;t=0&amp;s=1&amp;h=16219855482286143807"/></noscript>
+                            <h3>
+                                    <a href="/website/kinomaniak.tv" class="link title" data-shorturl="Kinomaniak.tv">
+                                        <img class="icon lazy-icon lazy" data-original="http://images2.similargroup.com/image?url=kinomaniak.tv&amp;t=2&amp;s=1&amp;h=16219855482286143807" src="/images/lazy.png"/>
+                                        <noscript><img class="icon" src="http://images2.similargroup.com/image?url=kinomaniak.tv&amp;t=2&amp;s=1&amp;h=16219855482286143807"/></noscript>
+                                        <span class="text" data-href="kinomaniak.tv">Kinomaniak.tv</span>
+                                    </a>
+                            </h3>
+                        </div>
+                        
+                    </li>           
+                    <li class="item js-order " data-site="ekino.tv "  data-shorturl="Ekino.tv">
+                        
+                        <div class="visual">
+                            <div class="thumbnail"><img class="icon lazy-thumb lazy" data-original="http://images2.similargroup.com/image?url=ekino.tv&amp;t=0&amp;s=1&amp;h=17493876415983673349" src="/images/lazy.png" /></div>
+                            <noscript><img class="icon" src="http://images2.similargroup.com/image?url=ekino.tv&amp;t=0&amp;s=1&amp;h=17493876415983673349"/></noscript>
+                            <h3>
+                                    <a href="/website/ekino.tv" class="link title" data-shorturl="Ekino.tv">
+                                        <img class="icon lazy-icon lazy" data-original="http://images2.similargroup.com/image?url=ekino.tv&amp;t=2&amp;s=1&amp;h=17493876415983673349" src="/images/lazy.png"/>
+                                        <noscript><img class="icon" src="http://images2.similargroup.com/image?url=ekino.tv&amp;t=2&amp;s=1&amp;h=17493876415983673349"/></noscript>
+                                        <span class="text" data-href="ekino.tv">Ekino.tv</span>
+                                    </a>
+                            </h3>
+                        </div>
+                        
+                    </li>           
+                    <li class="item js-order " data-site="iitv.info "  data-shorturl="Iitv.info">
+                        
+                        <div class="visual">
+                            <div class="thumbnail"><img class="icon lazy-thumb lazy" data-original="http://images2.similargroup.com/image?url=iitv.info&amp;t=0&amp;s=1&amp;h=8731690786543988136" src="/images/lazy.png" /></div>
+                            <noscript><img class="icon" src="http://images2.similargroup.com/image?url=iitv.info&amp;t=0&amp;s=1&amp;h=8731690786543988136"/></noscript>
+                            <h3>
+                                    <a href="/website/iitv.info" class="link title" data-shorturl="Iitv.info">
+                                        <img class="icon lazy-icon lazy" data-original="http://images2.similargroup.com/image?url=iitv.info&amp;t=2&amp;s=1&amp;h=8731690786543988136" src="/images/lazy.png"/>
+                                        <noscript><img class="icon" src="http://images2.similargroup.com/image?url=iitv.info&amp;t=2&amp;s=1&amp;h=8731690786543988136"/></noscript>
+                                        <span class="text" data-href="iitv.info">Iitv.info</span>
+                                    </a>
+                            </h3>
+                        </div>
+                        
+                    </li>           
+                    <li class="item js-order " data-site="playtube.pl "  data-shorturl="Playtube.pl">
+                        
+                        <div class="visual">
+                            <div class="thumbnail"><img class="icon lazy-thumb lazy" data-original="http://images2.similargroup.com/image?url=playtube.pl&amp;t=0&amp;s=1&amp;h=2584403412753277312" src="/images/lazy.png" /></div>
+                            <noscript><img class="icon" src="http://images2.similargroup.com/image?url=playtube.pl&amp;t=0&amp;s=1&amp;h=2584403412753277312"/></noscript>
+                            <h3>
+                                    <a href="/website/playtube.pl" class="link title" data-shorturl="Playtube.pl">
+                                        <img class="icon lazy-icon lazy" data-original="http://images2.similargroup.com/image?url=playtube.pl&amp;t=2&amp;s=1&amp;h=2584403412753277312" src="/images/lazy.png"/>
+                                        <noscript><img class="icon" src="http://images2.similargroup.com/image?url=playtube.pl&amp;t=2&amp;s=1&amp;h=2584403412753277312"/></noscript>
+                                        <span class="text" data-href="playtube.pl">Playtube.pl</span>
+                                    </a>
+                            </h3>
+                        </div>
+                        
+                    </li>           
+                    <li class="item js-order " data-site="serialeonline.pl "  data-shorturl="Serialeonline.pl">
+                        
+                        <div class="visual">
+                            <div class="thumbnail"><img class="icon lazy-thumb lazy" data-original="http://images2.similargroup.com/image?url=serialeonline.pl&amp;t=0&amp;s=1&amp;h=17577198162549592994" src="/images/lazy.png" /></div>
+                            <noscript><img class="icon" src="http://images2.similargroup.com/image?url=serialeonline.pl&amp;t=0&amp;s=1&amp;h=17577198162549592994"/></noscript>
+                            <h3>
+                                    <a href="/website/serialeonline.pl" class="link title" data-shorturl="Serialeonline.pl">
+                                        <img class="icon lazy-icon lazy" data-original="http://images2.similargroup.com/image?url=serialeonline.pl&amp;t=2&amp;s=1&amp;h=17577198162549592994" src="/images/lazy.png"/>
+                                        <noscript><img class="icon" src="http://images2.similargroup.com/image?url=serialeonline.pl&amp;t=2&amp;s=1&amp;h=17577198162549592994"/></noscript>
+                                        <span class="text" data-href="serialeonline.pl">Serialeonline.pl</span>
+                                    </a>
+                            </h3>
+                        </div>
+                        
+                    </li>           
+                    <li class="item js-order " data-site="filmykino.pl "  data-shorturl="Filmykino.pl">
+                        
+                        <div class="visual">
+                            <div class="thumbnail"><img class="icon lazy-thumb lazy" data-original="http://images2.similargroup.com/image?url=filmykino.pl&amp;t=0&amp;s=1&amp;h=8849828526934888325" src="/images/lazy.png" /></div>
+                            <noscript><img class="icon" src="http://images2.similargroup.com/image?url=filmykino.pl&amp;t=0&amp;s=1&amp;h=8849828526934888325"/></noscript>
+                            <h3>
+                                    <a href="/website/filmykino.pl" class="link title" data-shorturl="Filmykino.pl">
+                                        <img class="icon lazy-icon lazy" data-original="http://images2.similargroup.com/image?url=filmykino.pl&amp;t=2&amp;s=1&amp;h=8849828526934888325" src="/images/lazy.png"/>
+                                        <noscript><img class="icon" src="http://images2.similargroup.com/image?url=filmykino.pl&amp;t=2&amp;s=1&amp;h=8849828526934888325"/></noscript>
+                                        <span class="text" data-href="filmykino.pl">Filmykino.pl</span>
+                                    </a>
+                            </h3>
+                        </div>
+                        
+                    </li>           
+                    <li class="item js-order unlinked" data-site="kino.pecetowiec.pl "  data-shorturl="Kino.pecetowiec.pl">
+                        
+                        <div class="visual">
+                            <div class="thumbnail"><img class="icon lazy-thumb lazy" data-original="http://images2.similargroup.com/image?url=kino.pecetowiec.pl&amp;t=0&amp;s=1&amp;h=14388378778375605092" src="/images/lazy.png" /></div>
+                            <noscript><img class="icon" src="http://images2.similargroup.com/image?url=kino.pecetowiec.pl&amp;t=0&amp;s=1&amp;h=14388378778375605092"/></noscript>
+                            <h3>
+                                    <span class="link title" data-shorturl="Kino.pecetowiec.pl">
+                                        <img class="icon lazy-icon lazy" data-original="http://images2.similargroup.com/image?url=kino.pecetowiec.pl&amp;t=2&amp;s=1&amp;h=14388378778375605092" src="/images/lazy.png"/>
+                                        <noscript><img class="icon" src="http://images2.similargroup.com/image?url=kino.pecetowiec.pl&amp;t=2&amp;s=1&amp;h=14388378778375605092"/></noscript>
+                                        <span class="text" data-href="kino.pecetowiec.pl">Kino.pecetowiec.pl</span>
+                                    </span>
+                            </h3>
+                        </div>
+                        
+                    </li>           
+                    <li class="item js-order unlinked" data-site="tibiarank.pl "  data-shorturl="Tibiarank.pl">
+                        
+                        <div class="visual">
+                            <div class="thumbnail"><img class="icon lazy-thumb lazy" data-original="/images/unknown-medium.png" src="/images/lazy.png" /></div>
+                            <noscript><img class="icon" src="/images/unknown-medium.png"/></noscript>
+                            <h3>
+                                    <span class="link title" data-shorturl="Tibiarank.pl">
+                                        <img class="icon lazy-icon lazy" data-original="http://images2.similargroup.com/image?url=tibiarank.pl&amp;t=2&amp;s=1&amp;h=16385240882135522887" src="/images/lazy.png"/>
+                                        <noscript><img class="icon" src="http://images2.similargroup.com/image?url=tibiarank.pl&amp;t=2&amp;s=1&amp;h=16385240882135522887"/></noscript>
+                                        <span class="text" data-href="tibiarank.pl">Tibiarank.pl</span>
+                                    </span>
+                            </h3>
+                        </div>
+                        
+                    </li>           
+
+        </ul>
+    </div>
+
+</article>
+                </div>
+            </div>
+
+</div>
+<div id="mobileApps" class="content-page mobile-apps" name="mobileApps">
+            <div class="grid-1">
+
+
+<article class="siteheading component">
+
+    <h1 class="title">
+Mobile Apps
+    </h1>
+    
+    <div class="description">
+
+
+       
+    </div>
+
+
+</article>
+            </div>
+<div class="no-data">
+    <div class="info">
+        <h2 class="sec-color">No apps found</h2>
+    </div>
+</div>
+</div>
+        </div>
+    </div>
+
+    <div class="push"></div>
+
+</div>
+
+<script src="/website/data/zalukaj.tv"></script>
+
+<div class="loading component">
+    <div class="content">
+        <div class="center">
+            <img alt="loading" src="/images/loading.gif" />
+            <div class="text">
+                <div class="t1">
+                    Please wait while</div>
+                <div class="t2">
+                    Loading...</div>
+            </div>
+        </div>
+    </div>
+    <div class="remarks">
+        <div class="t1">
+            DID YOU KNOW?</div>
+        <div class="t2">
+            Find your online rank growth trend and traffic sources and most significant countries
+            bringing traffic to the website</div>
+    </div>
+</div>
+
+
+
+
+
+
+<footer id="footer">
+<div class="container">
+        
+    <div class="top container row">
+
+        <nav class="about">
+            <h3 class="title">SimilarWeb</h3>
+            <ul>
+				<li><a id="footer_pro_link" href="/pro" onclick="Sw.Helpers.Google.event('ProLink','Click', 'footer_pro_link');">SimilarWeb PRO</a></li>
+				<li><a href="/ourdata">Our Data</a></li>
+				<li><a href="/press">Press</a></li>
+				<li><a href="/about">About Us</a></li>
+            </ul>
+        </nav>
+
+         <nav class="about">
+            <h3 class="title">Top Sites</h3>
+            <ul>
+                <li><a href="/category">By Category</a></li>
+                <li><a href="/country">By Country</a></li>
+            </ul>
+        </nav>
+
+		<nav class="about">
+			<h3 class="title">Our Tools</h3>
+			<ul>
+				<li><a class="beta" href="/addon">Browser Add-ons</a></li>
+				<li><a target="_blank" class="beta" href="https://developer.similarweb.com">APIs</a></li>
+				<li><a class="beta" href="/widgets">Widgets</a></li>
+			</ul>
+		</nav>
+
+        <nav class="about">
+            <h3 class="title">Customers</h3>
+            <ul>
+                <li><a href="http://support.similarweb.com/customer/portal/emails/new">Contact</a></li>
+                <li><a target="_blank" href="http://support.similarweb.com">Support Center</a></li>
+                
+            </ul>
+        </nav>
+      
+
+
+        <nav class="follow-us">
+            <h3 class="title">Follow us</h3>
+            <ul>
+                <li><a target="_blank" href="https://www.facebook.com/pages/SimilarWeb/171738362968027"><i class="facebook"></i></a></li>
+                <li><a target="_blank" href="https://twitter.com/SimilarWeb"><i class="twitter"></i></a></li>
+				<li><a target="_blank" href="http://www.linkedin.com/groups/SimilarWeb-2188601"><i class="linkedin"></i></a></li>
+				<li><a target="_blank" class="last" href="https://plus.google.com/109431312760858845859"><i class="google-plus"></i></a></li>
+            </ul>
+        </nav>
+
+    </div><!-- end of footer top div -->
+
+    <div class="bottom container">
+        <div class="rights-reserved">
+			<div class="disclaimer">
+				<a href="/terms">Terms &amp; Conditions</a> | <a href="/privacy-policy">Privacy Policy</a>
+			</div>
+			<div class="copyrights">
+				<a target="_blank" href="http://www.similargroup.com" title="SimilarGroup">SimilarGroup</a> &copy; 2009-2013. All Rights Reserved
+			</div>
+        </div>
+    </div>
+
+</div>
+</footer>
+
+
+
+
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      window.jQuery || document.write(unescape('%3Cscript src="/scripts/libs/jquery.1.8.2.min.js"%3E%3C/script%3E'));
+  </script>
+
+   <script src="/bundles/i18n/langs/en-us.js?v=N87AWNsXiSwEu4yMxWYjdXs_932-r9gh0vOAhG-8sWE1"></script>
+
+<script src="/bundles/js/main?v=XR3GGoTy5P8JQ7_Z1FlH8VEAzazmvvSXBYjLKOhmZ-k1"></script>
+    
+
+
+       <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/offsite_event.php?id=6011598343171&amp;value=0&amp;currency=USD" /></noscript>
+    
+    <!-- google api - all its code must be loaded before jQuery -->
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load('visualization', '1', { 'packages': ['geochart', 'treemap'] });
+    </script>
+
+    
+   
+   <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+    var sc_project = 8617147;
+    var sc_invisible = 1;
+    var sc_security = "12c4f67d";
+    var sc_https = 1;
+    var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+    document.write("<sc" + "ript type='text/javascript' src='" +
+scJsHost +
+"statcounter.com/counter/counter.js'></" + "script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/8617147/0/12c4f67d/1/"
+alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+        <!--  gooogle social plugin -->
+        <script type="text/javascript">
+            (function () {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/plusone.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+        </script>
+
+         <!--  facebook social plugin -->
+<script>    
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id; js.async = true;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=113949902026632";
+        fjs.parentNode.insertBefore(js, fjs);
+       
+    } (document, 'script', 'facebook-jssdk'));
+    window.fbAsyncInit = function () {
+        FB.Event.subscribe('edge.create', function (response) {
+            _gaq.push(['_trackSocial', 'facebook', 'like', response]);
+        });
+        FB.Event.subscribe('edge.remove', function (targetUrl) {
+            _gaq.push(['_trackSocial', 'facebook', 'unlike', targetUrl]);
+        });
+    }
+</script>
+
+
+    <input type="hidden" value="false" id="isPrintable" />
+   <script type="text/javascript"> if (!NREUMQ.f) {NREUMQ.f=function() {NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script"); e.type="text/javascript"; e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" + "js-agent.newrelic.com/nr-100.js"; document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-2.newrelic.com","239c537ca3","2955942","Z1ZUbRdQVxFYVhBeXl4cclYRf1wWeloKQ0NfX1pcFx5uB1tGDUNUH3pYXQBJ",0,46,new Date().getTime(),"8B6CC81AC8A8741C","","","",""]);</script></body>
+</html>

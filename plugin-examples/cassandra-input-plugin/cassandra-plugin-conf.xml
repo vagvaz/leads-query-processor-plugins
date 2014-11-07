@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <intermediateCache>mycache</intermediateCache>
+    <technology>cassandra</technology>
+	<host>127.0.0.1</host>
+	<port>9042</port>
+	<storagePropertiesDir>/data/workspace/leads-query-processor-plugins/common/src/main/java/eu/leads/datastore</storagePropertiesDir>
 </config>

@@ -13,25 +13,22 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 import java.security.SecureRandom;
 
+import org.apache.commons.configuration.Configuration;
+
+import eu.leads.PropertiesSingleton;
+
 public class PythonCall {
 
-	private Properties prop = new Properties();
+	Configuration config = PropertiesSingleton.getConfig();
 	
 	SecureRandom random;
 
 
 	public PythonCall() {
-		InputStream input = getClass().getClassLoader().getResourceAsStream("eu/leads/infext/python/python.properties");
-		
-		// load a properties file
-		try {
-			prop.load(input);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
 		
 		random = new SecureRandom();
 	}
@@ -57,7 +54,7 @@ public class PythonCall {
 	
 	public String paramInFile(String... params) {
 		String fileExt = new java.text.SimpleDateFormat("yyMMddHHmmssSSS").format(new Date())+random.nextInt(1000);
-		String fileBase = prop.getProperty("filebasename");
+		String fileBase = config.getString("pythonFilebasename");
 		String fileName = fileBase + fileExt;
 		
 		File file = new File(fileName);
@@ -89,9 +86,7 @@ public class PythonCall {
 		if(moduleName.contains(".")) // full package name
 			path = moduleName;
 		else
-			path = prop.getProperty("package")+"."+moduleName;
-			
-		//System.out.println(path);
+			path = config.getString("pythonCLIPackage")+"."+moduleName;
 		
 		List<String> paramsList = new ArrayList<>();
 		
@@ -156,6 +151,8 @@ public class PythonCall {
 		
 		ProcessBuilder pb = new ProcessBuilder(params);
 		pb.redirectErrorStream(true);
+		Map<String, String> env = pb.environment();
+		env.put("PYTHONPATH", config.getString("pythonPath"));
 		try {
 			Process p = pb.start();
 

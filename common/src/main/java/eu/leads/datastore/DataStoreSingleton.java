@@ -1,5 +1,6 @@
 package eu.leads.datastore;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -13,9 +14,11 @@ import eu.leads.datastore.impl.CassandraCQLDataStore;
 
 public class DataStoreSingleton {
 	
-	static String parametersFile = "eu/leads/infext/datastore/parameters/parameters.properties";
-	static String mappingFile = "eu/leads/infext/datastore/mapping/casscql.properties";
-	static String storagePropsFile = "eu/leads/infext/datastore/prop/HiveDataStore.properties";
+	static String parametersFile = "parameters/parameters.properties";
+	static String mappingFile = "mapping/casscql.properties";
+	static String storagePropsFile = "prop/HiveDataStore.properties";
+	
+	static String storagePropertiesDir = "/temp";
 	
 	static AbstractDataStore dataStore = null;
 	static Properties prop = new Properties();
@@ -24,9 +27,10 @@ public class DataStoreSingleton {
 	
 	public static void configureDataStore(Configuration conf) {
 		if(dataStore == null) {
+			storagePropertiesDir = conf.getString("storagePropertiesDir");
 			String technology = conf.getString("technology");
 			if(technology.toLowerCase().equals("cassandra")) {
-				mappingFile = "eu/leads/infext/datastore/mapping/casscql.properties";
+				mappingFile = "mapping/casscql.properties";
 				initProperties();
 				initMapping();
 				initParameters();
@@ -59,7 +63,9 @@ public class DataStoreSingleton {
 		InputStream input = null;
 		 
 		try {
-			input =  DataStoreSingleton.class.getClassLoader().getResourceAsStream(parametersFile);
+			String filePath = storagePropertiesDir+"/"+parametersFile;
+			input = new FileInputStream(filePath);
+			//input =  DataStoreSingleton.class.getClassLoader().getResourceAsStream(parametersFile);
 			// load a properties file
 			parameters.load(input);
 		} catch (IOException ex) {
@@ -71,7 +77,9 @@ public class DataStoreSingleton {
 		InputStream input = null;
 		 
 		try {
-			input =  DataStoreSingleton.class.getClassLoader().getResourceAsStream(mappingFile);
+			String filePath = storagePropertiesDir+"/"+mappingFile;
+			input = new FileInputStream(filePath);
+			//input =  DataStoreSingleton.class.getClassLoader().getResourceAsStream(mappingFile);
 			// load a properties file
 			mapping.load(input);
 		} catch (IOException ex) {
@@ -83,7 +91,9 @@ public class DataStoreSingleton {
 		InputStream input = null;
 	 
 		try {
-			input =  DataStoreSingleton.class.getClassLoader().getResourceAsStream(storagePropsFile);
+			String filePath = storagePropertiesDir+"/"+storagePropsFile;
+			input = new FileInputStream(filePath);
+			//input =  DataStoreSingleton.class.getClassLoader().getResourceAsStream(storagePropsFile);
 			// load a properties file
 			prop.load(input);
 		} catch (IOException ex) {
@@ -93,3 +103,17 @@ public class DataStoreSingleton {
 	
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

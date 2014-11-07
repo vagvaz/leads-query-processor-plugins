@@ -1,0 +1,17 @@
+http://store.nike.com/us/en_us/pd/air-max-2014-running-shoe/pid-926969/pgid-774364
+http://store.nike.com/us/en_us/pd/zoom-vomero-9-running-shoe/pid-927383/pgid-927384
+http://store.nike.com/us/en_us/pd/sb-project-ba-r-r-shoe/pid-1474327/pgid-1488518
+http://store.nike.com/us/en_us/pd/bondi-block-halter-swim-top/pid-1554115/pgid-1554116
+http://store.nike.com/us/en_us/pd/bondi-block-tank-swimsuit/pid-1554538/pgid-1554539
+http://store.nike.com/us/en_us/pd/sb-printed-mesh-adjustable-hat/pid-1534393/pgid-1534394
+http://store.nike.com/us/en_us/pd/shield-compact-backpack/pid-724638/pgid-724640
+http://store.nike.com/us/en_us/product/air-pegasus-31-id/
+http://store.nike.com/us/en_us/product/lunarglide-6-id/
+http://store.nike.com/us/en_us/product/free-5-shield-id/
+#categories
+http://store.nike.com/us/en_us/pw/mens-skateboarding-shoes/7puZbrkZ9yq
+http://store.nike.com/us/en_us/pw/mens-training-shoes/7puZbrkZ9hk
+#testcluster
+http://store.nike.com/us/en_us/pd/lunar-stefan-janoski-shoe/pid-1500575/pgid-1528038
+http://store.nike.com/us/en_us/pd/graphic-feather-light-adjustable-hat/pid-1534383/pgid-1534386
+http://store.nike.com/us/en_us/pw/mens-jerseys-clothing/7puZbgdZbhlZcj1

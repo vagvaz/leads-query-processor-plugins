@@ -19,9 +19,13 @@ import java.util.Set;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
+import org.apache.commons.configuration.Configuration;
+
 import com.cybozu.labs.langdetect.Detector;
 import com.cybozu.labs.langdetect.DetectorFactory;
 import com.cybozu.labs.langdetect.LangDetectException;
+
+import eu.leads.PropertiesSingleton;
 
 public class JavaLanguageDetection {
 	
@@ -35,11 +39,18 @@ public class JavaLanguageDetection {
 	
 	private JavaLanguageDetection() {
 		try {
-			String resourcePrefix = "eu/leads/infext/proc/com/lang/profiles";
+			// String resourcePrefix = "eu/leads/infext/proc/com/lang/profiles";
+			String resourcePrefix = "lang/profiles";
+			Configuration config = PropertiesSingleton.getConfig();
+			String resourcesPath = config.getString("resources_path");
+			
 			List<String> jsonProfiles = new ArrayList<>();
-		    String[] resourcesNames = getResourceListing(getClass(), resourcePrefix);
-			for(String resName : resourcesNames) {
-				InputStream is = JavaLanguageDetection.class.getClassLoader().getResourceAsStream(resourcePrefix+"/"+resName);
+			File langDir = new File(resourcesPath+"/"+resourcePrefix);
+			File[] langFiles = langDir.listFiles();
+		    //String[] resourcesNames = getResourceListing(getClass(), resourcePrefix);
+			for(File langFile : langFiles) {
+				InputStream is = new FileInputStream(langFile);
+				//InputStream is = JavaLanguageDetection.class.getClassLoader().getResourceAsStream(resourcePrefix+"/"+resName);
 			    String jsonProfile = convertStreamToString(is);
 				jsonProfiles.add(jsonProfile);
 			   
@@ -47,14 +58,11 @@ public class JavaLanguageDetection {
 			DetectorFactory.loadProfile(jsonProfiles);
 		} catch (LangDetectException e) {
 			System.err.println(this.getClass().getName()+" exception: SOMETHING WRONG WITH PROFILE PATH IN loadProfile()");
-		} catch (URISyntaxException e) {
-	    	System.err.println(this.getClass().getName()+" exception: Problem finding language profile from the library!");
 		} catch (IOException e) {
 	    	System.err.println(this.getClass().getName()+" exception: Problem reading language profile from the library!");
 		}
 	}
 
-	
 	public String detectLanguage(String content) {
 		Detector detector;
 		String lang = null;

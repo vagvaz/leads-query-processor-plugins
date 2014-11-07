@@ -40,6 +40,9 @@ public class AdidasProcessingPlugin implements PluginInterface {
       this.configuration = config;
       this.manager = manager;
       
+      // KEEP config
+      PropertiesSingleton.setConfig(config);
+      
       // READ Configuration for Cassandra
       DataStoreSingleton.configureDataStore(config);
       

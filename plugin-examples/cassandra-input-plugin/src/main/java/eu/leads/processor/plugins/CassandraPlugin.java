@@ -53,10 +53,13 @@ public class CassandraPlugin implements PluginInterface {
 		intermediateCache = (Cache) manager.getPersisentCache(intermediateCacheName);
 	      
 	    // READ Configuration for Cassandra
-	    DataStoreSingleton.configureDataStore(config);
-	    ds = DataStoreSingleton.getDataStore();
-	    mapping = DataStoreSingleton.getMapping();
-	    
+		try {
+			DataStoreSingleton.configureDataStore(config);
+		    ds = DataStoreSingleton.getDataStore();
+		    mapping = DataStoreSingleton.getMapping();
+		} catch(Exception e) {
+			System.err.println(e);
+		}
 	}
 
 	@Override
