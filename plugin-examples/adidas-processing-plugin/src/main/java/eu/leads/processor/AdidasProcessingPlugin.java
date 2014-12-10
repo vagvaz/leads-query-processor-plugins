@@ -88,10 +88,13 @@ public class AdidasProcessingPlugin implements PluginInterface {
       // Here Do the heavy processing stuff
       System.out.println("########:"+getClassName().toString() + " heavily processed key " + key);
       try {
-		pageProcessingPojo.execute(uri, timestamp, "webpages", cacheColumns);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+//		pageProcessingPojo.execute(uri, timestamp, "webpages", cacheColumns);
+                eu.leads.infext.python.PythonCall pythonCall = new eu.leads.infext.python.PythonCall();
+                pythonCall.call("eu.leads.infext.python.CLAPI.ecomnewpagetypeclassifier_cli","arg1");
+		System.out.println("Python called, no exceptions.");
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
    }
 
    @Override

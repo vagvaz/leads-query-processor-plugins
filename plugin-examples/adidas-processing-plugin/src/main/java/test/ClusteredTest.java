@@ -27,8 +27,8 @@ public class ClusteredTest {
      //Create plugin package for upload (id,class name, jar file path, xml configuration)
         /*PluginPackage plugin = new PluginPackage();*/
      PluginPackage plugin = new PluginPackage(AdidasProcessingPlugin.class.getCanonicalName(), AdidasProcessingPlugin.class.getCanonicalName(),
-                                                     "/data/workspace/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/target/adidas-processing-plugin-1.0-SNAPSHOT-jar-with-dependencies.jar",
-                                                     "/data/workspace/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/adidas-processing-plugin-conf.xml");
+                                                     "/home/ubuntu/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/target/adidas-processing-plugin-1.0-SNAPSHOT-jar-with-dependencies.jar",
+                                                     "/home/ubuntu/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/adidas-processing-plugin-conf.xml");
 
 
      //upload plugin
@@ -42,7 +42,7 @@ public class ClusteredTest {
 
      //Put some configuration properties for crawler
      LQPConfiguration.getConf().setProperty("crawler.seed", "http://www.bbc.co.uk"); //For some reason it is ignored news.yahoo.com is used by default
-     LQPConfiguration.getConf().setProperty("crawler.depth", 3);
+     LQPConfiguration.getConf().setProperty("crawler.depth", 1);
      //Set desired target cache
      LQPConfiguration.getConf().setProperty(StringConstants.CRAWLER_DEFAULT_CACHE, "webpages");
      //start crawler

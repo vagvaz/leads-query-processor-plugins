@@ -25,7 +25,7 @@ public class PythonCall {
 
 	Configuration config = PropertiesSingleton.getConfig();
 	
-	SecureRandom random;
+	private SecureRandom random;
 
 
 	public PythonCall() {
@@ -132,7 +132,7 @@ public class PythonCall {
 				paramsList.add("paramsfile:"+fileName);
 			}
 		}
-		
+		params.add("sudo");
 		params.add(python);
 		params.add("-m");
 		params.add(path);
@@ -188,5 +188,10 @@ public class PythonCall {
 		}
 		
 		return retValue;		
+	}
+
+	public static void main(String [] args) {
+		PythonCall pythonCall = new PythonCall();
+		pythonCall.call("eu.leads.infext.python.CLAPI.ecomnewpagetypeclassifier_cli","arg1");
 	}
 }

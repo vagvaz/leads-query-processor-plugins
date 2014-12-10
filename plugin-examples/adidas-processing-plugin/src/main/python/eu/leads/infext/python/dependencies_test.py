@@ -4,9 +4,9 @@ Created on Jan 30, 2014
 @author: amo remix
 '''
 
-from lxml import etree
 from sklearn import linear_model
 import requests
+from lxml import etree
 
 xml = '<a xmlns="test"><b xmlns="test"/></a>'
 root = etree.fromstring(xml)

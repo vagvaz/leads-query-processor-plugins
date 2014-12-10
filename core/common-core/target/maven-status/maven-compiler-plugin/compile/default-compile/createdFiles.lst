@@ -52,8 +52,8 @@ eu/leads/processor/core/net/CommunicationHandler.class
 eu/leads/processor/infinispan/operators/mapreduce/ProjectMapper.class
 eu/leads/processor/core/ServiceHandler.class
 eu/leads/processor/infinispan/operators/Operator.class
-eu/leads/processor/core/ServiceCommand.class
 eu/leads/processor/core/comp/LeadsComponentHandler$1.class
+eu/leads/processor/core/ServiceCommand.class
 eu/leads/processor/core/comp/Component.class
 eu/leads/processor/core/comp/PersistentStateProxy.class
 eu/leads/processor/core/net/Node.class
@@ -64,8 +64,8 @@ eu/leads/processor/infinispan/operators/mapreduce/IntersectOperator.class
 eu/leads/processor/core/comp/ComponentCommand.class
 eu/leads/processor/core/net/DefaultNode$1.class
 eu/leads/processor/math/MathTreeOperatorConverter.class
-eu/leads/processor/core/ActionStatus.class
 eu/leads/processor/core/comp/ComponentControlVerticle$5.class
+eu/leads/processor/core/ActionStatus.class
 eu/leads/processor/infinispan/operators/ProjectOperator.class
 eu/leads/processor/core/ActionHandler.class
 eu/leads/processor/core/net/ComUtils.class
@@ -75,8 +75,8 @@ eu/leads/processor/core/ActionCategory.class
 eu/leads/processor/core/LeadsMapper.class
 eu/leads/processor/infinispan/operators/FilterOperator.class
 eu/leads/processor/core/TupleUtils.class
-eu/leads/processor/infinispan/operators/MapReduceOperator.class
 eu/leads/processor/infinispan/operators/mapreduce/GroupByReducer.class
+eu/leads/processor/infinispan/operators/MapReduceOperator.class
 eu/leads/processor/infinispan/operators/WGSOperator.class
 eu/leads/processor/core/net/DefaultNode$2.class
 eu/leads/processor/infinispan/operators/LimitOperator.class
