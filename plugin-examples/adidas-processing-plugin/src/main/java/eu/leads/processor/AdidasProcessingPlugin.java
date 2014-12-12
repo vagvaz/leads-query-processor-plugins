@@ -56,6 +56,17 @@ public class AdidasProcessingPlugin implements PluginInterface {
 //		  e.printStackTrace();
 		  // TODO
 //	  }
+      try {
+      System.setOut(outputFile("/home/ubuntu/leads.out"));
+      System.setErr(outputFile("/home/ubuntu/leads.err"));
+      System.out.println("Let's start the party!");
+      } catch (java.io.FileNotFoundException e) {
+         e.printStackTrace();
+      }
+   }
+
+   protected java.io.PrintStream outputFile(String name) throws java.io.FileNotFoundException {
+       return new java.io.PrintStream(new java.io.BufferedOutputStream(new java.io.FileOutputStream(name)));
    }
 
    @Override
