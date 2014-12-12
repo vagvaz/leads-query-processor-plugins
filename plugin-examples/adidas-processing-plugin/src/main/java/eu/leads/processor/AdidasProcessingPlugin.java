@@ -44,18 +44,18 @@ public class AdidasProcessingPlugin implements PluginInterface {
       PropertiesSingleton.setConfig(config);
       
       // READ Configuration for Cassandra
-      DataStoreSingleton.configureDataStore(config);
+//      DataStoreSingleton.configureDataStore(config);
       
       // READ Configuration for the plugin
       PropertiesSingleton.setResourcesDir(config.getString("resources_path"));
       // TODO something more ??
       
-      try {
-    	  pageProcessingPojo = new PageProcessingPojo();
-	  } catch (Exception e) {
-		  e.printStackTrace();
+//      try {
+//    	  pageProcessingPojo = new PageProcessingPojo();
+//	  } catch (Exception e) {
+//		  e.printStackTrace();
 		  // TODO
-	  }
+//	  }
    }
 
    @Override
