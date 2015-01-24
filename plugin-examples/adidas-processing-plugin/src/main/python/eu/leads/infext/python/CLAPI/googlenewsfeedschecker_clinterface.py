@@ -13,30 +13,33 @@ from eu.leads.infext.python.ecom.extract.verify import defaultverifier
 from eu.leads.infext.python.ecom.extract import extracthelpersfactory
 from eu.leads.infext.python.news.googlenewsfeedschecker import GoogleNewsFeedsChecker
 
-if __name__ == '__main__':
-    '''
-    Parameters:
-    1 fully qualified domain name ( my.example.com )
-    
-    Returns:
-    isinthenewsfeed
-    '''
-    
-    params = translateInputParameters(sys.argv)
-    processing = processing_on()
-    
-    fqdn = params[0]
-    
-    gnfChecker = GoogleNewsFeedsChecker()
-    isit = gnfChecker.isnewsdomain(fqdn)
-    
-    if isit == True:
-        retval = "true"
-    else:
-        retval = "false"
-    
-    returnlist = []
-    returnlist.append(retval)
-    
-    processing_off(processing)
-    print translateReturnValues(returnlist)
+#if __name__ == '__main__':
+class AccessPoint:
+    def execute(self,params):
+        '''
+        Parameters:
+        1 fully qualified domain name ( my.example.com )
+        
+        Returns:
+        isinthenewsfeed
+        '''
+        
+        #params = translateInputParameters(sys.argv)
+        #processing = processing_on()
+        
+        fqdn = params[0]
+        
+        gnfChecker = GoogleNewsFeedsChecker()
+        isit = gnfChecker.isnewsdomain(fqdn)
+        
+        if isit == True:
+            retval = "true"
+        else:
+            retval = "false"
+        
+        returnlist = []
+        returnlist.append(retval)
+        
+        # processing_off(processing)
+        # print translateReturnValues(returnlist)
+        return translateReturnValues(returnlist)

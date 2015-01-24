@@ -18,6 +18,8 @@ import java.util.Properties;
 import java.security.SecureRandom;
 
 import org.apache.commons.configuration.Configuration;
+import org.apache.commons.configuration.ConfigurationException;
+import org.apache.commons.configuration.XMLConfiguration;
 
 import eu.leads.PropertiesSingleton;
 
@@ -143,7 +145,7 @@ public class PythonCall {
 		int len = 0;
 		for(String param : params)
 			len += param.length()+1;
-		System.out.println(len);
+//		System.out.println(len);
 		
 //		for(String param : params)
 //			System.out.print(param+" ");
@@ -191,7 +193,15 @@ public class PythonCall {
 	}
 
 	public static void main(String [] args) {
-		PythonCall pythonCall = new PythonCall();
-		pythonCall.call("eu.leads.infext.python.CLAPI.ecomnewpagetypeclassifier_cli","arg1");
+		String confPath = "/data/workspace/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/adidas-processing-plugin-conf.xml";
+		XMLConfiguration config;
+		try {
+			config = new XMLConfiguration(confPath);
+			PropertiesSingleton.setConfig(config);
+			PythonCall pythonCall = new PythonCall();
+			pythonCall.call("eu.leads.infext.python.CLAPI.googlenewsfeedschecker_clinterface");
+		} catch (ConfigurationException e) {
+			e.printStackTrace();
+		}
 	}
 }

@@ -1,40 +1,9 @@
-WARN ReceiverThread org.jgroups.protocols.BPING - d343611c-0a65-65a1-fd8c-e0336a0e0be9: discarding discovery request for cluster 'pawel' from d343611c-0a65-65a1-fd8c-e0336a0e0be9; our cluster name is 'ISPN'. Please separate your clusters properly
-INFO main eu.leads.processor.common.infinispan.CacheManagerFactory - Starting Clustered Infinispan Manager
-INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
-INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
-INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
-INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
-INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
-INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
-INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
-INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
-WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
-INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
-WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
-WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
-WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
-INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
-WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
-INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
-WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
-WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
-ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for clustered is not clustered so using default cluster configuration
-INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN
-WARN main org.jgroups.stack.Configurator - JGRP000014: TP.loopback has been deprecated: enabled by default
 WARN main org.jgroups.protocols.MFC - The fragmentation size of the fragmentation protocol is 60000, which is greater than min_credits (40000). This can lead to blockings (https://issues.jboss.org/browse/JGRP-1659)
 WARN main org.jgroups.protocols.TCP - JGRP000046: bundler_type=new has been removed; using transfer-queue
-INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [integrationtest01-17068|0] (1) [integrationtest01-17068]
-INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is integrationtest01-17068, physical addresses are [10.106.0.29:60906]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-29999|0] (1) [leads-ps-29999]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is leads-ps-29999, physical addresses are [10.0.2.15:51323]
 INFO main org.infinispan.factories.GlobalComponentRegistry - ISPN000128: Infinispan version: Infinispan 'Guinness' 7.0.0.Alpha5
 WARN pool-4-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
-WARN ReceiverThread org.jgroups.protocols.BPING - d343611c-0a65-65a1-fd8c-e0336a0e0be9: discarding discovery request for cluster 'pawel' from d343611c-0a65-65a1-fd8c-e0336a0e0be9; our cluster name is 'ISPN'. Please separate your clusters properly
-ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
-ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
-ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
-ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for processor_plugins: is not clustered so using default cluster configuration
-WARN pool-5-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
-ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for active_plugins_cache: is not clustered so using default cluster configuration
-WARN pool-6-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
 ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
 INFO main eu.leads.processor.common.infinispan.CacheManagerFactory - Starting Clustered Infinispan Manager
 INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
@@ -60,11 +29,97 @@ INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN00007
 WARN main org.jgroups.stack.Configurator - JGRP000014: TP.loopback has been deprecated: enabled by default
 WARN main org.jgroups.protocols.MFC - The fragmentation size of the fragmentation protocol is 60000, which is greater than min_credits (40000). This can lead to blockings (https://issues.jboss.org/browse/JGRP-1659)
 WARN main org.jgroups.protocols.TCP - JGRP000046: bundler_type=new has been removed; using transfer-queue
-INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [integrationtest01-61606|0] (1) [integrationtest01-61606]
-INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is integrationtest01-61606, physical addresses are [10.106.0.29:33883]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-12304|0] (1) [leads-ps-12304]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is leads-ps-12304, physical addresses are [10.0.2.15:52999]
 INFO main org.infinispan.factories.GlobalComponentRegistry - ISPN000128: Infinispan version: Infinispan 'Guinness' 7.0.0.Alpha5
 WARN pool-4-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
-WARN ReceiverThread org.jgroups.protocols.BPING - d343611c-0a65-65a1-fd8c-e0336a0e0be9: discarding discovery request for cluster 'pawel' from d343611c-0a65-65a1-fd8c-e0336a0e0be9; our cluster name is 'ISPN'. Please separate your clusters properly
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+INFO main eu.leads.processor.common.infinispan.CacheManagerFactory - Starting Clustered Infinispan Manager
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for clustered is not clustered so using default cluster configuration
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN
+WARN main org.jgroups.stack.Configurator - JGRP000014: TP.loopback has been deprecated: enabled by default
+WARN main org.jgroups.protocols.MFC - The fragmentation size of the fragmentation protocol is 60000, which is greater than min_credits (40000). This can lead to blockings (https://issues.jboss.org/browse/JGRP-1659)
+WARN main org.jgroups.protocols.TCP - JGRP000046: bundler_type=new has been removed; using transfer-queue
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-5566|0] (1) [leads-ps-5566]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is leads-ps-5566, physical addresses are [10.0.2.15:46259]
+INFO main org.infinispan.factories.GlobalComponentRegistry - ISPN000128: Infinispan version: Infinispan 'Guinness' 7.0.0.Alpha5
+WARN pool-4-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+INFO main eu.leads.processor.common.infinispan.CacheManagerFactory - Starting Clustered Infinispan Manager
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for clustered is not clustered so using default cluster configuration
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN
+WARN main org.jgroups.stack.Configurator - JGRP000014: TP.loopback has been deprecated: enabled by default
+WARN main org.jgroups.protocols.MFC - The fragmentation size of the fragmentation protocol is 60000, which is greater than min_credits (40000). This can lead to blockings (https://issues.jboss.org/browse/JGRP-1659)
+WARN main org.jgroups.protocols.TCP - JGRP000046: bundler_type=new has been removed; using transfer-queue
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-6870|0] (1) [leads-ps-6870]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is leads-ps-6870, physical addresses are [10.0.2.15:36616]
+INFO main org.infinispan.factories.GlobalComponentRegistry - ISPN000128: Infinispan version: Infinispan 'Guinness' 7.0.0.Alpha5
+WARN pool-4-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+INFO main eu.leads.processor.common.infinispan.CacheManagerFactory - Starting Clustered Infinispan Manager
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for clustered is not clustered so using default cluster configuration
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN
+WARN main org.jgroups.stack.Configurator - JGRP000014: TP.loopback has been deprecated: enabled by default
+WARN main org.jgroups.protocols.MFC - The fragmentation size of the fragmentation protocol is 60000, which is greater than min_credits (40000). This can lead to blockings (https://issues.jboss.org/browse/JGRP-1659)
+WARN main org.jgroups.protocols.TCP - JGRP000046: bundler_type=new has been removed; using transfer-queue
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-31147|0] (1) [leads-ps-31147]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is leads-ps-31147, physical addresses are [10.0.2.15:53920]
+INFO main org.infinispan.factories.GlobalComponentRegistry - ISPN000128: Infinispan version: Infinispan 'Guinness' 7.0.0.Alpha5
+WARN pool-4-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
 ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
 ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
 ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
@@ -73,11 +128,539 @@ WARN pool-5-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurati
 ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for active_plugins_cache: is not clustered so using default cluster configuration
 WARN pool-6-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
 ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
-WARN ReceiverThread org.jgroups.protocols.BPING - d343611c-0a65-65a1-fd8c-e0336a0e0be9: discarding discovery request for cluster 'pawel' from d343611c-0a65-65a1-fd8c-e0336a0e0be9; our cluster name is 'ISPN'. Please separate your clusters properly
-WARN ReceiverThread org.jgroups.protocols.BPING - d343611c-0a65-65a1-fd8c-e0336a0e0be9: discarding discovery request for cluster 'pawel' from d343611c-0a65-65a1-fd8c-e0336a0e0be9; our cluster name is 'ISPN'. Please separate your clusters properly
-WARN ReceiverThread org.jgroups.protocols.BPING - d343611c-0a65-65a1-fd8c-e0336a0e0be9: discarding discovery request for cluster 'pawel' from d343611c-0a65-65a1-fd8c-e0336a0e0be9; our cluster name is 'ISPN'. Please separate your clusters properly
-WARN ReceiverThread org.jgroups.protocols.BPING - d343611c-0a65-65a1-fd8c-e0336a0e0be9: discarding discovery request for cluster 'pawel' from d343611c-0a65-65a1-fd8c-e0336a0e0be9; our cluster name is 'ISPN'. Please separate your clusters properly
-WARN ReceiverThread org.jgroups.protocols.BPING - d343611c-0a65-65a1-fd8c-e0336a0e0be9: discarding discovery request for cluster 'pawel' from d343611c-0a65-65a1-fd8c-e0336a0e0be9; our cluster name is 'ISPN'. Please separate your clusters properly
-WARN ReceiverThread org.jgroups.protocols.BPING - d343611c-0a65-65a1-fd8c-e0336a0e0be9: discarding discovery request for cluster 'pawel' from d343611c-0a65-65a1-fd8c-e0336a0e0be9; our cluster name is 'ISPN'. Please separate your clusters properly
-WARN ReceiverThread org.jgroups.protocols.BPING - d343611c-0a65-65a1-fd8c-e0336a0e0be9: discarding discovery request for cluster 'pawel' from d343611c-0a65-65a1-fd8c-e0336a0e0be9; our cluster name is 'ISPN'. Please separate your clusters properly
-WARN ReceiverThread org.jgroups.protocols.BPING - d343611c-0a65-65a1-fd8c-e0336a0e0be9: discarding discovery request for cluster 'pawel' from d343611c-0a65-65a1-fd8c-e0336a0e0be9; our cluster name is 'ISPN'. Please separate your clusters properly
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for webpages is not clustered so using default cluster configuration
+WARN pool-7-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.conf.LQPConfiguration - File config.propertiesCould not be loaded because it does not exist neither in the working dir nor in conf/
+INFO main eu.leads.crawler.PersistentCrawl - Seed : http://www.bbc.co.uk
+INFO main eu.leads.crawler.PersistentCrawl - Depth 1
+INFO main eu.leads.crawler.PersistentCrawl - Number of crawler threads 1
+INFO main eu.leads.crawler.PersistentCrawl - Document earler than 10 day(s)
+INFO main eu.leads.crawler.PersistentCrawl - 0
+INFO main eu.leads.crawler.CrawlerController - Starting crawling..
+INFO main eu.leads.crawler.CrawlerController - Initializing crawler controller
+INFO main eu.leads.crawler.CrawlerController - Initializing task queue
+INFO main eu.leads.crawler.CrawlerController - Queue is overriden, setting it instead of default inner task queue
+INFO main eu.leads.crawler.CrawlerController - Initializing scheduler
+INFO main eu.leads.crawler.frontier.DefaultScheduler - Scheduler was successfully initialized and started
+INFO main eu.leads.crawler.CrawlerController - Initializing crawler workers
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-8 set task queue
+INFO main eu.leads.crawler.CrawlerController - Task queue initialized
+INFO main eu.leads.crawler.CrawlerController - Crawler controller initialized
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-8 is started
+INFO Thread-8 eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-8 start do work loop
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/alba/
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cymru/
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/accessibility/
+INFO Thread-8 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/news/ content length exceeded limit, stopping downloading
+INFO Thread-8 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/news/ violates this downloader constraints
+INFO Thread-8 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/weather/ content length exceeded limit, stopping downloading
+INFO Thread-8 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/weather/ violates this downloader constraints
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cbbc/
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cbeebies/
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/ww1/
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/food/
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/learning/
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/nature/
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/a-z/
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/privacy/cookies/managing/cookie-settings.html
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/locator/default/desktop/en-GB?ptrt=%2F
+INFO main eu.leads.crawler.CrawlerController - Stopping crawling
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-8 is joined, waiting until it stops
+INFO Thread-8 eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-8 finished its work
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-8 is stopped
+INFO main eu.leads.processor.common.infinispan.CacheManagerFactory - Starting Clustered Infinispan Manager
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for clustered is not clustered so using default cluster configuration
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN
+WARN main org.jgroups.stack.Configurator - JGRP000014: TP.loopback has been deprecated: enabled by default
+WARN main org.jgroups.protocols.MFC - The fragmentation size of the fragmentation protocol is 60000, which is greater than min_credits (40000). This can lead to blockings (https://issues.jboss.org/browse/JGRP-1659)
+WARN main org.jgroups.protocols.TCP - JGRP000046: bundler_type=new has been removed; using transfer-queue
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-38916|0] (1) [leads-ps-38916]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is leads-ps-38916, physical addresses are [10.0.2.15:60115]
+INFO main org.infinispan.factories.GlobalComponentRegistry - ISPN000128: Infinispan version: Infinispan 'Guinness' 7.0.0.Alpha5
+WARN pool-4-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for processor_plugins: is not clustered so using default cluster configuration
+WARN pool-5-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for active_plugins_cache: is not clustered so using default cluster configuration
+WARN pool-6-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for webpages is not clustered so using default cluster configuration
+WARN pool-7-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.conf.LQPConfiguration - File config.propertiesCould not be loaded because it does not exist neither in the working dir nor in conf/
+INFO main eu.leads.crawler.PersistentCrawl - Seed : http://www.bbc.co.uk
+INFO main eu.leads.crawler.PersistentCrawl - Depth 1
+INFO main eu.leads.crawler.PersistentCrawl - Number of crawler threads 1
+INFO main eu.leads.crawler.PersistentCrawl - Document earler than 10 day(s)
+INFO main eu.leads.crawler.PersistentCrawl - 0
+INFO main eu.leads.crawler.CrawlerController - Starting crawling..
+INFO main eu.leads.crawler.CrawlerController - Initializing crawler controller
+INFO main eu.leads.crawler.CrawlerController - Initializing task queue
+INFO main eu.leads.crawler.CrawlerController - Queue is overriden, setting it instead of default inner task queue
+INFO main eu.leads.crawler.CrawlerController - Initializing scheduler
+INFO main eu.leads.crawler.frontier.DefaultScheduler - Scheduler was successfully initialized and started
+INFO main eu.leads.crawler.CrawlerController - Initializing crawler workers
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 set task queue
+INFO main eu.leads.crawler.CrawlerController - Task queue initialized
+INFO main eu.leads.crawler.CrawlerController - Crawler controller initialized
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 is started
+INFO Thread-7 eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 start do work loop
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/alba/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cymru/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/accessibility/
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/news/ content length exceeded limit, stopping downloading
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/news/ violates this downloader constraints
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/weather/ content length exceeded limit, stopping downloading
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/weather/ violates this downloader constraints
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cbbc/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cbeebies/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/ww1/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/food/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/learning/
+INFO main eu.leads.crawler.CrawlerController - Stopping crawling
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 is joined, waiting until it stops
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/nature/
+INFO Thread-7 eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 finished its work
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 is stopped
+INFO main eu.leads.processor.common.infinispan.CacheManagerFactory - Starting Clustered Infinispan Manager
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for clustered is not clustered so using default cluster configuration
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN
+WARN main org.jgroups.stack.Configurator - JGRP000014: TP.loopback has been deprecated: enabled by default
+WARN main org.jgroups.protocols.MFC - The fragmentation size of the fragmentation protocol is 60000, which is greater than min_credits (40000). This can lead to blockings (https://issues.jboss.org/browse/JGRP-1659)
+WARN main org.jgroups.protocols.TCP - JGRP000046: bundler_type=new has been removed; using transfer-queue
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-18876|0] (1) [leads-ps-18876]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is leads-ps-18876, physical addresses are [10.0.2.15:58254]
+INFO main org.infinispan.factories.GlobalComponentRegistry - ISPN000128: Infinispan version: Infinispan 'Guinness' 7.0.0.Alpha5
+WARN pool-4-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for processor_plugins: is not clustered so using default cluster configuration
+WARN pool-5-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for active_plugins_cache: is not clustered so using default cluster configuration
+WARN pool-6-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for webpages is not clustered so using default cluster configuration
+WARN pool-7-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.conf.LQPConfiguration - File config.propertiesCould not be loaded because it does not exist neither in the working dir nor in conf/
+INFO main eu.leads.crawler.PersistentCrawl - Seed : http://www.bbc.co.uk
+INFO main eu.leads.crawler.PersistentCrawl - Depth 1
+INFO main eu.leads.crawler.PersistentCrawl - Number of crawler threads 1
+INFO main eu.leads.crawler.PersistentCrawl - Document earler than 10 day(s)
+INFO main eu.leads.crawler.PersistentCrawl - 0
+INFO main eu.leads.crawler.CrawlerController - Starting crawling..
+INFO main eu.leads.crawler.CrawlerController - Initializing crawler controller
+INFO main eu.leads.crawler.CrawlerController - Initializing task queue
+INFO main eu.leads.crawler.CrawlerController - Queue is overriden, setting it instead of default inner task queue
+INFO main eu.leads.crawler.CrawlerController - Initializing scheduler
+INFO main eu.leads.crawler.frontier.DefaultScheduler - Scheduler was successfully initialized and started
+INFO main eu.leads.crawler.CrawlerController - Initializing crawler workers
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 set task queue
+INFO main eu.leads.crawler.CrawlerController - Task queue initialized
+INFO main eu.leads.crawler.CrawlerController - Crawler controller initialized
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 is started
+INFO Thread-7 eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 start do work loop
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/alba/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cymru/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/accessibility/
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/news/ content length exceeded limit, stopping downloading
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/news/ violates this downloader constraints
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/weather/ content length exceeded limit, stopping downloading
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/weather/ violates this downloader constraints
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cbbc/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cbeebies/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/ww1/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/food/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/learning/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/nature/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/a-z/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/privacy/cookies/managing/cookie-settings.html
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/locator/default/desktop/en-GB?ptrt=%2F
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/weather/2643743?day=0 content length exceeded limit, stopping downloading
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/weather/2643743?day=0 violates this downloader constraints
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/weather/2643743?day=1 content length exceeded limit, stopping downloading
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/weather/2643743?day=1 violates this downloader constraints
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/weather/2643743?day=2 content length exceeded limit, stopping downloading
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/weather/2643743?day=2 violates this downloader constraints
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/weather/2643743 content length exceeded limit, stopping downloading
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/weather/2643743 violates this downloader constraints
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/news/world-middle-east-30944812
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/news/world-middle-east-30945324 content length exceeded limit, stopping downloading
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/news/world-middle-east-30945324 violates this downloader constraints
+INFO main eu.leads.crawler.CrawlerController - Stopping crawling
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 is joined, waiting until it stops
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/programmes/p02hh37p
+INFO Thread-7 eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 finished its work
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 is stopped
+INFO main eu.leads.processor.common.infinispan.CacheManagerFactory - Starting Clustered Infinispan Manager
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for clustered is not clustered so using default cluster configuration
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN
+WARN main org.jgroups.stack.Configurator - JGRP000014: TP.loopback has been deprecated: enabled by default
+WARN main org.jgroups.protocols.MFC - The fragmentation size of the fragmentation protocol is 60000, which is greater than min_credits (40000). This can lead to blockings (https://issues.jboss.org/browse/JGRP-1659)
+WARN main org.jgroups.protocols.TCP - JGRP000046: bundler_type=new has been removed; using transfer-queue
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-52849|0] (1) [leads-ps-52849]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is leads-ps-52849, physical addresses are [10.0.2.15:39154]
+INFO main org.infinispan.factories.GlobalComponentRegistry - ISPN000128: Infinispan version: Infinispan 'Guinness' 7.0.0.Alpha5
+WARN pool-4-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for processor_plugins: is not clustered so using default cluster configuration
+WARN pool-5-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for active_plugins_cache: is not clustered so using default cluster configuration
+WARN pool-6-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for webpages is not clustered so using default cluster configuration
+WARN pool-7-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.conf.LQPConfiguration - File config.propertiesCould not be loaded because it does not exist neither in the working dir nor in conf/
+INFO main eu.leads.crawler.PersistentCrawl - Seed : http://www.bbc.co.uk
+INFO main eu.leads.crawler.PersistentCrawl - Depth 1
+INFO main eu.leads.crawler.PersistentCrawl - Number of crawler threads 1
+INFO main eu.leads.crawler.PersistentCrawl - Document earler than 10 day(s)
+INFO main eu.leads.crawler.PersistentCrawl - 0
+INFO main eu.leads.crawler.CrawlerController - Starting crawling..
+INFO main eu.leads.crawler.CrawlerController - Initializing crawler controller
+INFO main eu.leads.crawler.CrawlerController - Initializing task queue
+INFO main eu.leads.crawler.CrawlerController - Queue is overriden, setting it instead of default inner task queue
+INFO main eu.leads.crawler.CrawlerController - Initializing scheduler
+INFO main eu.leads.crawler.frontier.DefaultScheduler - Scheduler was successfully initialized and started
+INFO main eu.leads.crawler.CrawlerController - Initializing crawler workers
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-8 set task queue
+INFO main eu.leads.crawler.CrawlerController - Task queue initialized
+INFO main eu.leads.crawler.CrawlerController - Crawler controller initialized
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-8 is started
+INFO Thread-8 eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-8 start do work loop
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/alba/
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cymru/
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/accessibility/
+INFO Thread-8 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/news/ content length exceeded limit, stopping downloading
+INFO Thread-8 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/news/ violates this downloader constraints
+INFO Thread-8 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/weather/ content length exceeded limit, stopping downloading
+INFO Thread-8 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/weather/ violates this downloader constraints
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cbbc/
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cbeebies/
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/ww1/
+INFO main eu.leads.crawler.CrawlerController - Stopping crawling
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-8 is joined, waiting until it stops
+INFO Thread-8 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/food/
+INFO Thread-8 eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-8 finished its work
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-8 is stopped
+INFO main eu.leads.processor.common.infinispan.CacheManagerFactory - Starting Clustered Infinispan Manager
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for clustered is not clustered so using default cluster configuration
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN
+WARN main org.jgroups.stack.Configurator - JGRP000014: TP.loopback has been deprecated: enabled by default
+WARN main org.jgroups.protocols.MFC - The fragmentation size of the fragmentation protocol is 60000, which is greater than min_credits (40000). This can lead to blockings (https://issues.jboss.org/browse/JGRP-1659)
+WARN main org.jgroups.protocols.TCP - JGRP000046: bundler_type=new has been removed; using transfer-queue
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-9793|0] (1) [leads-ps-9793]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is leads-ps-9793, physical addresses are [10.0.2.15:36287]
+INFO main org.infinispan.factories.GlobalComponentRegistry - ISPN000128: Infinispan version: Infinispan 'Guinness' 7.0.0.Alpha5
+WARN pool-4-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for processor_plugins: is not clustered so using default cluster configuration
+WARN pool-5-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for active_plugins_cache: is not clustered so using default cluster configuration
+WARN pool-6-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for webpages is not clustered so using default cluster configuration
+WARN pool-7-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.conf.LQPConfiguration - File config.propertiesCould not be loaded because it does not exist neither in the working dir nor in conf/
+INFO main eu.leads.crawler.PersistentCrawl - Seed : http://www.bbc.co.uk
+INFO main eu.leads.crawler.PersistentCrawl - Depth 1
+INFO main eu.leads.crawler.PersistentCrawl - Number of crawler threads 1
+INFO main eu.leads.crawler.PersistentCrawl - Document earler than 10 day(s)
+INFO main eu.leads.crawler.PersistentCrawl - 0
+INFO main eu.leads.crawler.CrawlerController - Starting crawling..
+INFO main eu.leads.crawler.CrawlerController - Initializing crawler controller
+INFO main eu.leads.crawler.CrawlerController - Initializing task queue
+INFO main eu.leads.crawler.CrawlerController - Queue is overriden, setting it instead of default inner task queue
+INFO main eu.leads.crawler.CrawlerController - Initializing scheduler
+INFO main eu.leads.crawler.frontier.DefaultScheduler - Scheduler was successfully initialized and started
+INFO main eu.leads.crawler.CrawlerController - Initializing crawler workers
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 set task queue
+INFO main eu.leads.crawler.CrawlerController - Task queue initialized
+INFO main eu.leads.crawler.CrawlerController - Crawler controller initialized
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 is started
+INFO Thread-7 eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 start do work loop
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/alba/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cymru/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/accessibility/
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/news/ content length exceeded limit, stopping downloading
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/news/ violates this downloader constraints
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/weather/ content length exceeded limit, stopping downloading
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/weather/ violates this downloader constraints
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cbbc/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cbeebies/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/ww1/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/food/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/learning/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/nature/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/a-z/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/privacy/cookies/managing/cookie-settings.html
+INFO main eu.leads.crawler.CrawlerController - Stopping crawling
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 is joined, waiting until it stops
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/locator/default/desktop/en-GB?ptrt=%2F
+INFO Thread-7 eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 finished its work
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 is stopped
+INFO main eu.leads.processor.common.infinispan.CacheManagerFactory - Starting Clustered Infinispan Manager
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for clustered is not clustered so using default cluster configuration
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN
+WARN main org.jgroups.stack.Configurator - JGRP000014: TP.loopback has been deprecated: enabled by default
+WARN main org.jgroups.protocols.MFC - The fragmentation size of the fragmentation protocol is 60000, which is greater than min_credits (40000). This can lead to blockings (https://issues.jboss.org/browse/JGRP-1659)
+WARN main org.jgroups.protocols.TCP - JGRP000046: bundler_type=new has been removed; using transfer-queue
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-53915|0] (1) [leads-ps-53915]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is leads-ps-53915, physical addresses are [10.0.2.15:44546]
+INFO main org.infinispan.factories.GlobalComponentRegistry - ISPN000128: Infinispan version: Infinispan 'Guinness' 7.0.0.Alpha5
+WARN pool-4-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for processor_plugins: is not clustered so using default cluster configuration
+WARN pool-5-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for active_plugins_cache: is not clustered so using default cluster configuration
+WARN pool-6-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for webpages is not clustered so using default cluster configuration
+WARN pool-7-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.conf.LQPConfiguration - File config.propertiesCould not be loaded because it does not exist neither in the working dir nor in conf/
+INFO main eu.leads.crawler.PersistentCrawl - Seed : http://www.bbc.co.uk
+INFO main eu.leads.crawler.PersistentCrawl - Depth 1
+INFO main eu.leads.crawler.PersistentCrawl - Number of crawler threads 1
+INFO main eu.leads.crawler.PersistentCrawl - Document earler than 10 day(s)
+INFO main eu.leads.crawler.PersistentCrawl - 0
+INFO main eu.leads.crawler.CrawlerController - Starting crawling..
+INFO main eu.leads.crawler.CrawlerController - Initializing crawler controller
+INFO main eu.leads.crawler.CrawlerController - Initializing task queue
+INFO main eu.leads.crawler.CrawlerController - Queue is overriden, setting it instead of default inner task queue
+INFO main eu.leads.crawler.CrawlerController - Initializing scheduler
+INFO main eu.leads.crawler.frontier.DefaultScheduler - Scheduler was successfully initialized and started
+INFO main eu.leads.crawler.CrawlerController - Initializing crawler workers
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 set task queue
+INFO main eu.leads.crawler.CrawlerController - Task queue initialized
+INFO main eu.leads.crawler.CrawlerController - Crawler controller initialized
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 is started
+INFO Thread-7 eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 start do work loop
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/alba/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cymru/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/accessibility/
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/news/ content length exceeded limit, stopping downloading
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/news/ violates this downloader constraints
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/weather/ content length exceeded limit, stopping downloading
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/weather/ violates this downloader constraints
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cbbc/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cbeebies/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/ww1/
+INFO main eu.leads.crawler.CrawlerController - Stopping crawling
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 is joined, waiting until it stops
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/food/
+INFO Thread-7 eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 finished its work
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 is stopped
+INFO main eu.leads.processor.common.infinispan.CacheManagerFactory - Starting Clustered Infinispan Manager
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+INFO main org.infinispan.configuration.parsing.Parser70 - ISPN000293: Ignoring XML attribute START, please remove from configuration file
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+INFO main org.infinispan.configuration.cache.EvictionConfigurationBuilder - ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+WARN main org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for clustered is not clustered so using default cluster configuration
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN
+WARN main org.jgroups.stack.Configurator - JGRP000014: TP.loopback has been deprecated: enabled by default
+WARN main org.jgroups.protocols.MFC - The fragmentation size of the fragmentation protocol is 60000, which is greater than min_credits (40000). This can lead to blockings (https://issues.jboss.org/browse/JGRP-1659)
+WARN main org.jgroups.protocols.TCP - JGRP000046: bundler_type=new has been removed; using transfer-queue
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [leads-ps-16924|0] (1) [leads-ps-16924]
+INFO main org.infinispan.remoting.transport.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is leads-ps-16924, physical addresses are [10.0.2.15:47791]
+INFO main org.infinispan.factories.GlobalComponentRegistry - ISPN000128: Infinispan version: Infinispan 'Guinness' 7.0.0.Alpha5
+WARN pool-4-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for processor_plugins: is not clustered so using default cluster configuration
+WARN pool-5-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for active_plugins_cache: is not clustered so using default cluster configuration
+WARN pool-6-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.jar.lock
+ERROR main eu.leads.processor.common.utils.FileLockWrapper - Could not create the directories for the lock of /tmp/leads/processor/tmp/testplugin.xml.lock
+ERROR main eu.leads.processor.common.infinispan.ClusterInfinispanManager - Configuration given for webpages is not clustered so using default cluster configuration
+WARN pool-7-thread-1 org.infinispan.configuration.cache.AbstractStoreConfigurationBuilder - ISPN000149: Fetch persistent state and purge on startup are both disabled, cache may contain stale entries on startup
+ERROR main eu.leads.processor.conf.LQPConfiguration - File config.propertiesCould not be loaded because it does not exist neither in the working dir nor in conf/
+INFO main eu.leads.crawler.PersistentCrawl - Seed : http://www.bbc.co.uk
+INFO main eu.leads.crawler.PersistentCrawl - Depth 1
+INFO main eu.leads.crawler.PersistentCrawl - Number of crawler threads 1
+INFO main eu.leads.crawler.PersistentCrawl - Document earler than 10 day(s)
+INFO main eu.leads.crawler.PersistentCrawl - 0
+INFO main eu.leads.crawler.CrawlerController - Starting crawling..
+INFO main eu.leads.crawler.CrawlerController - Initializing crawler controller
+INFO main eu.leads.crawler.CrawlerController - Initializing task queue
+INFO main eu.leads.crawler.CrawlerController - Queue is overriden, setting it instead of default inner task queue
+INFO main eu.leads.crawler.CrawlerController - Initializing scheduler
+INFO main eu.leads.crawler.frontier.DefaultScheduler - Scheduler was successfully initialized and started
+INFO main eu.leads.crawler.CrawlerController - Initializing crawler workers
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 set task queue
+INFO main eu.leads.crawler.CrawlerController - Task queue initialized
+INFO main eu.leads.crawler.CrawlerController - Crawler controller initialized
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 is started
+INFO Thread-7 eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 start do work loop
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/alba/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cymru/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/accessibility/
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/news/ content length exceeded limit, stopping downloading
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/news/ violates this downloader constraints
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - http://www.bbc.co.uk/weather/ content length exceeded limit, stopping downloading
+INFO Thread-7 eu.leads.crawler.download.DefaultDownloader - Request to http://www.bbc.co.uk/weather/ violates this downloader constraints
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cbbc/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/cbeebies/
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/ww1/
+INFO main eu.leads.crawler.CrawlerController - Stopping crawling
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 is joined, waiting until it stops
+INFO Thread-7 eu.leads.crawler.PersistentCrawler - Crawled: http://www.bbc.co.uk/food/
+INFO Thread-7 eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 finished its work
+INFO main eu.leads.crawler.CrawlerController$CrawlerWorker - Thread-7 is stopped

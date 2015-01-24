@@ -1,2 +1,5 @@
 eclipse.preferences.version=1
 encoding//src/main/java=UTF-8
+encoding//src/main/python/eu/leads/infext/python/CLAPI/conversionmethods.py=latin1
+encoding//src/main/python/eu/leads/infext/python/CLAPI/helloworld_clinterface.py=utf-8
+encoding//src/main/python/eu/leads/infext/python/CLAPI/valuesextraction_clinterface.py=utf-8

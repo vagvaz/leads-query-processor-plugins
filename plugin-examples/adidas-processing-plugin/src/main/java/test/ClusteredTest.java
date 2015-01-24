@@ -27,12 +27,15 @@ public class ClusteredTest {
      //Create plugin package for upload (id,class name, jar file path, xml configuration)
         /*PluginPackage plugin = new PluginPackage();*/
      PluginPackage plugin = new PluginPackage(AdidasProcessingPlugin.class.getCanonicalName(), AdidasProcessingPlugin.class.getCanonicalName(),
-                                                     "/home/ubuntu/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/target/adidas-processing-plugin-1.0-SNAPSHOT-jar-with-dependencies.jar",
-                                                     "/home/ubuntu/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/adidas-processing-plugin-conf.xml");
+                                                     "/data/workspace/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/target/adidas-processing-plugin-1.0-SNAPSHOT-jar-with-dependencies.jar",
+                                                     "/data/workspace/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/adidas-processing-plugin-conf.xml");
 
 
      //upload plugin
-     PluginManager.uploadPlugin(plugin);
+     boolean uploaded = PluginManager.uploadPlugin(plugin);
+     
+     System.out.print("neu stuff: ");
+     System.out.println(uploaded ? "###plugin uploaded!" : "###not uploaded!!");
 
      //distributed deployment  ( plugin id, cache to install, events)
      //PluginManager.deployPlugin();

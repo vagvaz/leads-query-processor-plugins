@@ -8,8 +8,11 @@
 	<resources_path>/data/workspace/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/resources</resources_path>
 	<storagePropertiesDir>/data/workspace/leads-query-processor-plugins/common/src/main/java/eu/leads/datastore</storagePropertiesDir>
 	
-	<pythonPath>/home/ubuntu/.local/lib/python2.7/site-packages:/local/lib/python2.7/dist-packages:/home/ubuntu/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/src/main/python</pythonPath>
+<!-- 	<pythonPath>/home/nonlinear/.local/lib/python2.7/site-packages:/local/lib/python2.7/dist-packages:/home/nonlinear/workspace/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/src/main/python</pythonPath> -->
+	<pythonPath>/data/workspace/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/src/main/python</pythonPath>
 	<pythonCLIPackage>eu.leads.infext.python.CLAPI</pythonCLIPackage>
 	<pythonFilebasename>/tmp/leadsjavapy-</pythonFilebasename>
+	<pzsEndpoints>tcp://127.0.0.1:5559</pzsEndpoints>
+	<pzsEndpoints>tcp://127.0.0.1:5560</pzsEndpoints>
 	
 </config>
