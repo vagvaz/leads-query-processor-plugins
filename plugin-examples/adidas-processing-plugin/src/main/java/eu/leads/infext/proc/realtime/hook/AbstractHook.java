@@ -30,6 +30,10 @@ public abstract class AbstractHook {
 	private List<String> nonRetrievableFamilies = new ArrayList<String>()
 			{{ add("leads_resourceparts"); add("leads_keywords"); }};
 	
+	public void resetMapping(Properties mapping) {
+		this.mapping = mapping;
+	}
+			
 	/**
 	 * 
 	 * @param url

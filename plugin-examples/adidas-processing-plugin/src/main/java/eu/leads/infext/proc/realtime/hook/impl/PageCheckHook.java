@@ -1,6 +1,7 @@
 package eu.leads.infext.proc.realtime.hook.impl;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -19,8 +20,10 @@ import eu.leads.datastore.datastruct.URIVersion;
 import eu.leads.infext.proc.com.categorization.ecom.EcomClassificationEnum;
 import eu.leads.infext.proc.com.categorization.ecom.EcommerceClassification;
 import eu.leads.infext.proc.com.categorization.ecom.EcommerceNewPageTypeEvaluation;
+import eu.leads.infext.proc.com.categorization.newsblog.NewsBlogArticleAnalysis;
 import eu.leads.infext.proc.com.core.UrlAssumptions;
 import eu.leads.infext.proc.realtime.hook.AbstractHook;
+import eu.leads.infext.python.PythonQueueCall;
 import eu.leads.utils.LEADSUtils;
 
 public class PageCheckHook extends AbstractHook {
@@ -32,7 +35,7 @@ public class PageCheckHook extends AbstractHook {
 		HashMap<String, HashMap<String, String>> newMetadata = new HashMap<>();
 		
 		putLeadsMDIfNeeded(url, "new", "leads_internal", 0, null, currentMetadata, newMetadata, editableFamilies);
-		putLeadsMDIfNeeded(url, "new", "leads_core", 0, null, currentMetadata, newMetadata, null);
+		putLeadsMDIfNeeded(url, "new", "leads_core", 0, null, currentMetadata, newMetadata, editableFamilies);
 		putLeadsMDIfNeeded(url, "previous", "leads_internal", -1, timestamp, currentMetadata, newMetadata, null);
 		
 		List<String> urlGeneralizations = LEADSUtils.getAllResourceGeneralizations(url);
@@ -52,6 +55,7 @@ public class PageCheckHook extends AbstractHook {
 		
 		HashMap<String, HashMap<String, String>> result = new HashMap<>();
 		HashMap<String, String> newInternal = new HashMap<>();
+		HashMap<String, String> newCore     = new HashMap<>();
 		
 		HashMap<String,String> newParameters = parameters.get("new");
 		HashMap<String,String> newCoreParameters = parameters.get("new:leads_core");
@@ -74,6 +78,7 @@ public class PageCheckHook extends AbstractHook {
 		String ecomTypeAssumption = null;
 		String pageType = mapping.getProperty("leads_internal-page_type-none");
 		String ecomFeatures = null;
+		String contentDate = null;
 		
 		boolean longPathNeeded = false;
 		
@@ -84,6 +89,21 @@ public class PageCheckHook extends AbstractHook {
 				
 				if(extractionCandidatesJSONString == null)
 					longPathNeeded = true;
+			}
+			else if(previousVersionType.equals(mapping.getProperty("leads_internal-page_type-ecom_category_page"))) {
+				pageType = previousVersionType;
+				longPathNeeded = false;
+			}
+			else if(previousVersionType.equals(mapping.getProperty("leads_internal-page_type-newsblog_article"))) {
+				extractionCandidatesJSONString = LEADSUtils.prepareExtractionCandidatesJSONString(
+						new String[]{"boilerpipe"}, new String[]{"article_content"});
+				
+				pageType = previousVersionType;
+				longPathNeeded = false;
+			}
+			else if(previousVersionType.equals(mapping.getProperty("leads_internal-page_type-newsblog_other"))) {
+				pageType = previousVersionType;
+				longPathNeeded = false;
 			}
 		}
 		else {
@@ -103,8 +123,12 @@ public class PageCheckHook extends AbstractHook {
 				 pageType = mapping.getProperty("leads_internal-page_type-ecom_category_page");
 			 }
 			 else {
-				 extractionCandidatesJSONString = LEADSUtils.prepareExtractionCandidatesJSONString(
-							new String[]{"boilerpipe"}, new String[]{"article_content"});
+				 contentDate = checkForNewsblogArticlePage(content, url);
+				 if(contentDate != null) {
+					 pageType = mapping.getProperty("leads_internal-page_type-newsblog_article");
+					 extractionCandidatesJSONString = LEADSUtils.prepareExtractionCandidatesJSONString(
+								new String[]{"boilerpipe"}, new String[]{"article_content"});
+				 }
 			 }
 			 ecomFeatures = returnStringsArray[2];
 		}
@@ -116,7 +140,11 @@ public class PageCheckHook extends AbstractHook {
 			newInternal.put(mapping.getProperty("leads_internal-page_type"), pageType);
 		if(ecomFeatures != null)
 			newInternal.put(mapping.getProperty("leads_internal-ecom_features"), ecomFeatures);
-		result.put("new:leads_internal", newInternal);
+		if(contentDate != null)
+			newCore.put(mapping.getProperty("leads_core-contentdate"), contentDate);
+		
+		if(!newInternal.isEmpty()) result.put("new:leads_internal", newInternal);
+		if(!newCore.isEmpty()) result.put("new:leads_core", newCore);
 		
 		return result;
 //		if(extractionSchemaCandidatesJSON != null)
@@ -128,7 +156,13 @@ public class PageCheckHook extends AbstractHook {
 //		return parameters;
 		
 	}
-	
+
+
+	private String checkForNewsblogArticlePage(String content, String url) {
+		return NewsBlogArticleAnalysis.getPublishDate(content, url);
+	}
+
+
 	private String ecomFindExtractionQuickPath(HashMap<String,String> previousParameters) {
 		System.out.println("-> Quick extraction path");
 		String successfulSchemasJsonString = previousParameters.get(mapping.get("leads_internal-successful_extractions"));
@@ -141,55 +175,66 @@ public class PageCheckHook extends AbstractHook {
 		System.out.println("-> Long extraction path");
 		String extractionCandidatesJSONString = null;
 		
-		HashMap<String, String> fqdnParameters = generalParametersList.get(0);
-		HashMap<String,String> fqdnEcomParameters = generalEcomParametersList.get(0);
+		HashMap<String, String> fqdnParameters = null;
+		HashMap<String,String> fqdnEcomParameters = null;
 		
-		String isBagButtonOnSite = fqdnEcomParameters.get(mapping.get("leads_urldirectory_ecom-is_atb_button_in_dir"));
-		List<String> kMeansParams = new ArrayList<>();
-		kMeansParams.add(fqdnEcomParameters.get(mapping.get("leads_urldirectory_ecom-product_cluster_center")));
-		kMeansParams.add(fqdnEcomParameters.get(mapping.get("leads_urldirectory_ecom-category_cluster_center")));
-		kMeansParams.add(fqdnEcomParameters.get(mapping.get("leads_urldirectory_ecom-product_cluster_50pc_dist")));
-		kMeansParams.add(fqdnEcomParameters.get(mapping.get("leads_urldirectory_ecom-product_cluster_80pc_dist")));
-		kMeansParams.add(fqdnEcomParameters.get(mapping.get("leads_urldirectory_ecom-category_cluster_50pc_dist")));
-		kMeansParams.add(fqdnEcomParameters.get(mapping.get("leads_urldirectory_ecom-category_cluster_80pc_dist")));
-		kMeansParams.add(fqdnEcomParameters.get(mapping.get("leads_urldirectory_ecom-scaler_mean")));
-		kMeansParams.add(fqdnEcomParameters.get(mapping.get("leads_urldirectory_ecom-scaler_std")));
+		EcommerceNewPageTypeEvaluation ecomPageEval = null;
 		
-		EcommerceNewPageTypeEvaluation ecomPageEval = new EcommerceNewPageTypeEvaluation(content,lang, isBagButtonOnSite, kMeansParams);
+		if(generalParametersList.size() > 0)
+			fqdnParameters = generalParametersList.get(0);
+		if(generalEcomParametersList.size() > 0)
+			fqdnEcomParameters = generalEcomParametersList.get(0);
 		
-		// if the page has no older version and has url, check assumptions based on url's parent directories
-		if(previousVersionType == null) {
-			// assumption on the URL
-			UrlAssumptions urlAssumptions = new UrlAssumptions();
-			List<String> assumptionsList = urlAssumptions.getFQDNAssumption(fqdnParameters);
-						
-			//if(assumptionsList.contains(mapping.get("ecom"))) {
-			if(!assumptionsList.isEmpty()) {
-				if(assumptionsList.get(0).toLowerCase().startsWith("ecom")) {
-					// GET EXTRACTION SCHEMAS FROM DIR
-					boolean isCorrect = ecomPageEval.determinePageEcomFeatures();
-					if(isCorrect) {
-						if(ecomPageEval.getEcomAssumption() == EcomClassificationEnum.ECOM_PRODUCT_OFFERING_PAGE)
-							// if there is a change that this is the product offering page, try to determine extraction schema
-							// based on content and other "similar" pages
-							extractionCandidatesJSONString = getEcomNamePriceExtractionSchemasFromDir(fqdnEcomParameters);
-						else
-							extractionCandidatesJSONString = new JSONObject().toString();
+		if(fqdnEcomParameters != null) {
+			String isBagButtonOnSite = fqdnEcomParameters.get(mapping.get("leads_urldirectory_ecom-is_atb_button_in_dir"));
+			List<String> kMeansParams = new ArrayList<>();
+			kMeansParams.add(fqdnEcomParameters.get(mapping.get("leads_urldirectory_ecom-product_cluster_center")));
+			kMeansParams.add(fqdnEcomParameters.get(mapping.get("leads_urldirectory_ecom-category_cluster_center")));
+			kMeansParams.add(fqdnEcomParameters.get(mapping.get("leads_urldirectory_ecom-product_cluster_50pc_dist")));
+			kMeansParams.add(fqdnEcomParameters.get(mapping.get("leads_urldirectory_ecom-product_cluster_80pc_dist")));
+			kMeansParams.add(fqdnEcomParameters.get(mapping.get("leads_urldirectory_ecom-category_cluster_50pc_dist")));
+			kMeansParams.add(fqdnEcomParameters.get(mapping.get("leads_urldirectory_ecom-category_cluster_80pc_dist")));
+			kMeansParams.add(fqdnEcomParameters.get(mapping.get("leads_urldirectory_ecom-scaler_mean")));
+			kMeansParams.add(fqdnEcomParameters.get(mapping.get("leads_urldirectory_ecom-scaler_std")));
+		
+			ecomPageEval = new EcommerceNewPageTypeEvaluation(content,lang, isBagButtonOnSite, kMeansParams);
+			
+			// if the page has no older version and has url, check assumptions based on url's parent directories
+			if(previousVersionType == null) {
+				// assumption on the URL
+				UrlAssumptions urlAssumptions = new UrlAssumptions();
+				List<String> assumptionsList = urlAssumptions.getFQDNAssumption(fqdnParameters);
+							
+				//if(assumptionsList.contains(mapping.get("ecom"))) {
+				if(!assumptionsList.isEmpty()) {
+					if(assumptionsList.get(0).toLowerCase().startsWith("ecom")) {
+						// GET EXTRACTION SCHEMAS FROM DIR
+						boolean isCorrect = ecomPageEval.determinePageEcomFeatures();
+						if(isCorrect) {
+							if(ecomPageEval.getEcomAssumption() == EcomClassificationEnum.ECOM_PRODUCT_OFFERING_PAGE)
+								// if there is a change that this is the product offering page, try to determine extraction schema
+								// based on content and other "similar" pages
+								extractionCandidatesJSONString = getEcomNamePriceExtractionSchemasFromDir(fqdnEcomParameters);
+							else
+								extractionCandidatesJSONString = new JSONObject().toString();
+						}
+					}
+					else {
+						extractionCandidatesJSONString = getArticleSchemaFromDir(fqdnEcomParameters);
 					}
 				}
-				else {
-					extractionCandidatesJSONString = getArticleSchemaFromDir(fqdnEcomParameters);
-				}
+				
 			}
-			
 		}
 		
 		String [] returnArray = new String[3];
 		
 		returnArray[0] = extractionCandidatesJSONString;
-		EcomClassificationEnum ecomAssumption = ecomPageEval.getEcomAssumption();
-		returnArray[1] = ecomAssumption==null ? null : ecomAssumption.toString();
-		returnArray[2] = ecomPageEval.getEcomFeatures();
+		if(ecomPageEval != null) {
+			EcomClassificationEnum ecomAssumption = ecomPageEval.getEcomAssumption();
+			returnArray[1] = ecomAssumption==null ? null : ecomAssumption.toString();
+			returnArray[2] = ecomPageEval.getEcomFeatures();
+		}
 		
 		return returnArray;		
 	}

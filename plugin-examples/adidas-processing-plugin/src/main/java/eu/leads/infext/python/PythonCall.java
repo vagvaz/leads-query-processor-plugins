@@ -198,7 +198,7 @@ public class PythonCall {
 		try {
 			config = new XMLConfiguration(confPath);
 			PropertiesSingleton.setConfig(config);
-			PythonCall pythonCall = new PythonCall();
+			PythonQueueCall pythonCall = new PythonQueueCall();
 			pythonCall.call("eu.leads.infext.python.CLAPI.googlenewsfeedschecker_clinterface");
 		} catch (ConfigurationException e) {
 			e.printStackTrace();

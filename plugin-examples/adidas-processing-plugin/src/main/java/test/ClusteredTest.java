@@ -11,12 +11,15 @@ import eu.leads.processor.conf.LQPConfiguration;
 import eu.leads.processor.plugins.EventType;
 import eu.leads.processor.plugins.PluginManager;
 import eu.leads.processor.plugins.PluginPackage;
+
 import org.infinispan.Cache;
 
 import java.util.ArrayList;
 
 public class ClusteredTest {
   public static void main(String[] args) {
+	  String seed = args.length>0 ? args[0] : "http://www.bbc.com/news/uk-31545744";
+	  
      LQPConfiguration.initialize();
      ArrayList<InfinispanManager> cluster = new ArrayList<InfinispanManager>();
      cluster.add(InfinispanClusterSingleton.getInstance().getManager());  //must add because it is used from the rest of the system
@@ -35,7 +38,7 @@ public class ClusteredTest {
      boolean uploaded = PluginManager.uploadPlugin(plugin);
      
      System.out.print("neu stuff: ");
-     System.out.println(uploaded ? "###plugin uploaded!" : "###not uploaded!!");
+     System.out.println(uploaded ? "###plugin uploaded!" : "###plugin not uploaded!!");
 
      //distributed deployment  ( plugin id, cache to install, events)
      //PluginManager.deployPlugin();
@@ -44,7 +47,8 @@ public class ClusteredTest {
         /*Start putting values to the cache */
 
      //Put some configuration properties for crawler
-     LQPConfiguration.getConf().setProperty("crawler.seed", "http://www.bbc.co.uk"); //For some reason it is ignored news.yahoo.com is used by default
+     
+     LQPConfiguration.getConf().setProperty("crawler.seed", seed); //For some reason it is ignored news.yahoo.com is used by default
      LQPConfiguration.getConf().setProperty("crawler.depth", 1);
      //Set desired target cache
      LQPConfiguration.getConf().setProperty(StringConstants.CRAWLER_DEFAULT_CACHE, "webpages");

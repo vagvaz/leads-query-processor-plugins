@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import eu.leads.datastore.datastruct.Cell;
-import eu.leads.infext.python.PythonCall;
+import eu.leads.infext.python.PythonQueueCall;
 import eu.leads.utils.LEADSUtils;
 
 public class BlogNewsSiteDefiner extends AbstractPartialSiteDefiner {
@@ -17,9 +17,9 @@ public class BlogNewsSiteDefiner extends AbstractPartialSiteDefiner {
 	@Override
 	public boolean defineAndStore() {
 		
-		PythonCall pythonCall = new PythonCall();
+		PythonQueueCall pythonCall = new PythonQueueCall();
 		String site = LEADSUtils.nutchUrlToFullyQualifiedDomainName(fqdn);
-		List<String> retList = pythonCall.call("googlenewsfeedschecker_clinterface", site);
+		List<Object> retList = pythonCall.call("googlenewsfeedschecker_clinterface", site);
 		
 		if(retList.isEmpty()) {
 			return false;
@@ -43,8 +43,8 @@ public class BlogNewsSiteDefiner extends AbstractPartialSiteDefiner {
 	
 	
 	public static void main(String[] args) {
-		PythonCall pythonCall = new PythonCall();
-		List<String> retList = pythonCall.call("googlenewsfeedschecker_clinterface", "wiadomosci.onet.pl");
+		PythonQueueCall pythonCall = new PythonQueueCall();
+		List<Object> retList = pythonCall.call("googlenewsfeedschecker_clinterface", "wiadomosci.onet.pl");
 		System.out.println(retList.get(0));
 	}
 

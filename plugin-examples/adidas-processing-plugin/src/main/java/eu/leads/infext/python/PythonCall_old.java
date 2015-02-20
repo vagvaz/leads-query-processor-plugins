@@ -193,20 +193,20 @@ public class PythonCall_old {
 	
 	private static int param1 = 1000;
 
-	public static void main(String [] args) {
-		String confPath = "/data/workspace/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/adidas-processing-plugin-conf.xml";
-		XMLConfiguration config;
-		try {
-			config = new XMLConfiguration(confPath);
-			PropertiesSingleton.setConfig(config);
-			long startTime = System.currentTimeMillis();
-			for(int i=0; i<param1; i++) {
-				PythonQueueCall pythonCall = new PythonQueueCall();
-				pythonCall.call(args[0]); // "eu.leads.infext.python.CLAPI.helloworld_clinterface"
-			}
-			System.out.println("Time: "+(System.currentTimeMillis()-startTime));
-		} catch (ConfigurationException e) {
-			e.printStackTrace();
-		}
-	}
+//	public static void main(String [] args) {
+//		String confPath = "/data/workspace/leads-query-processor-plugins/plugin-examples/adidas-processing-plugin/adidas-processing-plugin-conf.xml";
+//		XMLConfiguration config;
+//		try {
+//			config = new XMLConfiguration(confPath);
+//			PropertiesSingleton.setConfig(config);
+//			long startTime = System.currentTimeMillis();
+//			for(int i=0; i<param1; i++) {
+//				PythonQueueCallRIGHT pythonCall = new PythonQueueCallRIGHT();
+//				pythonCall.call(args[0]); // "eu.leads.infext.python.CLAPI.helloworld_clinterface"
+//			}
+//			System.out.println("Time: "+(System.currentTimeMillis()-startTime));
+//		} catch (ConfigurationException e) {
+//			e.printStackTrace();
+//		}
+//	}
 }

@@ -2,15 +2,15 @@ package eu.leads.infext.python;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.zeromq.ZContext;
-import org.zeromq.ZFrame;
 import org.zeromq.ZMQ;
-import org.zeromq.ZMsg;
 import org.zeromq.ZMQ.PollItem;
 import org.zeromq.ZMQ.Socket;
+import org.zeromq.ZMsg;
 
 public class JZC {
     private static final int REQUEST_TIMEOUT = 1000;
@@ -24,7 +24,7 @@ public class JZC {
 		System.out.println(list);
 	}
 
-    private ZMsg tryRequest (ZContext ctx, String endpoint, ZMsg request)
+    private JSONArray tryRequest (ZContext ctx, String endpoint, ZMsg request)
     {
         //System.out.printf("I: trying echo service at %s…\n",new Object[]{endpoint});
         Socket client = ctx.createSocket(ZMQ.REQ);
@@ -38,24 +38,28 @@ public class JZC {
         ZMsg reply = null;
         if (items[0].isReadable())
             reply = ZMsg.recvMsg(client);
-
+        JSONArray jsonReply = null;
+        String strReply = reply.popString();
+        if(strReply != null)
+        	jsonReply = new JSONArray(strReply);
         //  Close socket in any case, we're done with it now
         ctx.destroySocket(client);
-        return reply;
+        reply.destroy();
+        return jsonReply;
     }
     //  The client uses a Lazy Pirate strategy if it only has one server to talk
     //  to. If it has two or more servers to talk to, it will try each server just
     //  once:
 
-    public List<String> send(List<String> argsArray)
+    public List<Object> send(List<String> argsArray)
     {
-    	List<String> returnList = new ArrayList<String>();
+    	List<Object> returnList = new ArrayList<Object>();
     	
         ZContext ctx = new ZContext();
         ZMsg request = new ZMsg();
         for(String arg : argsArray)
         	request.add(arg);
-        ZMsg reply = null;
+        JSONArray reply = null;
 
         int endpointsNo = this.endpoints.length;
         if (endpointsNo == 0)
@@ -69,7 +73,7 @@ public class JZC {
                 reply = tryRequest(ctx, endpoint, request);
                 if (reply != null)
                     break;          //  Successful
-                //System.out.printf("W: no response from %s, retrying…\n", new Object[]{endpoint});
+                System.out.printf("W: no response from %s, retrying…\n", new Object[]{endpoint});
             }
         }
         else {
@@ -81,18 +85,21 @@ public class JZC {
                 reply = tryRequest (ctx, endpoint, request);
                 if (reply != null)
                     break;          //  Successful
-                //System.out.printf ("W: no response from %s\n", new Object[]{endpoint});
+                System.out.printf ("W: no response from %s\n", new Object[]{endpoint});
             }
         }
         if (reply != null) {
-            //System.out.println ("Service is running OK\n");
-            Iterator<ZFrame> itr = reply.iterator();
-            while(itr.hasNext()) {
-               Object element = itr.next();
-               returnList.add(element.toString());
-              // System.out.print(element + " ");
-            }
-            reply.destroy();
+            System.out.println ("Service is running OK\n");
+//            Iterator<ZFrame> itr = reply.iterator();
+//            while(itr.hasNext()) {
+//               Object element = itr.next();
+//               returnList.add(element.toString());
+//               System.out.print(element + " ");
+//            }
+            System.out.println("Received: <<"+reply+">>");
+            JSONArray json = reply;
+            for (int i=0; i<json.length(); i++)
+                returnList.add( json.get(i) );
         }
         else
         	returnList = null;

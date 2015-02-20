@@ -5,9 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import eu.leads.PropertiesSingleton;
-import eu.leads.datastore.DataStoreSingleton;
 import eu.leads.infext.proc.realtime.env.pojo.PageProcessingPojo;
-import eu.leads.infext.python.PythonQueueCall;
 import eu.leads.processor.common.infinispan.InfinispanManager;
 import eu.leads.processor.core.Tuple;
 import eu.leads.processor.plugins.PluginInterface;
@@ -82,6 +80,7 @@ public class AdidasProcessingPlugin implements PluginInterface {
 		  }
       } 
       catch (IOException e) {
+    	  System.out.println("Exception during initializing the plugin!");
     	  e.printStackTrace();
       }
    }
@@ -106,29 +105,37 @@ public class AdidasProcessingPlugin implements PluginInterface {
       processTuple(key,value);
    }
 
+   /**
+ * @param key
+ * @param value
+ */
    private void processTuple(Object key, Object value) {
 	   try {
-		  System.out.println("######## processTuple");
-	      String uri = (String) key;
-	      String webpageJson = (String)value;
-	      Tuple webpage = new Tuple(webpageJson);
-	      
-	      String content = webpage.getAttribute("content");
-	      String timestamp = webpage.getNumberAttribute("timestamp").toString();
-	      HashMap<String,String> cacheColumns = new HashMap<>();
-	      cacheColumns.put("content", content);
-	      cacheColumns.put("fetchTime", timestamp);
-	
-	      // Here Do the heavy processing stuff
-	      System.out.println("########:"+getClassName().toString() + " heavily processed key " + key);
-	//		pageProcessingPojo.execute(uri, timestamp, "webpages", cacheColumns);
-			PythonQueueCall pythonCall = new PythonQueueCall();
-			pythonCall.call("eu.leads.infext.python.CLAPI.helloworld_clinterface","hello","world");
-            System.out.println("Python called, no exceptions.");
+		   System.out.println("######## processTuple");
+		   String uri = (String) key;
+			String webpageJson = (String)value;
+			Tuple webpage = new Tuple(webpageJson);
+				      
+			String content = webpage.getAttribute("content");
+			String timestamp = webpage.getNumberAttribute("timestamp").toString();
+			HashMap<String,String> cacheColumns = new HashMap<>();
+			cacheColumns.put("content", content);
+			cacheColumns.put("fetchTime", timestamp);
+				
+			// Here Do the heavy processing stuff
+			System.out.println("########:"+getClassName().toString() + " calls a processing POJO on a key " + key);
+			pageProcessingPojo.execute(uri, timestamp, "webpages", cacheColumns);
+			
+/*			// ZEROMQ PYTHON CALL CHECK
+ * 			PythonQueueCall pythonCall = new PythonQueueCall();
+ *			pythonCall.call("eu.leads.infext.python.CLAPI.helloworld_clinterface","hello","world");
+ *          System.out.println("Python called, no exceptions.");
+ */
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-    }
+   }
 
    @Override
    public void removed(Object key, Object value, Cache<Object, Object> cache) {

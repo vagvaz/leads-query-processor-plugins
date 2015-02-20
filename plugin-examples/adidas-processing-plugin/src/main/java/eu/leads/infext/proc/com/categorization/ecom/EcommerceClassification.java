@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import eu.leads.infext.logging.ErrorStrings;
-import eu.leads.infext.python.PythonCall;
+import eu.leads.infext.python.PythonQueueCall;
 import eu.leads.utils.LEADSUtils;
 
 public class EcommerceClassification {
@@ -59,15 +59,15 @@ public class EcommerceClassification {
 		
 		String cliName = popcName;
 		
-		PythonCall pyCall = new PythonCall();
+		PythonQueueCall pyCall = new PythonQueueCall();
 		pyCall.sendViaFile(0);
-		List<String> retValues = pyCall.call(cliName, content, lang);
+		List<Object> retValues = pyCall.call(cliName, content, lang);
 		
 		if(retValues.size() >= 4) {
-			isEcomAssumption = retValues.get(0);
-			ecomFeatures = retValues.get(1);
-			buttonNode = retValues.get(2).trim().length()>0 ? retValues.get(2) : null; // might be None, is that ok?
-			basketNode = retValues.get(3).trim().length()>0 ? retValues.get(3) : null; // the same
+			isEcomAssumption = (String) retValues.get(0);
+			ecomFeatures = (String) retValues.get(1);
+			buttonNode = ((String)retValues.get(2)).trim().length()>0 ? ((String)retValues.get(2)) : null; // might be None, is that ok?
+			basketNode = ((String)retValues.get(3)).trim().length()>0 ? ((String)retValues.get(3)) : null; // the same
 			
 			this.ecomFeatures = ecomFeatures;
 			this.isEcomAssumption = Boolean.valueOf(isEcomAssumption);
@@ -93,8 +93,8 @@ public class EcommerceClassification {
 		
 		String name = atbbcName;
 		
-		PythonCall pyCall = new PythonCall();
-		List<String> retValues = new ArrayList<>();
+		PythonQueueCall pyCall = new PythonQueueCall();
+		List<Object> retValues = new ArrayList<>();
 		if(extractionCandidatesJSONString != null) {
 			pyCall.sendViaFile(0,2);
 			retValues = pyCall.call(name, content, lang, extractionCandidatesJSONString);
@@ -104,7 +104,7 @@ public class EcommerceClassification {
 			retValues = pyCall.call(name, content, lang);
 		}
 		if(retValues.get(0).equals("1"))
-			atbButtonXpath = retValues.get(1);
+			atbButtonXpath = (String) retValues.get(1);
 		
 		return atbButtonXpath;
 	}

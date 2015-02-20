@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import eu.leads.infext.logging.ErrorStrings;
-import eu.leads.infext.python.PythonCall;
+import eu.leads.infext.python.PythonQueueCall;
 import eu.leads.utils.LEADSUtils;
 
 public class EcommerceNewPageTypeEvaluation {
@@ -58,13 +58,13 @@ public class EcommerceNewPageTypeEvaluation {
 		
 		String name = enptcName;
 		
-		PythonCall pyCall = new PythonCall();
+		PythonQueueCall pyCall = new PythonQueueCall();
 		pyCall.sendViaFile(0);
-		List<String> retValues = pyCall.call(name, content, lang, isBagButtonOnSite, kMeansParams);
+		List<Object> retValues = pyCall.call(name, content, lang, isBagButtonOnSite, kMeansParams);
 		
 		if(retValues.size() >= 2) {
-			setEcomAssumption(retValues.get(0));
-			this.ecomFeatures = retValues.get(1);
+			setEcomAssumption((String) retValues.get(0));
+			this.ecomFeatures = (String) retValues.get(1);
 			return true;
 		}
 		else {

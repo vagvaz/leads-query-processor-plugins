@@ -68,8 +68,11 @@ public class PythonQueueCall {
 			try {
 				file.createNewFile();
 				PrintWriter out = new PrintWriter(file);
+				String outputStr = "";
 				for(String param : params)
-					out.println(param);
+					outputStr += param + "\n";
+				outputStr = outputStr.substring(0, outputStr.length()-1);
+				out.print(outputStr);
 				out.close();
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -80,9 +83,9 @@ public class PythonQueueCall {
 	}
 	
 	
-	public List<String> call(String moduleName, Object... args) {
+	public List<Object> call(String moduleName, Object... args) {
 		
-		List<String> retValue = null;
+		List<Object> retValue = null;
 		
 		List<String> params = new ArrayList<>();
 		
@@ -130,7 +133,12 @@ public class PythonQueueCall {
 				paramsList.add("paramsfile:"+fileName);
 			}
 		}
-		params.add(moduleName);
+		String path;
+		if(moduleName.contains(".")) // full package name
+			path = moduleName;
+		else
+			path = config.getString("pythonCLIPackage")+"."+moduleName;
+		params.add(path);
 		params.addAll(paramsList);
 		
 		int REQUEST_RETRIES = 3;
@@ -139,34 +147,33 @@ public class PythonQueueCall {
 		
 		String paramsString = StringUtils.join(params.toArray(),' ');
 		
-		//System.out.println(params);
+		System.out.println(paramsString);
         
-        List<String> reply = jzc.send(params);
-        
+        List<Object> reply = jzc.send(params);
         if(reply != null) {
 	        System.out.println("Received reply:\n\n" + reply);			
-	        List<String> returned = new ArrayList<>();
-			String strtemp = "";
-			boolean areRetsStarted = false;
-			for(String line : reply) {
-				if(line.startsWith("[leadsret:] ")) {
-					if(areRetsStarted) {
-						// put the last one into the list
-						returned.add(strtemp);
-						strtemp = "";
-					}
-					else
-						areRetsStarted = true;
-					strtemp += line.substring(12);
-				}
-				else {
-					if(areRetsStarted)
-						strtemp += "\n" + line;
-				}
-			}
-			if(areRetsStarted)
-				returned.add(strtemp);
-			retValue = returned;
+//	        List<String> returned = new ArrayList<>();
+//			String strtemp = "";
+//			boolean areRetsStarted = false;
+//			for(Object line : reply) {
+//				if(line.startsWith("[leadsret:] ")) {
+//					if(areRetsStarted) {
+//						// put the last one into the list
+//						returned.add(strtemp);
+//						strtemp = "";
+//					}
+//					else
+//						areRetsStarted = true;
+//					strtemp += line.substring(12);
+//				}
+//				else {
+//					if(areRetsStarted)
+//						strtemp += "\n" + line;
+//				}
+//			}
+//			if(areRetsStarted)
+//				returned.add(strtemp);
+			retValue = reply;
         }
 		return retValue;		
 	}
@@ -178,23 +185,25 @@ public class PythonQueueCall {
 			config = new XMLConfiguration(confPath);
 			PropertiesSingleton.setConfig(config);
 			
-		      // Start Python ZeroMQ Server processes!
-		      List<String> endpoints = config.getList("pzsEndpoints");
-		      String pythonPath = "PYTHONPATH="+config.getString("pythonPath");
-		      String commandBase = "/usr/bin/python -m eu.leads.infext.python.CLAPI.pzs ";
-		      String[] envp = {pythonPath};
-		      try {
-		    	  for(int i=0; i<endpoints.size(); i++) {
-			    	  String endpoint = endpoints.get(i);
-			    	  String command  = commandBase+endpoint;
-			    	  Runtime.getRuntime().exec(command, envp);
-			      }
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+//		      // Start Python ZeroMQ Server processes!
+//		      List<String> endpoints = config.getList("pzsEndpoints");
+//		      String pythonPath = "PYTHONPATH="+config.getString("pythonPath");
+//		      String commandBase = "/usr/bin/python2.7 -m eu.leads.infext.python.CLAPI.pzs ";
+//		      String[] envp = {pythonPath};
+//		      try {
+//		    	  for(int i=0; i<endpoints.size(); i++) {
+//			    	  String endpoint = endpoints.get(i);
+//			    	  String command  = commandBase+endpoint;
+//			    	  System.out.println(command);
+//			    	  Runtime.getRuntime().exec(command, envp);
+//			      }
+//			} catch (IOException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
 			
 			PythonQueueCall pythonCall = new PythonQueueCall();
+			pythonCall.sendViaFile(0);
 			pythonCall.call("eu.leads.infext.python.CLAPI.helloworld_clinterface","hello","world");
 		} catch (ConfigurationException e) {
 			e.printStackTrace();
